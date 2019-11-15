@@ -30,17 +30,23 @@ subordinates = {
 }
 
 
-@blueprint.route('/example', methods=['GET'])
-def get_example():
-    return jsonify(current_app.backend.perform('example_module', 'example_action'))
+@blueprint.route('/authority', methods=['GET'])
+def get_authority():
+    authority_status = current_app.backend.perform('remote', 'get_status')
+    return jsonify({'status': authority_status['status']})
 
 
-@blueprint.route('/example', methods=['POST'])
-def post_example():
-    validate_json(request.json, {'modules': list})
+@blueprint.route('/authority', methods=['POST'])
+def post_authority():
+    ca_status = current_app.backend.perform('remote', 'get_status').get('status')
+    if ca_status == 'ready':
+        raise APIError(_('Certificate authority already exists'))
+    return jsonify(current_app.backend.perform('remote', 'generate_ca')), HTTPStatus.ACCEPTED
 
-    response = current_app.backend.perform('example_module', 'example_action', request.json)
+
+@blueprint.route('/authority', methods=['DELETE'])
+def delete_authority():
+    response = current_app.backend.perform('remote', 'delete_ca')
     if response.get('result') is not True:
-        raise APIError(_('Cannot create entity'), HTTPStatus.INTERNAL_SERVER_ERROR)
-
-    return jsonify(response), HTTPStatus.CREATED
+        raise APIError(_('Cannot delete certificate authority'), HTTPStatus.INTERNAL_SERVER_ERROR)
+    return '', HTTPStatus.NO_CONTENT

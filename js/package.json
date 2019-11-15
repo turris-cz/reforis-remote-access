@@ -6,7 +6,7 @@
   "description": "",
   "main": "./src/app.js",
   "peerDependencies": {
-    "foris": "beta",
+    "foris": "1.3.2-beta.b3bb4de6",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
@@ -26,7 +26,7 @@
     "css-loader": "^3.0.0",
     "eslint": "^6.1.0",
     "eslint-config-reforis": "^1.0.0",
-    "foris": "beta",
+    "foris": "1.3.2-beta.b3bb4de6",
     "jest": "^24.8.0",
     "jest-mock-axios": "^3.0.0",
     "moment-timezone": "^0.5.25",

@@ -5,14 +5,13 @@
  * See /LICENSE for more information.
  */
 
-import Subordinates from "./subordinates/Subordinates";
+import RemoteAccess from "./remoteAccess/RemoteAccess";
 
 const SubordinatesPlugin = {
-    name: _("Subordinates"),
-    submenuId: "administration",
-    weight: 100,
-    path: "/subordinates",
-    component: Subordinates,
+    name: _("Remote Access"),
+    path: "/remote-access",
+    component: RemoteAccess,
+    icon: "tty",
 };
 
 ForisPlugins.push(SubordinatesPlugin);

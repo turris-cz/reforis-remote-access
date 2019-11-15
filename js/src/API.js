@@ -5,11 +5,11 @@
  * See /LICENSE for more information.
  */
 
-const API_URL_PREFIX = "/subordinates/api";
+const API_URL_PREFIX = "/reforis/subordinates/api";
 
 const API_URLs = new Proxy(
     {
-        example: "/example",
+        authority: "/authority",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,
