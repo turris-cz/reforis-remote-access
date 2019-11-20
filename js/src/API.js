@@ -10,6 +10,7 @@ const API_URL_PREFIX = "/reforis/subordinates/api";
 const API_URLs = new Proxy(
     {
         authority: "/authority",
+        settings: "/settings",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,

@@ -17,8 +17,12 @@ describe("<AuthorityMissing />", () => {
     let componentContainer;
     const onSuccess = jest.fn();
 
+    function generateCA() {
+        fireEvent.click(getByText(componentContainer, "Generate certificate authority"));
+    }
+
     beforeEach(() => {
-        const { container } = render(<AuthorityMissing onSuccess={onSuccess} />);
+        const { container } = render(<AuthorityMissing onAuthoritySuccess={onSuccess} />);
         componentContainer = container;
     });
 
@@ -27,12 +31,17 @@ describe("<AuthorityMissing />", () => {
     });
 
     it("should send request when button is clicked", () => {
-        fireEvent.click(getByText(componentContainer, "Generate CA"));
+        generateCA();
         expect(mockAxios.post).toBeCalledWith("/reforis/subordinates/api/authority", undefined, expect.anything());
     });
 
+    it("should display spinner when sending request", () => {
+        generateCA();
+        expect(componentContainer).toMatchSnapshot();
+    });
+
     it("should handle error", async () => {
-        fireEvent.click(getByText(componentContainer, "Generate CA"));
+        generateCA();
         mockJSONError();
         await wait(() => {
             expect(mockSetAlert).toHaveBeenCalledWith("Cannot generate certificate authority");
@@ -40,7 +49,7 @@ describe("<AuthorityMissing />", () => {
     });
 
     it("should handle success", async () => {
-        fireEvent.click(getByText(componentContainer, "Generate CA"));
+        generateCA();
         mockAxios.mockResponse({});
         await wait(() => {
             expect(onSuccess).toHaveBeenCalledTimes(1);

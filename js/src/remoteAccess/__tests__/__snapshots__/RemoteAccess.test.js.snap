@@ -12,7 +12,7 @@ exports[`<RemoteAccess /> should handle generating certificate 1`] = `
     This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.
   </p>
   <h3>
-    Generating certification authority
+    Generating certificate authority
   </h3>
   <div
     class="spinner-wrapper my-3 text-center"
@@ -30,7 +30,7 @@ exports[`<RemoteAccess /> should handle generating certificate 1`] = `
     />
   </div>
   <p>
-    Your certification authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.
+    Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.
   </p>
 </div>
 `;
@@ -47,7 +47,7 @@ exports[`<RemoteAccess /> should handle missing certificate 1`] = `
     This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.
   </p>
   <h3>
-    No certification authority
+    No certificate authority
   </h3>
   <p>
     Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
@@ -58,7 +58,7 @@ exports[`<RemoteAccess /> should handle missing certificate 1`] = `
   >
      
      
-    Generate CA
+    Generate certificate authority
   </button>
 </div>
 `;
@@ -75,10 +75,42 @@ exports[`<RemoteAccess /> should handle ready certificate 1`] = `
     This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.
   </p>
   <h3>
+    Connection Settings
+  </h3>
+  <form>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          class="custom-control-input"
+          id="1"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="1"
+        >
+          Enable remote access
+        </label>
+      </div>
+    </div>
+    <button
+      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      type="submit"
+    >
+       
+       
+      Save
+    </button>
+  </form>
+  <h3>
     Certificate Authority
   </h3>
   <p>
-    Your certificate authority (CA) is set up properly. Please note that if you delete it all clients will have their access revoked.
+    Your certificate authority is set up properly. Please note that if you delete it all clients will have their access revoked.
   </p>
   <button
     class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
@@ -86,7 +118,7 @@ exports[`<RemoteAccess /> should handle ready certificate 1`] = `
   >
      
      
-    Delete CA
+    Delete certificate authority
   </button>
 </div>
 `;

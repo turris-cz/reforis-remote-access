@@ -12,24 +12,24 @@ import { useWSForisModule, Spinner } from "foris";
 
 AuthorityGenerating.propTypes = {
     ws: PropTypes.object.isRequired,
-    onSuccess: PropTypes.func.isRequired,
+    onAuthoritySuccess: PropTypes.func.isRequired,
 };
 
 export const SUCCESS_STATUS = "succeeded";
 
-export default function AuthorityGenerating({ ws, onSuccess }) {
+export default function AuthorityGenerating({ ws, onAuthoritySuccess }) {
     const [generateCA] = useWSForisModule(ws, "remote", "generate_ca");
     useEffect(() => {
         if (generateCA && generateCA.status === SUCCESS_STATUS) {
-            onSuccess();
+            onAuthoritySuccess();
         }
-    }, [generateCA, onSuccess]);
+    }, [generateCA, onAuthoritySuccess]);
 
     return (
         <>
-            <h3>{_("Generating certification authority")}</h3>
+            <h3>{_("Generating certificate authority")}</h3>
             <Spinner />
-            <p>{_("Your certification authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.")}</p>
+            <p>{_("Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.")}</p>
         </>
     );
 }

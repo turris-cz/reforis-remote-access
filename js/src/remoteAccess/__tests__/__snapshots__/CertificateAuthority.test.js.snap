@@ -1,41 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CertificateAuthority /> authority is ready should render component 1`] = `
+exports[`<CertificateAuthority /> when remote access is disabled should render component 1`] = `
 <div>
   <h3>
     Certificate Authority
   </h3>
   <p>
-    Your certificate authority (CA) is set up properly. Please note that if you delete it all clients will have their access revoked.
-  </p>
-  <button
-    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
-    type="button"
-  >
-     
-     
-    Delete CA
-  </button>
-</div>
-`;
-
-exports[`<CertificateAuthority /> should render error 1`] = `
-<div>
-  <p
-    class="text-center text-danger"
-  >
-    An error occurred while fetching data.
+    You can't delete certificate authority while remote access is enabled. In order to delete it you need to disable the access first.
   </p>
 </div>
 `;
 
-exports[`<CertificateAuthority /> should render missing component 1`] = `
+exports[`<CertificateAuthority /> when remote access is enabled should render component 1`] = `
 <div>
   <h3>
-    No certification authority
+    Certificate Authority
   </h3>
   <p>
-    Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
+    Your certificate authority is set up properly. Please note that if you delete it all clients will have their access revoked.
   </p>
   <button
     class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
@@ -43,27 +25,7 @@ exports[`<CertificateAuthority /> should render missing component 1`] = `
   >
      
      
-    Generate CA
+    Delete certificate authority
   </button>
-</div>
-`;
-
-exports[`<CertificateAuthority /> should render spinner 1`] = `
-<div>
-  <div
-    class="spinner-wrapper my-3 text-center"
-  >
-    <div
-      class="spinner-border "
-      role="status"
-    >
-      <span
-        class="sr-only"
-      />
-    </div>
-    <div
-      class="spinner-text"
-    />
-  </div>
 </div>
 `;

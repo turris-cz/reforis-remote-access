@@ -30,6 +30,8 @@ subordinates = {
 }
 
 
+# /authority
+
 @blueprint.route('/authority', methods=['GET'])
 def get_authority():
     authority_status = current_app.backend.perform('remote', 'get_status')
@@ -50,3 +52,19 @@ def delete_authority():
     if response.get('result') is not True:
         raise APIError(_('Cannot delete certificate authority'), HTTPStatus.INTERNAL_SERVER_ERROR)
     return '', HTTPStatus.NO_CONTENT
+
+
+# /settings
+
+@blueprint.route('/settings', methods=['GET'])
+def get_connection_settings():
+    return jsonify(current_app.backend.perform('remote', 'get_settings'))
+
+
+@blueprint.route('/settings', methods=['PUT'])
+def put_connection_settings():
+    validate_json(request.json)
+    response = current_app.backend.perform('remote', 'update_settings', request.json)
+    if response.get('result') is not True:
+        raise APIError(_('Cannot change settings'), HTTPStatus.INTERNAL_SERVER_ERROR)
+    return jsonify(response)

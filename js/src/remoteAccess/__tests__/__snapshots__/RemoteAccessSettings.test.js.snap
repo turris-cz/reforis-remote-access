@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RemoteAccessSettings /> should render error 1`] = `
+<div>
+  <p
+    class="text-center text-danger"
+  >
+    An error occurred while fetching data.
+  </p>
+</div>
+`;
+
+exports[`<RemoteAccessSettings /> should render generating component 1`] = `
+<div>
+  <h3>
+    Generating certificate authority
+  </h3>
+  <div
+    class="spinner-wrapper my-3 text-center"
+  >
+    <div
+      class="spinner-border "
+      role="status"
+    >
+      <span
+        class="sr-only"
+      />
+    </div>
+    <div
+      class="spinner-text"
+    />
+  </div>
+  <p>
+    Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.
+  </p>
+</div>
+`;
+
+exports[`<RemoteAccessSettings /> should render missing component 1`] = `
+<div>
+  <h3>
+    No certificate authority
+  </h3>
+  <p>
+    Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
+  </p>
+  <button
+    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    type="button"
+  >
+     
+     
+    Generate certificate authority
+  </button>
+</div>
+`;
+
+exports[`<RemoteAccessSettings /> should render settings component 1`] = `
+<div>
+  <h3>
+    Connection Settings
+  </h3>
+  <form>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          checked=""
+          class="custom-control-input"
+          id="1"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="1"
+        >
+          Enable remote access
+        </label>
+      </div>
+    </div>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          class="custom-control-input"
+          id="2"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="2"
+        >
+          Accessible via WAN
+        </label>
+        <small
+          class="form-text text-muted"
+        >
+          Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+        </small>
+      </div>
+    </div>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <label
+        for="3"
+      >
+        Port
+      </label>
+      <div
+        class="input-group"
+      >
+        <input
+          class="form-control"
+          id="3"
+          type="number"
+          value="1234"
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            aria-label="Increase"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-plus"
+            />
+          </button>
+          <button
+            aria-label="Decrease"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-minus"
+            />
+          </button>
+        </div>
+      </div>
+      <small
+        class="form-text text-muted"
+      >
+        A port which will be opened for the remote configuration of this device.
+      </small>
+    </div>
+    <button
+      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      type="submit"
+    >
+       
+       
+      Save
+    </button>
+  </form>
+  <h3>
+    Certificate Authority
+  </h3>
+  <p>
+    You can't delete certificate authority while remote access is enabled. In order to delete it you need to disable the access first.
+  </p>
+</div>
+`;
+
+exports[`<RemoteAccessSettings /> should render spinner 1`] = `
+<div>
+  <div
+    class="spinner-wrapper my-3 text-center"
+  >
+    <div
+      class="spinner-border "
+      role="status"
+    >
+      <span
+        class="sr-only"
+      />
+    </div>
+    <div
+      class="spinner-text"
+    />
+  </div>
+</div>
+`;

@@ -1,9 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<AuthorityMissing /> should display spinner when sending request 1`] = `
+<div>
+  <h3>
+    No certificate authority
+  </h3>
+  <p>
+    Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
+  </p>
+  <button
+    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    type="button"
+  >
+    <span
+      aria-hidden="true"
+      class="spinner-border spinner-border-sm"
+      role="status"
+    />
+     
+     
+     
+    Generate certificate authority
+  </button>
+</div>
+`;
+
 exports[`<AuthorityMissing /> should match snapshot 1`] = `
 <div>
   <h3>
-    No certification authority
+    No certificate authority
   </h3>
   <p>
     Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
@@ -14,7 +39,7 @@ exports[`<AuthorityMissing /> should match snapshot 1`] = `
   >
      
      
-    Generate CA
+    Generate certificate authority
   </button>
 </div>
 `;
