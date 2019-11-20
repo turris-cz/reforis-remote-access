@@ -9,12 +9,10 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 import {
-    Button, withErrorMessage, withSpinnerOnSending, withEither, useAlert, useAPIDelete, API_STATE,
+    Button, useAlert, useAPIDelete, API_STATE,
 } from "foris";
 
 import API_URLs from "API";
-import AuthorityMissing from "./AuthorityMissing";
-import AuthorityGenerating from "./AuthorityGenerating";
 
 export const CA_STATUS = {
     MISSING: "missing",
@@ -24,10 +22,11 @@ export const CA_STATUS = {
 
 CertificateAuthority.propTypes = {
     authority: PropTypes.object.isRequired,
+    accessEnabled: PropTypes.bool.isRequired,
     onSuccess: PropTypes.func.isRequired,
 };
 
-function CertificateAuthority({ authority, onSuccess }) {
+export default function CertificateAuthority({ authority, accessEnabled, onSuccess }) {
     const [setAlert] = useAlert();
 
     const [deleteResponse, deleteCA] = useAPIDelete(API_URLs.authority);
@@ -46,27 +45,20 @@ function CertificateAuthority({ authority, onSuccess }) {
     return (
         <>
             <h3>{_("Certificate Authority")}</h3>
-            <p>{_("Your certificate authority (CA) is set up properly. Please note that if you delete it all clients will have their access revoked.")}</p>
-            <Button onClick={() => deleteCA()} forisFormSize>{_("Delete CA")}</Button>
+            {accessEnabled
+                ? <p>{_("You can't delete certificate authority while remote access is enabled. In order to delete it you need to disable the access first.")}</p>
+                : (
+                    <>
+                        <p>{_("Your certificate authority is set up properly. Please note that if you delete it all clients will have their access revoked.")}</p>
+                        <Button
+                            onClick={() => deleteCA()}
+                            loading={deleteResponse.state === API_STATE.SENDING}
+                            forisFormSize
+                        >
+                            {_("Delete certificate authority")}
+                        </Button>
+                    </>
+                )}
         </>
     );
 }
-
-const withMissing = withEither(
-    (props) => props.authority.status === CA_STATUS.MISSING,
-    AuthorityMissing,
-);
-
-const withGenerating = withEither(
-    (props) => props.authority.status === CA_STATUS.GENERATING,
-    AuthorityGenerating,
-);
-
-export default (
-    withErrorMessage(
-        withSpinnerOnSending(
-            withMissing(
-                withGenerating(CertificateAuthority),
-            ),
-        ),
-    ));

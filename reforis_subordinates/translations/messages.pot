@@ -1,0 +1,133 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-11-20 12:17+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: js/src/app.js:11 js/src/remoteAccess/RemoteAccess.js:33
+msgid "Remote Access"
+msgstr ""
+
+#: js/src/remoteAccess/AuthorityGenerating.js:30
+msgid "Generating certification authority"
+msgstr ""
+
+#: js/src/remoteAccess/AuthorityGenerating.js:32
+msgid ""
+"Your certification authority is now being generated. It usually takes a "
+"few minutes. Settings will appear here automatically once the authority "
+"is ready."
+msgstr ""
+
+#: js/src/remoteAccess/AuthorityMissing.js:29
+msgid "Cannot generate certificate authority"
+msgstr ""
+
+#: js/src/remoteAccess/AuthorityMissing.js:35
+msgid "No certification authority"
+msgstr ""
+
+#: js/src/remoteAccess/AuthorityMissing.js:36
+msgid ""
+"Currently there is no certificate authority (CA) dedicated to remote "
+"access. A CA is required to generate access tokens to authenticate. To "
+"proceed you need to generate it first."
+msgstr ""
+
+#: js/src/remoteAccess/AuthorityMissing.js:42
+msgid "Generate CA"
+msgstr ""
+
+#: js/src/remoteAccess/CertificateAuthority.js:37
+#: reforis_subordinates/__init__.py:53
+msgid "Cannot delete certificate authority"
+msgstr ""
+
+#: js/src/remoteAccess/CertificateAuthority.js:47
+msgid "Certificate Authority"
+msgstr ""
+
+#: js/src/remoteAccess/CertificateAuthority.js:49
+msgid ""
+"You can't delete CA while remote access is enabled. In order to delete it"
+" you need to disable the access first."
+msgstr ""
+
+#: js/src/remoteAccess/CertificateAuthority.js:52
+msgid ""
+"Your certificate authority (CA) is set up properly. Please note that if "
+"you delete it all clients will have their access revoked."
+msgstr ""
+
+#: js/src/remoteAccess/CertificateAuthority.js:58
+msgid "Delete CA"
+msgstr ""
+
+#: js/src/remoteAccess/RemoteAccess.js:34
+msgid ""
+"Here you can set up your router to be configured remotely. The remote "
+"configuration is done via secure encrypted connection and each client is "
+"required to have a token issued by this device."
+msgstr ""
+
+#: js/src/remoteAccess/RemoteAccess.js:35
+msgid ""
+"This can be useful when you plan to access configuration interface via "
+"mobile app, another Turris router or you intend to write your own client."
+msgstr ""
+
+#: js/src/remoteAccess/SettingsForm.js:28
+msgid "Cannot save connection parameters"
+msgstr ""
+
+#: js/src/remoteAccess/SettingsForm.js:61
+msgid "Connection Settings"
+msgstr ""
+
+#: js/src/remoteAccess/SettingsForm.js:64
+msgid "Enable remote access"
+msgstr ""
+
+#: js/src/remoteAccess/SettingsForm.js:72
+msgid "Accessible via WAN"
+msgstr ""
+
+#: js/src/remoteAccess/SettingsForm.js:73
+msgid ""
+"Devices in the WAN network will be able to connect to the configuration "
+"interface. Otherwise only devices on LAN will be able to access it."
+msgstr ""
+
+#: js/src/remoteAccess/SettingsForm.js:80
+msgid "Port"
+msgstr ""
+
+#: js/src/remoteAccess/SettingsForm.js:81
+msgid "A port which will be opened for the remote configuration of this device."
+msgstr ""
+
+#: js/src/remoteAccess/SettingsForm.js:94
+msgid "Save"
+msgstr ""
+
+#: reforis_subordinates/__init__.py:45
+msgid "Certificate authority already exists"
+msgstr ""
+
+#: reforis_subordinates/__init__.py:69
+msgid "Cannot change settings"
+msgstr ""
+

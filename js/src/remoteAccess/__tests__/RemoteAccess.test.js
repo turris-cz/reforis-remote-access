@@ -28,22 +28,32 @@ describe("<RemoteAccess />", () => {
 
     it("should render error", async () => {
         expect(mockAxios.get).toBeCalledWith("/reforis/subordinates/api/authority", expect.anything());
+        expect(mockAxios.get).toBeCalledWith("/reforis/subordinates/api/settings", expect.anything());
         mockJSONError();
         await wait(() => expect(container).toMatchSnapshot());
     });
 
     it("should handle missing certificate", async () => {
+        // Response to GET authority
         mockAxios.mockResponse({ data: { status: CA_STATUS.MISSING }});
+        // Response to GET settings
+        mockAxios.mockResponse({ data: { enabled: false }});
         await wait(() => expect(container).toMatchSnapshot());
     });
 
     it("should handle generating certificate", async () => {
+        // Response to GET authority
         mockAxios.mockResponse({ data: { status: CA_STATUS.GENERATING }});
+        // Response to GET settings
+        mockAxios.mockResponse({ data: { enabled: false }});
         await wait(() => expect(container).toMatchSnapshot());
     });
 
     it("should handle ready certificate", async () => {
+        // Response to GET authority
         mockAxios.mockResponse({ data: { status: CA_STATUS.READY }});
+        // Response to GET settings
+        mockAxios.mockResponse({ data: { enabled: false }});
         await wait(() => expect(container).toMatchSnapshot());
     });
 });

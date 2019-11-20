@@ -3,7 +3,7 @@
 exports[`<AuthorityGenerating /> should match snapshot 1`] = `
 <div>
   <h3>
-    Generating certification authority
+    Generating certificate authority
   </h3>
   <div
     class="spinner-wrapper my-3 text-center"
@@ -21,7 +21,7 @@ exports[`<AuthorityGenerating /> should match snapshot 1`] = `
     />
   </div>
   <p>
-    Your certification authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.
+    Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.
   </p>
 </div>
 `;

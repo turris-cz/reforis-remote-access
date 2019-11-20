@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SettingsForm /> should display a spinner and disable save button while sending request 1`] = `
+<div>
+  <h3>
+    Connection Settings
+  </h3>
+  <form>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          checked=""
+          class="custom-control-input"
+          id="1"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="1"
+        >
+          Enable remote access
+        </label>
+      </div>
+    </div>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          class="custom-control-input"
+          id="2"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="2"
+        >
+          Accessible via WAN
+        </label>
+        <small
+          class="form-text text-muted"
+        >
+          Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+        </small>
+      </div>
+    </div>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <label
+        for="3"
+      >
+        Port
+      </label>
+      <div
+        class="input-group"
+      >
+        <input
+          class="form-control"
+          id="3"
+          type="number"
+          value="1808"
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            aria-label="Increase"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-plus"
+            />
+          </button>
+          <button
+            aria-label="Decrease"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-minus"
+            />
+          </button>
+        </div>
+      </div>
+      <small
+        class="form-text text-muted"
+      >
+        A port which will be opened for the remote configuration of this device.
+      </small>
+    </div>
+    <button
+      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      disabled=""
+      type="submit"
+    >
+      <span
+        aria-hidden="true"
+        class="spinner-border spinner-border-sm"
+        role="status"
+      />
+       
+       
+       
+      Save
+    </button>
+  </form>
+</div>
+`;
+
+exports[`<SettingsForm /> should expose the rest of the form when enabled 1`] = `
+<div>
+  <h3>
+    Connection Settings
+  </h3>
+  <form>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          class="custom-control-input"
+          id="1"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="1"
+        >
+          Enable remote access
+        </label>
+      </div>
+    </div>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          class="custom-control-input"
+          id="3"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="3"
+        >
+          Accessible via WAN
+        </label>
+        <small
+          class="form-text text-muted"
+        >
+          Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+        </small>
+      </div>
+    </div>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <label
+        for="4"
+      >
+        Port
+      </label>
+      <div
+        class="input-group"
+      >
+        <input
+          class="form-control"
+          id="4"
+          type="number"
+          value="1194"
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            aria-label="Increase"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-plus"
+            />
+          </button>
+          <button
+            aria-label="Decrease"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-minus"
+            />
+          </button>
+        </div>
+      </div>
+      <small
+        class="form-text text-muted"
+      >
+        A port which will be opened for the remote configuration of this device.
+      </small>
+    </div>
+    <button
+      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      type="submit"
+    >
+       
+       
+      Save
+    </button>
+  </form>
+</div>
+`;
+
+exports[`<SettingsForm /> should render full form when access is enabled 1`] = `
+<div>
+  <h3>
+    Connection Settings
+  </h3>
+  <form>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          checked=""
+          class="custom-control-input"
+          id="1"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="1"
+        >
+          Enable remote access
+        </label>
+      </div>
+    </div>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          class="custom-control-input"
+          id="2"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="2"
+        >
+          Accessible via WAN
+        </label>
+        <small
+          class="form-text text-muted"
+        >
+          Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+        </small>
+      </div>
+    </div>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <label
+        for="3"
+      >
+        Port
+      </label>
+      <div
+        class="input-group"
+      >
+        <input
+          class="form-control"
+          id="3"
+          type="number"
+          value="1808"
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            aria-label="Increase"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-plus"
+            />
+          </button>
+          <button
+            aria-label="Decrease"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-minus"
+            />
+          </button>
+        </div>
+      </div>
+      <small
+        class="form-text text-muted"
+      >
+        A port which will be opened for the remote configuration of this device.
+      </small>
+    </div>
+    <button
+      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      type="submit"
+    >
+       
+       
+      Save
+    </button>
+  </form>
+</div>
+`;
+
+exports[`<SettingsForm /> should render only checkbox when access is disabled 1`] = `
+<div>
+  <h3>
+    Connection Settings
+  </h3>
+  <form>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <div
+        class="custom-control custom-checkbox "
+      >
+        <input
+          class="custom-control-input"
+          id="1"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="1"
+        >
+          Enable remote access
+        </label>
+      </div>
+    </div>
+    <button
+      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      type="submit"
+    >
+       
+       
+      Save
+    </button>
+  </form>
+</div>
+`;

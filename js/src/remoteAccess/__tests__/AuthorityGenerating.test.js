@@ -19,7 +19,7 @@ describe("<AuthorityGenerating />", () => {
 
     beforeEach(() => {
         webSockets = new WebSockets();
-        const { container } = render(<AuthorityGenerating ws={webSockets} onSuccess={onSuccess} />);
+        const { container } = render(<AuthorityGenerating ws={webSockets} onAuthoritySuccess={onSuccess} />);
         componentContainer = container;
     });
 
