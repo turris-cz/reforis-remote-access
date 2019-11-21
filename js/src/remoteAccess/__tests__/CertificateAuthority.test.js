@@ -57,7 +57,7 @@ describe("<CertificateAuthority />", () => {
 
         it("should send request when button is clicked", () => {
             deleteCA();
-            expect(mockAxios.delete).toBeCalledWith("/reforis/subordinates/api/authority", expect.anything());
+            expect(mockAxios.delete).toBeCalledWith("/reforis/remote-access/api/authority", expect.anything());
         });
 
         it("should handle error", async () => {

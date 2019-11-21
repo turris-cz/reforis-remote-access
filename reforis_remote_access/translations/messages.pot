@@ -52,7 +52,7 @@ msgid "Generate CA"
 msgstr ""
 
 #: js/src/remoteAccess/CertificateAuthority.js:37
-#: reforis_subordinates/__init__.py:53
+#: reforis_remote_access/__init__.py:53
 msgid "Cannot delete certificate authority"
 msgstr ""
 
@@ -123,11 +123,11 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: reforis_subordinates/__init__.py:45
+#: reforis_remote_access/__init__.py:45
 msgid "Certificate authority already exists"
 msgstr ""
 
-#: reforis_subordinates/__init__.py:69
+#: reforis_remote_access/__init__.py:69
 msgid "Cannot change settings"
 msgstr ""
 

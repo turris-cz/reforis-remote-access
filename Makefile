@@ -57,7 +57,7 @@ prepare-dev:
 
 install:
 	$(ROUTER_PYTHON) -m pip install -e .
-	ln -sf /tmp/reforis-subordinates/reforis_static/reforis_subordinates /tmp/reforis/reforis_static/
+	ln -sf /tmp/reforis-remote-access/reforis_static/reforis_remote_access /tmp/reforis/reforis_static/
 	/etc/init.d/lighttpd restart
 install-js: js/package.json
 	cd $(JS_DIR); npm install --save-dev
@@ -75,8 +75,8 @@ lint-js:
 lint-js-fix:
 	cd $(JS_DIR); npm run lint:fix
 lint-web: venv
-	$(VENV_BIN)/$(DEV_PYTHON) -m pylint --rcfile=pylintrc reforis_subordinates
-	$(VENV_BIN)/$(DEV_PYTHON) -m pycodestyle --config=pycodestyle reforis_subordinates
+	$(VENV_BIN)/$(DEV_PYTHON) -m pylint --rcfile=pylintrc reforis_remote_access
+	$(VENV_BIN)/$(DEV_PYTHON) -m pycodestyle --config=pycodestyle reforis_remote_access
 
 test: test-js test-web
 test-js:
@@ -87,21 +87,21 @@ test-js-update-snapshots:
 	cd $(JS_DIR); npm test -- -u
 
 create-messages:
-	$(VENV_BIN)/pybabel extract -F babel.cfg -o ./reforis_subordinates/translations/messages.pot .
+	$(VENV_BIN)/pybabel extract -F babel.cfg -o ./reforis_remote_access/translations/messages.pot .
 init-langs: create-messages
 	for lang in $(LANGS); do \
 		$(VENV_BIN)/pybabel init \
-		-i reforis_subordinates/translations/messages.pot \
-		-d reforis_subordinates/translations/ -l $$lang \
+		-i reforis_remote_access/translations/messages.pot \
+		-d reforis_remote_access/translations/ -l $$lang \
 	; done
 update-messages:
-	$(VENV_BIN)/pybabel update -i ./reforis_subordinates/translations/messages.pot -d ./reforis/translations
+	$(VENV_BIN)/pybabel update -i ./reforis_remote_access/translations/messages.pot -d ./reforis/translations
 compile-messages:
-	$(VENV_BIN)/pybabel compile -f -d ./reforis_subordinates/translations
+	$(VENV_BIN)/pybabel compile -f -d ./reforis_remote_access/translations
 
 clean:
 	find . -name '*.pyc' -exec rm -f {} +
 	rm -rf $(VENV_NAME) *.eggs *.egg-info dist build .cache
 	rm -rf dist build *.egg-info
-	rm -rf $(JS_DIR)/node_modules/ reforis_static/subordinates/app.min.js
-	$(ROUTER_PYTHON) -m pip uninstall -y reforis_subordinates
+	rm -rf $(JS_DIR)/node_modules/ reforis_static/remote-access/app.min.js
+	$(ROUTER_PYTHON) -m pip uninstall -y reforis_remote_access

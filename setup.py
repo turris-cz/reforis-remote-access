@@ -11,12 +11,12 @@ import pathlib
 import setuptools
 from setuptools.command.build_py import build_py
 
-NAME = 'reforis_subordinates'
+NAME = 'reforis_remote_access'
 
 BASE_DIR = pathlib.Path(__file__).absolute().parent
 
 
-class SubordinatesBuild(build_py):
+class RemoteAccessBuild(build_py):
     def run(self):
         # build package
         build_py.run(self)
@@ -32,7 +32,7 @@ class SubordinatesBuild(build_py):
 
 setuptools.setup(
     name=NAME,
-    version='0.1.0',
+    version='0.2.0',
     packages=setuptools.find_packages(exclude=['tests']),
     include_package_data=True,
 
@@ -61,7 +61,7 @@ setuptools.setup(
         'git+https://gitlab.labs.nic.cz/turris/reforis/reforis-distutils.git#egg=reforis-distutils',
     ],
     entry_points={
-        'foris.plugins': f'{NAME} = {NAME}:subordinates'
+        'foris.plugins': f'{NAME} = {NAME}:remote_access'
     },
     classifiers=[
         'Framework :: Flask',
@@ -74,7 +74,7 @@ setuptools.setup(
         'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
     ],
     cmdclass={
-        'build_py': SubordinatesBuild,
+        'build_py': RemoteAccessBuild,
     },
     zip_safe=False,
 )

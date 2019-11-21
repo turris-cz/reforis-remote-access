@@ -32,7 +32,7 @@ describe("<AuthorityMissing />", () => {
 
     it("should send request when button is clicked", () => {
         generateCA();
-        expect(mockAxios.post).toBeCalledWith("/reforis/subordinates/api/authority", undefined, expect.anything());
+        expect(mockAxios.post).toBeCalledWith("/reforis/remote-access/api/authority", undefined, expect.anything());
     });
 
     it("should display spinner when sending request", () => {

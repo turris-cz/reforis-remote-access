@@ -87,7 +87,7 @@ describe("<SettingsForm />", () => {
         saveForm();
 
         expect(mockAxios.put).toBeCalledWith(
-            "/reforis/subordinates/api/settings",
+            "/reforis/remote-access/api/settings",
             { ...settingsDisabled, enabled: true, port: newPort },
             expect.anything()
         );
@@ -102,7 +102,7 @@ describe("<SettingsForm />", () => {
         enableRemoteAccess();
         saveForm();
         expect(mockAxios.put).toBeCalledWith(
-            "/reforis/subordinates/api/settings",
+            "/reforis/remote-access/api/settings",
             { enabled: false },
             expect.anything()
         );
