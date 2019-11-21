@@ -25,7 +25,7 @@ remote_access = {
     'blueprint': blueprint,
     # Define {python_module_name}/js/app.min.js
     # See https://gitlab.labs.nic.cz/turris/reforis/reforis-distutils/blob/master/reforis_distutils/__init__.py#L11
-    'js_app_path': 'reforis_remote_access/app.min.js',
+    'js_app_path': 'reforis_remote_access/js/app.min.js',
     'translations_path': BASE_DIR / 'translations',
 }
 
