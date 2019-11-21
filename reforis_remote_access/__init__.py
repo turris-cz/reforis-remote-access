@@ -13,19 +13,19 @@ from reforis.foris_controller_api.utils import log_error, validate_json, APIErro
 
 # pylint: disable=invalid-name
 blueprint = Blueprint(
-    'Subordinates',
+    'Remote Access',
     __name__,
-    url_prefix='/subordinates/api',
+    url_prefix='/remote-access/api',
 )
 
 BASE_DIR = Path(__file__).parent
 
 # pylint: disable=invalid-name
-subordinates = {
+remote_access = {
     'blueprint': blueprint,
     # Define {python_module_name}/js/app.min.js
     # See https://gitlab.labs.nic.cz/turris/reforis/reforis-distutils/blob/master/reforis_distutils/__init__.py#L11
-    'js_app_path': 'reforis_subordinates/app.min.js',
+    'js_app_path': 'reforis_remote_access/app.min.js',
     'translations_path': BASE_DIR / 'translations',
 }
 

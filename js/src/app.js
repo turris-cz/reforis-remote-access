@@ -7,11 +7,11 @@
 
 import RemoteAccess from "./remoteAccess/RemoteAccess";
 
-const SubordinatesPlugin = {
+const RemoteAccessPlugin = {
     name: _("Remote Access"),
     path: "/remote-access",
     component: RemoteAccess,
     icon: "tty",
 };
 
-ForisPlugins.push(SubordinatesPlugin);
+ForisPlugins.push(RemoteAccessPlugin);

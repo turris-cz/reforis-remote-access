@@ -5,7 +5,7 @@
  * See /LICENSE for more information.
  */
 
-const API_URL_PREFIX = "/reforis/subordinates/api";
+const API_URL_PREFIX = "/reforis/remote-access/api";
 
 const API_URLs = new Proxy(
     {

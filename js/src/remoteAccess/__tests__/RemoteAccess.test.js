@@ -27,8 +27,8 @@ describe("<RemoteAccess />", () => {
     });
 
     it("should render error", async () => {
-        expect(mockAxios.get).toBeCalledWith("/reforis/subordinates/api/authority", expect.anything());
-        expect(mockAxios.get).toBeCalledWith("/reforis/subordinates/api/settings", expect.anything());
+        expect(mockAxios.get).toBeCalledWith("/reforis/remote-access/api/authority", expect.anything());
+        expect(mockAxios.get).toBeCalledWith("/reforis/remote-access/api/settings", expect.anything());
         mockJSONError();
         await wait(() => expect(container).toMatchSnapshot());
     });

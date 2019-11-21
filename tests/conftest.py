@@ -1,6 +1,6 @@
 import pytest
 
-from reforis_subordinates import blueprint
+from reforis_remote_access import blueprint
 
 
 pytest_plugins = 'reforis.test_utils.fixtures'
