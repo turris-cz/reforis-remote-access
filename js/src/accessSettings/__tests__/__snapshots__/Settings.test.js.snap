@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RemoteAccessSettings /> should render error 1`] = `
+exports[`<Settings /> should render error 1`] = `
 <div>
   <p
     class="text-center text-danger"
@@ -10,7 +10,7 @@ exports[`<RemoteAccessSettings /> should render error 1`] = `
 </div>
 `;
 
-exports[`<RemoteAccessSettings /> should render generating component 1`] = `
+exports[`<Settings /> should render generating component 1`] = `
 <div>
   <h3>
     Generating certificate authority
@@ -36,7 +36,7 @@ exports[`<RemoteAccessSettings /> should render generating component 1`] = `
 </div>
 `;
 
-exports[`<RemoteAccessSettings /> should render missing component 1`] = `
+exports[`<Settings /> should render missing component 1`] = `
 <div>
   <h3>
     No certificate authority
@@ -55,10 +55,10 @@ exports[`<RemoteAccessSettings /> should render missing component 1`] = `
 </div>
 `;
 
-exports[`<RemoteAccessSettings /> should render settings component 1`] = `
+exports[`<Settings /> should render settings component 1`] = `
 <div>
   <h3>
-    Connection Settings
+    Remote Access
   </h3>
   <form>
     <div
@@ -97,12 +97,12 @@ exports[`<RemoteAccessSettings /> should render settings component 1`] = `
           for="2"
         >
           Accessible via WAN
+          <small
+            class="form-text text-muted"
+          >
+            Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+          </small>
         </label>
-        <small
-          class="form-text text-muted"
-        >
-          Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
-        </small>
       </div>
     </div>
     <div
@@ -169,7 +169,7 @@ exports[`<RemoteAccessSettings /> should render settings component 1`] = `
 </div>
 `;
 
-exports[`<RemoteAccessSettings /> should render spinner 1`] = `
+exports[`<Settings /> should render spinner 1`] = `
 <div>
   <div
     class="spinner-wrapper my-3 text-center"

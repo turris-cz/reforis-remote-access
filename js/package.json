@@ -2,11 +2,11 @@
   "name": "reforis_remote_access",
   "author": "CZ.NIC, z.s.p.o.",
   "license": "GPL-3.0",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "",
   "main": "./src/app.js",
   "dependencies": {
-    "foris": "1.3.2-beta.fbaa73e3"
+    "foris": "1.3.3-beta.d71f638b"
   },
   "peerDependencies": {
     "prop-types": "15.7.2",

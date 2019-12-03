@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccessTokens /> should handle proper CA 1`] = `
+<div>
+  <h1>
+    Access Tokens
+  </h1>
+  <p>
+    You need to generate a token file for each client you want to grant access.
+  </p>
+  <p>
+    To use the token with another Turris router you need to transfer it using "Remote Devices" plugin on client device.
+  </p>
+  <h3>
+    Create new token
+  </h3>
+  <form>
+    <div
+      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    >
+      <label
+        for="1"
+      >
+        Token name
+      </label>
+      <div
+        class="input-group"
+      >
+        <input
+          class="form-control  is-invalid"
+          id="1"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="invalid-feedback"
+      >
+        Name cannot be empty
+      </div>
+      <small
+        class="form-text text-muted"
+      >
+        Shorter than 64 characters. Only alphanumeric characters, dots, dashes and underscores.
+      </small>
+    </div>
+    <button
+      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      disabled=""
+      type="submit"
+    >
+       
+       
+      Add
+    </button>
+  </form>
+  <h3>
+    Tokens
+  </h3>
+  <div
+    class="spinner-wrapper my-3 text-center"
+  >
+    <div
+      class="spinner-border "
+      role="status"
+    >
+      <span
+        class="sr-only"
+      />
+    </div>
+    <div
+      class="spinner-text"
+    />
+  </div>
+</div>
+`;
+
+exports[`<AccessTokens /> should render error 1`] = `
+<div>
+  <h1>
+    Access Tokens
+  </h1>
+  <p
+    class="text-center text-danger"
+  >
+    An error occurred while fetching data.
+  </p>
+</div>
+`;
+
+exports[`<AccessTokens /> should render spinner 1`] = `
+<div>
+  <h1>
+    Access Tokens
+  </h1>
+  <div
+    class="spinner-wrapper my-3 text-center"
+  >
+    <div
+      class="spinner-border "
+      role="status"
+    >
+      <span
+        class="sr-only"
+      />
+    </div>
+    <div
+      class="spinner-text"
+    />
+  </div>
+</div>
+`;

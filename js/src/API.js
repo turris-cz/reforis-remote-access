@@ -11,6 +11,7 @@ const API_URLs = new Proxy(
     {
         authority: "/authority",
         settings: "/settings",
+        tokens: "/tokens",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,

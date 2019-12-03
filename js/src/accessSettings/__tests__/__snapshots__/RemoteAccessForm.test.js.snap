@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SettingsForm /> should display a spinner and disable save button while sending request 1`] = `
+exports[`<RemoteAccessForm /> should display a spinner and disable save button while sending request 1`] = `
 <div>
   <h3>
-    Connection Settings
+    Remote Access
   </h3>
   <form>
     <div
@@ -42,12 +42,12 @@ exports[`<SettingsForm /> should display a spinner and disable save button while
           for="2"
         >
           Accessible via WAN
+          <small
+            class="form-text text-muted"
+          >
+            Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+          </small>
         </label>
-        <small
-          class="form-text text-muted"
-        >
-          Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
-        </small>
       </div>
     </div>
     <div
@@ -115,10 +115,10 @@ exports[`<SettingsForm /> should display a spinner and disable save button while
 </div>
 `;
 
-exports[`<SettingsForm /> should expose the rest of the form when enabled 1`] = `
+exports[`<RemoteAccessForm /> should expose the rest of the form when enabled 1`] = `
 <div>
   <h3>
-    Connection Settings
+    Remote Access
   </h3>
   <form>
     <div
@@ -156,12 +156,12 @@ exports[`<SettingsForm /> should expose the rest of the form when enabled 1`] = 
           for="3"
         >
           Accessible via WAN
+          <small
+            class="form-text text-muted"
+          >
+            Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+          </small>
         </label>
-        <small
-          class="form-text text-muted"
-        >
-          Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
-        </small>
       </div>
     </div>
     <div
@@ -222,10 +222,10 @@ exports[`<SettingsForm /> should expose the rest of the form when enabled 1`] = 
 </div>
 `;
 
-exports[`<SettingsForm /> should render full form when access is enabled 1`] = `
+exports[`<RemoteAccessForm /> should render full form when access is enabled 1`] = `
 <div>
   <h3>
-    Connection Settings
+    Remote Access
   </h3>
   <form>
     <div
@@ -264,12 +264,12 @@ exports[`<SettingsForm /> should render full form when access is enabled 1`] = `
           for="2"
         >
           Accessible via WAN
+          <small
+            class="form-text text-muted"
+          >
+            Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+          </small>
         </label>
-        <small
-          class="form-text text-muted"
-        >
-          Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
-        </small>
       </div>
     </div>
     <div
@@ -330,10 +330,10 @@ exports[`<SettingsForm /> should render full form when access is enabled 1`] = `
 </div>
 `;
 
-exports[`<SettingsForm /> should render only checkbox when access is disabled 1`] = `
+exports[`<RemoteAccessForm /> should render only checkbox when access is disabled 1`] = `
 <div>
   <h3>
-    Connection Settings
+    Remote Access
   </h3>
   <form>
     <div

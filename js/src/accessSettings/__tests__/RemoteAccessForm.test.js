@@ -12,16 +12,16 @@ import { render, fireEvent, getByLabelText, getByText, queryByText, wait } from 
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
 import { mockJSONError } from "foris/testUtils/network";
 
-import SettingsForm from "../SettingsForm";
+import RemoteAccessForm from "../RemoteAccessForm";
 
-describe("<SettingsForm />", () => {
+describe("<RemoteAccessForm />", () => {
     let container;
     const onSuccess = jest.fn();
     const settings = { enabled: true, wan_enabled: true, port: 1808 };
     const settingsDisabled = { enabled: false, wan_enabled: false, port: 1194 };
 
     function renderForm(settings) {
-        return render(<SettingsForm settings={settings} onSuccess={onSuccess} />);
+        return render(<RemoteAccessForm settings={settings} onSuccess={onSuccess} />);
     };
 
     function getSaveButton() {
@@ -112,7 +112,7 @@ describe("<SettingsForm />", () => {
         ({ container } = renderForm(settings));
         saveForm();
         mockJSONError();
-        await wait(() => expect(mockSetAlert).toBeCalledWith("Cannot save connection parameters"));
+        await wait(() => expect(mockSetAlert).toBeCalledWith("Cannot save connection parameters."));
     });
 
     it("should display a spinner and disable save button while sending request", async () => {

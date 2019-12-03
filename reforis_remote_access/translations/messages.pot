@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-11-20 12:17+0100\n"
+"POT-Creation-Date: 2019-12-02 12:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,117 +17,219 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.7.0\n"
 
-#: js/src/app.js:11 js/src/remoteAccess/RemoteAccess.js:33
+#: js/src/accessSettings/RemoteAccessForm.js:61 js/src/app.js:13
 msgid "Remote Access"
 msgstr ""
 
-#: js/src/remoteAccess/AuthorityGenerating.js:30
-msgid "Generating certification authority"
+#: js/src/accessSettings/AccessSettings.js:33
+msgid "Access Settings"
 msgstr ""
 
-#: js/src/remoteAccess/AuthorityGenerating.js:32
-msgid ""
-"Your certification authority is now being generated. It usually takes a "
-"few minutes. Settings will appear here automatically once the authority "
-"is ready."
-msgstr ""
-
-#: js/src/remoteAccess/AuthorityMissing.js:29
-msgid "Cannot generate certificate authority"
-msgstr ""
-
-#: js/src/remoteAccess/AuthorityMissing.js:35
-msgid "No certification authority"
-msgstr ""
-
-#: js/src/remoteAccess/AuthorityMissing.js:36
-msgid ""
-"Currently there is no certificate authority (CA) dedicated to remote "
-"access. A CA is required to generate access tokens to authenticate. To "
-"proceed you need to generate it first."
-msgstr ""
-
-#: js/src/remoteAccess/AuthorityMissing.js:42
-msgid "Generate CA"
-msgstr ""
-
-#: js/src/remoteAccess/CertificateAuthority.js:37
-#: reforis_remote_access/__init__.py:53
-msgid "Cannot delete certificate authority"
-msgstr ""
-
-#: js/src/remoteAccess/CertificateAuthority.js:47
-msgid "Certificate Authority"
-msgstr ""
-
-#: js/src/remoteAccess/CertificateAuthority.js:49
-msgid ""
-"You can't delete CA while remote access is enabled. In order to delete it"
-" you need to disable the access first."
-msgstr ""
-
-#: js/src/remoteAccess/CertificateAuthority.js:52
-msgid ""
-"Your certificate authority (CA) is set up properly. Please note that if "
-"you delete it all clients will have their access revoked."
-msgstr ""
-
-#: js/src/remoteAccess/CertificateAuthority.js:58
-msgid "Delete CA"
-msgstr ""
-
-#: js/src/remoteAccess/RemoteAccess.js:34
+#: js/src/accessSettings/AccessSettings.js:34
 msgid ""
 "Here you can set up your router to be configured remotely. The remote "
 "configuration is done via secure encrypted connection and each client is "
 "required to have a token issued by this device."
 msgstr ""
 
-#: js/src/remoteAccess/RemoteAccess.js:35
+#: js/src/accessSettings/AccessSettings.js:35
 msgid ""
-"This can be useful when you plan to access configuration interface via "
-"mobile app, another Turris router or you intend to write your own client."
+"This can be useful when you plan to access configuration interface "
+"another Turris router or you intend to write your own client."
 msgstr ""
 
-#: js/src/remoteAccess/SettingsForm.js:28
+#: js/src/accessSettings/AuthorityGenerating.js:30
+msgid "Generating certificate authority"
+msgstr ""
+
+#: js/src/accessSettings/AuthorityGenerating.js:32
+msgid ""
+"Your certificate authority is now being generated. It usually takes a few"
+" minutes. Settings will appear here automatically once the authority is "
+"ready."
+msgstr ""
+
+#: js/src/accessSettings/AuthorityMissing.js:29
+msgid "Cannot generate certificate authority"
+msgstr ""
+
+#: js/src/accessSettings/AuthorityMissing.js:35
+msgid "No certificate authority"
+msgstr ""
+
+#: js/src/accessSettings/AuthorityMissing.js:36
+msgid ""
+"Currently there is no certificate authority (CA) dedicated to remote "
+"access. A CA is required to generate access tokens to authenticate. To "
+"proceed you need to generate it first."
+msgstr ""
+
+#: js/src/accessSettings/AuthorityMissing.js:42
+msgid "Generate certificate authority"
+msgstr ""
+
+#: js/src/accessSettings/CertificateAuthority.js:37
+#: reforis_remote_access/__init__.py:53
+msgid "Cannot delete certificate authority."
+msgstr ""
+
+#: js/src/accessSettings/CertificateAuthority.js:47
+msgid "Certificate Authority"
+msgstr ""
+
+#: js/src/accessSettings/CertificateAuthority.js:49
+msgid ""
+"You can't delete certificate authority while remote access is enabled. In"
+" order to delete it you need to disable the access first."
+msgstr ""
+
+#: js/src/accessSettings/CertificateAuthority.js:52
+msgid ""
+"Your certificate authority is set up properly. Please note that if you "
+"delete it all clients will have their access revoked."
+msgstr ""
+
+#: js/src/accessSettings/CertificateAuthority.js:58
+msgid "Delete certificate authority"
+msgstr ""
+
+#: js/src/accessSettings/RemoteAccessForm.js:28
 msgid "Cannot save connection parameters"
 msgstr ""
 
-#: js/src/remoteAccess/SettingsForm.js:61
-msgid "Connection Settings"
-msgstr ""
-
-#: js/src/remoteAccess/SettingsForm.js:64
+#: js/src/accessSettings/RemoteAccessForm.js:64
 msgid "Enable remote access"
 msgstr ""
 
-#: js/src/remoteAccess/SettingsForm.js:72
+#: js/src/accessSettings/RemoteAccessForm.js:72
 msgid "Accessible via WAN"
 msgstr ""
 
-#: js/src/remoteAccess/SettingsForm.js:73
+#: js/src/accessSettings/RemoteAccessForm.js:73
 msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise only devices on LAN will be able to access it."
 msgstr ""
 
-#: js/src/remoteAccess/SettingsForm.js:80
+#: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Port"
 msgstr ""
 
-#: js/src/remoteAccess/SettingsForm.js:81
+#: js/src/accessSettings/RemoteAccessForm.js:81
 msgid "A port which will be opened for the remote configuration of this device."
 msgstr ""
 
-#: js/src/remoteAccess/SettingsForm.js:94
+#: js/src/accessSettings/RemoteAccessForm.js:94
 msgid "Save"
 msgstr ""
 
+#: js/src/accessSettings/RemoteAccessForm.js:103
+msgid "Should be a number in range of 1024-65536"
+msgstr ""
+
+#: js/src/accessTokens/AccessTokens.js:29
+msgid "Access Tokens"
+msgstr ""
+
+#: js/src/accessTokens/AccessTokens.js:50
+msgid "You need to generate certificate authority in order to create tokens."
+msgstr ""
+
+#: js/src/accessTokens/AccessTokens.js:55
+msgid ""
+"You need to generate a token file for each client you want to grant "
+"access."
+msgstr ""
+
+#: js/src/accessTokens/AccessTokens.js:56
+msgid ""
+"To use the token with another Turris router you need to transfer it using"
+" \"Remote Devices\" plugin on client device."
+msgstr ""
+
+#: js/src/accessTokens/CreateTokenForm.js:53
+msgid "Create new token"
+msgstr ""
+
+#: js/src/accessTokens/CreateTokenForm.js:56
+msgid "Token name"
+msgstr ""
+
+#: js/src/accessTokens/CreateTokenForm.js:57
+msgid ""
+"Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
+"and underscores."
+msgstr ""
+
+#: js/src/accessTokens/CreateTokenForm.js:63
+msgid "Add"
+msgstr ""
+
+#: js/src/accessTokens/CreateTokenForm.js:73
+msgid "Name cannot be empty"
+msgstr ""
+
+#: js/src/accessTokens/CreateTokenForm.js:76
+msgid "Name is too long"
+msgstr ""
+
+#: js/src/accessTokens/CreateTokenForm.js:79
+msgid "Name contains invalid characters"
+msgstr ""
+
+#: js/src/accessTokens/Tokens.js:69
+msgid "Tokens"
+msgstr ""
+
+#: js/src/accessTokens/TokensTable.js:29
+msgid "There are no tokens added yet."
+msgstr ""
+
+#: js/src/accessTokens/TokensTable.js:36
+msgid "Name"
+msgstr ""
+
+#: js/src/accessTokens/TokensTable.js:37
+msgid "Actions"
+msgstr ""
+
+#: js/src/accessTokens/TokensTable.js:81
+msgid "Access revoked"
+msgstr ""
+
+#: js/src/accessTokens/TokensTable.js:90
+msgid "Download"
+msgstr ""
+
+#: js/src/accessTokens/TokensTable.js:93
+msgid "Revoke"
+msgstr ""
+
 #: reforis_remote_access/__init__.py:45
-msgid "Certificate authority already exists"
+msgid "Certificate authority already exists."
 msgstr ""
 
 #: reforis_remote_access/__init__.py:69
-msgid "Cannot change settings"
+msgid "Cannot change settings."
+msgstr ""
+
+#: reforis_remote_access/__init__.py:89
+msgid "Token '{}' already exists."
+msgstr ""
+
+#: reforis_remote_access/__init__.py:93
+msgid "Cannot create token."
+msgstr ""
+
+#: reforis_remote_access/__init__.py:103
+msgid "Requested token does not exist."
+msgstr ""
+
+#: reforis_remote_access/__init__.py:107
+msgid "Cannot get token."
+msgstr ""
+
+#: reforis_remote_access/__init__.py:122
+msgid "Cannot revoke token."
 msgstr ""
 

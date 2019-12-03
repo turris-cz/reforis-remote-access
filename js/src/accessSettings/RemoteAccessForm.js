@@ -14,18 +14,18 @@ import {
 
 import API_URLs from "API";
 
-SettingsForm.propTypes = {
+RemoteAccessForm.propTypes = {
     settings: PropTypes.object.isRequired,
     onSuccess: PropTypes.func.isRequired,
 };
 
-export default function SettingsForm({ settings, onSuccess }) {
+export default function RemoteAccessForm({ settings, onSuccess }) {
     const [setAlert] = useAlert();
 
     const [putSettingsResponse, putSettings] = useAPIPut(API_URLs.settings);
     useEffect(() => {
         if (putSettingsResponse.state === API_STATE.ERROR) {
-            setAlert(_("Cannot save connection parameters"));
+            setAlert(_("Cannot save connection parameters."));
         } else if (putSettingsResponse.state === API_STATE.SUCCESS) {
             onSuccess();
         }
@@ -58,7 +58,7 @@ export default function SettingsForm({ settings, onSuccess }) {
 
     return (
         <>
-            <h3>{_("Connection Settings")}</h3>
+            <h3>{_("Remote Access")}</h3>
             <form onSubmit={handleSubmit}>
                 <CheckBox
                     label={_("Enable remote access")}

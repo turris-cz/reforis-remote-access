@@ -34,7 +34,7 @@ export default function CertificateAuthority({ authority, accessEnabled, onSucce
         if (deleteResponse.state === API_STATE.SUCCESS) {
             onSuccess();
         } else if (deleteResponse.state === API_STATE.ERROR) {
-            setAlert(_("Cannot delete certificate authority"));
+            setAlert(_("Cannot delete certificate authority."));
         }
     }, [deleteResponse, onSuccess, setAlert]);
 

@@ -44,7 +44,7 @@ describe("<AuthorityMissing />", () => {
         generateCA();
         mockJSONError();
         await wait(() => {
-            expect(mockSetAlert).toHaveBeenCalledWith("Cannot generate certificate authority");
+            expect(mockSetAlert).toHaveBeenCalledWith("Cannot generate certificate authority.");
         });
     });
 

@@ -11,13 +11,13 @@ import PropTypes from "prop-types";
 import { useAPIGet } from "foris";
 
 import API_URLs from "API";
-import RemoteAccessSettings from "./RemoteAccessSettings";
+import Settings from "./Settings";
 
-RemoteAccess.propTypes = {
+AccessSettings.propTypes = {
     ws: PropTypes.object.isRequired,
 };
 
-export default function RemoteAccess({ ws }) {
+export default function AccessSettings({ ws }) {
     const [getAuthorityResponse, getAuthority] = useAPIGet(API_URLs.authority);
     useEffect(() => {
         getAuthority();
@@ -30,10 +30,10 @@ export default function RemoteAccess({ ws }) {
 
     return (
         <>
-            <h1>{_("Remote Access")}</h1>
+            <h1>{_("Access Settings")}</h1>
             <p>{_("Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.")}</p>
-            <p>{_("This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.")}</p>
-            <RemoteAccessSettings
+            <p>{_("This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.")}</p>
+            <Settings
                 apiState={[getAuthorityResponse.state, getSettingsResponse.state]}
                 ws={ws}
                 authority={getAuthorityResponse.data}

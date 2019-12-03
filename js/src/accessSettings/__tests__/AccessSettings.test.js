@@ -11,15 +11,15 @@ import { WebSockets } from "foris";
 import { mockJSONError } from "foris/testUtils/network";
 import mockAxios from 'jest-mock-axios';
 
-import RemoteAccess from "../RemoteAccess";
+import AccessSettings from "../AccessSettings";
 import { CA_STATUS } from "../CertificateAuthority";
 
-describe("<RemoteAccess />", () => {
+describe("<AccessSettings />", () => {
     const webSockets = new WebSockets();
     let container;
 
     beforeEach(() => {
-        ({ container } = render(<RemoteAccess ws={webSockets} />));
+        ({ container } = render(<AccessSettings ws={webSockets} />));
     });
 
     it("should render spinner", () => {

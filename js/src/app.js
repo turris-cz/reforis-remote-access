@@ -5,13 +5,26 @@
  * See /LICENSE for more information.
  */
 
-import RemoteAccess from "./remoteAccess/RemoteAccess";
+import AccessSettings from "./accessSettings/AccessSettings";
+import AccessTokens from "./accessTokens/AccessTokens";
 
 const RemoteAccessPlugin = {
+    submenuId: "remote-access",
     name: _("Remote Access"),
+    icon: "satellite-dish",
     path: "/remote-access",
-    component: RemoteAccess,
-    icon: "tty",
+    pages: [
+        {
+            name: "Access Settings",
+            path: "/settings",
+            component: AccessSettings,
+        },
+        {
+            name: "Access Tokens",
+            path: "/tokens",
+            component: AccessTokens,
+        },
+    ],
 };
 
 ForisPlugins.push(RemoteAccessPlugin);

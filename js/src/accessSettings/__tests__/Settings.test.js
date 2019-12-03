@@ -9,17 +9,17 @@ import React from "react";
 import { WebSockets, API_STATE } from "foris";
 import { render } from "foris/testUtils/customTestRender";
 
-import RemoteAccessSettings from "../RemoteAccessSettings";
+import Settings from "../Settings";
 import { CA_STATUS } from "../CertificateAuthority";
 
-describe("<RemoteAccessSettings />", () => {
+describe("<Settings />", () => {
     const webSockets = new WebSockets();
     const onAuthoritySuccess = jest.fn();
     const onSettingsSuccess = jest.fn();
 
     function renderComponent(apiState, authority = {}, settings={}) {
         return render(
-            <RemoteAccessSettings
+            <Settings
                 apiState={apiState}
                 ws={webSockets}
                 authority={authority}

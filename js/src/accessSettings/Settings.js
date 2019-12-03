@@ -13,21 +13,21 @@ import { withErrorMessage, withSpinnerOnSending, withEither } from "foris";
 import AuthorityMissing from "./AuthorityMissing";
 import AuthorityGenerating from "./AuthorityGenerating";
 import CertificateAuthority, { CA_STATUS } from "./CertificateAuthority";
-import SettingsForm from "./SettingsForm";
+import RemoteAccessForm from "./RemoteAccessForm";
 
-RemoteAccessSettings.propTypes = {
+Settings.propTypes = {
     authority: PropTypes.object.isRequired,
     settings: PropTypes.object.isRequired,
     onAuthoritySuccess: PropTypes.func.isRequired,
     onSettingsSuccess: PropTypes.func.isRequired,
 };
 
-function RemoteAccessSettings({
+function Settings({
     authority, settings, onAuthoritySuccess, onSettingsSuccess,
 }) {
     return (
         <>
-            <SettingsForm
+            <RemoteAccessForm
                 settings={settings}
                 onSuccess={onSettingsSuccess}
             />
@@ -52,7 +52,7 @@ export default (
     withErrorMessage(
         withSpinnerOnSending(
             withMissing(
-                withGenerating(RemoteAccessSettings),
+                withGenerating(Settings),
             ),
         ),
     ));
