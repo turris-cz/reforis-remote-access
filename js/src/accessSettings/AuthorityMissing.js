@@ -26,7 +26,7 @@ export default function AuthorityMissing({ onAuthoritySuccess }) {
         if (generateResponse.state === API_STATE.SUCCESS) {
             onAuthoritySuccess();
         } else if (generateResponse.state === API_STATE.ERROR) {
-            setAlert(_("Cannot generate certificate authority"));
+            setAlert(_("Cannot generate certificate authority."));
         }
     }, [generateResponse, onAuthoritySuccess, setAlert]);
 

@@ -33,4 +33,4 @@ def test_put_settings_backend_error(app):
     with get_mocked_remote_access_client(app, {'result': False}) as client:
         response = client.put(SETTINGS_URL, json={'foo': 'bar'})
     assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
-    assert response.json == 'Cannot change settings'
+    assert response.json == 'Cannot change settings.'

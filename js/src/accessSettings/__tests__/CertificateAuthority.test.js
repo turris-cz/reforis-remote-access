@@ -64,7 +64,7 @@ describe("<CertificateAuthority />", () => {
             deleteCA();
             mockJSONError();
             await wait(() => {
-                expect(mockSetAlert).toHaveBeenCalledWith("Cannot delete certificate authority");
+                expect(mockSetAlert).toHaveBeenCalledWith("Cannot delete certificate authority.");
             });
         });
 

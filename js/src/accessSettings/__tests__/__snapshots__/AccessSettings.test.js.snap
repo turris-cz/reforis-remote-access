@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RemoteAccess /> should handle generating certificate 1`] = `
+exports[`<AccessSettings /> should handle generating certificate 1`] = `
 <div>
   <h1>
-    Remote Access
+    Access Settings
   </h1>
   <p>
     Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.
+    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
   </p>
   <h3>
     Generating certificate authority
@@ -35,16 +35,16 @@ exports[`<RemoteAccess /> should handle generating certificate 1`] = `
 </div>
 `;
 
-exports[`<RemoteAccess /> should handle missing certificate 1`] = `
+exports[`<AccessSettings /> should handle missing certificate 1`] = `
 <div>
   <h1>
-    Remote Access
+    Access Settings
   </h1>
   <p>
     Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.
+    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
   </p>
   <h3>
     No certificate authority
@@ -63,19 +63,19 @@ exports[`<RemoteAccess /> should handle missing certificate 1`] = `
 </div>
 `;
 
-exports[`<RemoteAccess /> should handle ready certificate 1`] = `
+exports[`<AccessSettings /> should handle ready certificate 1`] = `
 <div>
   <h1>
-    Remote Access
+    Access Settings
   </h1>
   <p>
     Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.
+    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
   </p>
   <h3>
-    Connection Settings
+    Remote Access
   </h3>
   <form>
     <div
@@ -123,16 +123,16 @@ exports[`<RemoteAccess /> should handle ready certificate 1`] = `
 </div>
 `;
 
-exports[`<RemoteAccess /> should render error 1`] = `
+exports[`<AccessSettings /> should render error 1`] = `
 <div>
   <h1>
-    Remote Access
+    Access Settings
   </h1>
   <p>
     Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.
+    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
   </p>
   <p
     class="text-center text-danger"
@@ -142,16 +142,16 @@ exports[`<RemoteAccess /> should render error 1`] = `
 </div>
 `;
 
-exports[`<RemoteAccess /> should render spinner 1`] = `
+exports[`<AccessSettings /> should render spinner 1`] = `
 <div>
   <h1>
-    Remote Access
+    Access Settings
   </h1>
   <p>
     Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface via mobile app, another Turris router or you intend to write your own client.
+    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
   </p>
   <div
     class="spinner-wrapper my-3 text-center"

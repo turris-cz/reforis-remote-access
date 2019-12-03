@@ -26,7 +26,7 @@ def test_post_authority_already_exists(app):
     with get_mocked_remote_access_client(app, {'status': 'ready'}) as client:
         response = client.post(AUTHORITY_URL)
     assert response.status_code == HTTPStatus.BAD_REQUEST
-    assert response.json == 'Certificate authority already exists'
+    assert response.json == 'Certificate authority already exists.'
 
 
 def test_delete_authority(app):
@@ -40,11 +40,11 @@ def test_delete_authority_backend_error_no_result(app):
     with get_mocked_remote_access_client(app, {}) as client:
         response = client.delete(AUTHORITY_URL)
     assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
-    assert response.json == 'Cannot delete certificate authority'
+    assert response.json == 'Cannot delete certificate authority.'
 
 
 def test_delete_authority_backend_error_wrong_result(app):
     with get_mocked_remote_access_client(app, {'result': 1234}) as client:
         response = client.delete(AUTHORITY_URL)
     assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
-    assert response.json == 'Cannot delete certificate authority'
+    assert response.json == 'Cannot delete certificate authority.'
