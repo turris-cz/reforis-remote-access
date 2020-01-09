@@ -1,36 +1,38 @@
+#  Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+#
+#  This is free software, licensed under the GNU General Public License v3.
+#  See /LICENSE for more information.
+
 from http import HTTPStatus
 
-from .utils import get_mocked_remote_access_client
-
+from reforis.test_utils import mock_backend_response
 
 SETTINGS_URL = '/remote-access/api/settings'
 
 
-def test_get_settings(app):
-    backend_response = {'key': 'value'}
-    with get_mocked_remote_access_client(app, backend_response) as client:
-        response = client.get(SETTINGS_URL)
+@mock_backend_response({'remote': {'get_settings': {'key': 'value'}}})
+def test_get_settings(client):
+    response = client.get(SETTINGS_URL)
     assert response.status_code == HTTPStatus.OK
-    assert response.json == backend_response
+    assert response.json == {'key': 'value'}
 
 
-def test_put_settings(app):
-    backend_response = {'result': True}
-    with get_mocked_remote_access_client(app, backend_response) as client:
-        response = client.put(SETTINGS_URL, json={'foo': 'bar'})
+@mock_backend_response({'remote': {'update_settings': {'result': True}}})
+def test_put_settings(client):
+    response = client.put(SETTINGS_URL, json={'foo': 'bar'})
     assert response.status_code == HTTPStatus.OK
-    assert response.json == backend_response
+    assert response.json == {'result': True}
 
 
-def test_put_settings_invalid_json(app):
-    with get_mocked_remote_access_client(app, {}) as client:
-        response = client.put(SETTINGS_URL)
+@mock_backend_response({'remote': {'update_settings': {}}})
+def test_put_settings_invalid_json(client):
+    response = client.put(SETTINGS_URL)
     assert response.status_code == HTTPStatus.BAD_REQUEST
     assert response.json == 'Invalid JSON'
 
 
-def test_put_settings_backend_error(app):
-    with get_mocked_remote_access_client(app, {'result': False}) as client:
-        response = client.put(SETTINGS_URL, json={'foo': 'bar'})
+@mock_backend_response({'remote': {'update_settings': {'result': False}}})
+def test_put_settings_backend_error(client):
+    response = client.put(SETTINGS_URL, json={'foo': 'bar'})
     assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
     assert response.json == 'Cannot change settings.'
