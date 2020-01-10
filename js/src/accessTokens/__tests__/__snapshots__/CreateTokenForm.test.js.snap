@@ -7,7 +7,7 @@ exports[`<CreateTokenForm /> should be rendered 1`] = `
   </h3>
   <form>
     <div
-      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+      class="form-group"
     >
       <label
         for="1"
@@ -36,7 +36,7 @@ exports[`<CreateTokenForm /> should be rendered 1`] = `
       </small>
     </div>
     <button
-      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      class="btn btn-primary  col-sm-12 col-lg-3"
       disabled=""
       type="submit"
     >

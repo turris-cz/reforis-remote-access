@@ -18,16 +18,13 @@ exports[`<AccessSettings /> should handle generating certificate 1`] = `
     class="spinner-wrapper my-3 text-center"
   >
     <div
-      class="spinner-border "
+      class="spinner-border"
       role="status"
     >
       <span
         class="sr-only"
       />
     </div>
-    <div
-      class="spinner-text"
-    />
   </div>
   <p>
     Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.
@@ -53,7 +50,7 @@ exports[`<AccessSettings /> should handle missing certificate 1`] = `
     Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
   </p>
   <button
-    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    class="btn btn-primary  col-sm-12 col-lg-3"
     type="button"
   >
      
@@ -79,7 +76,7 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
   </h3>
   <form>
     <div
-      class="form-group col-sm-12 offset-lg-1 col-lg-10"
+      class="form-group"
     >
       <div
         class="custom-control custom-checkbox "
@@ -98,7 +95,7 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
       </div>
     </div>
     <button
-      class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+      class="btn btn-primary  col-sm-12 col-lg-3"
       type="submit"
     >
        
@@ -113,7 +110,7 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
     Your certificate authority is set up properly. Please note that if you delete it all clients will have their access revoked.
   </p>
   <button
-    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    class="btn btn-primary  col-sm-12 col-lg-3"
     type="button"
   >
      
@@ -157,16 +154,13 @@ exports[`<AccessSettings /> should render spinner 1`] = `
     class="spinner-wrapper my-3 text-center"
   >
     <div
-      class="spinner-border "
+      class="spinner-border"
       role="status"
     >
       <span
         class="sr-only"
       />
     </div>
-    <div
-      class="spinner-text"
-    />
   </div>
 </div>
 `;

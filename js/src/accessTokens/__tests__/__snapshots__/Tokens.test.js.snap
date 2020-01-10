@@ -22,16 +22,13 @@ exports[`<Tokens /> should render spinner 1`] = `
     class="spinner-wrapper my-3 text-center"
   >
     <div
-      class="spinner-border "
+      class="spinner-border"
       role="status"
     >
       <span
         class="sr-only"
       />
     </div>
-    <div
-      class="spinner-text"
-    />
   </div>
 </div>
 `;
@@ -42,7 +39,7 @@ exports[`<Tokens /> should render tokens 1`] = `
     Tokens
   </h3>
   <table
-    class="table table-hover col-sm-12 offset-lg-1 col-lg-10"
+    class="table table-hover col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3"
   >
     <thead>
       <tr>
@@ -115,16 +112,13 @@ exports[`<Tokens /> should render tokens 1`] = `
           class="text-center"
         >
           <div
-            class="spinner-border "
+            class="spinner-border"
             role="status"
           >
             <span
               class="sr-only"
             />
           </div>
-          <div
-            class="spinner-text"
-          />
         </td>
       </tr>
     </tbody>
