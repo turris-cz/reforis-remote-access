@@ -9,7 +9,7 @@ exports[`<AuthorityMissing /> should display spinner when sending request 1`] = 
     Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
   </p>
   <button
-    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    class="btn btn-primary  col-sm-12 col-lg-3"
     type="button"
   >
     <span
@@ -34,7 +34,7 @@ exports[`<AuthorityMissing /> should match snapshot 1`] = `
     Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
   </p>
   <button
-    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    class="btn btn-primary  col-sm-12 col-lg-3"
     type="button"
   >
      

@@ -45,9 +45,9 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
     function handleSubmit(event) {
         event.preventDefault();
         if (formData.enabled) {
-            putSettings(formData);
+            putSettings({ data: formData });
         } else {
-            putSettings({ enabled: false });
+            putSettings({ data: { enabled: false } });
         }
     }
 

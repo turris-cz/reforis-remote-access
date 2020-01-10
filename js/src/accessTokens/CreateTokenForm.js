@@ -39,7 +39,7 @@ export default function CreateTokenForm({ generating, setGenerating }) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        createToken(formData);
+        createToken({ data: formData });
         setGenerating(true);
     }
 
