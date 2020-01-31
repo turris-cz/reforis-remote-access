@@ -4,3 +4,10 @@
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
+
+const TOKEN_STATUS = {
+    GENERATING: "generating",
+    REVOKED: "revoked",
+};
+
+export default TOKEN_STATUS;

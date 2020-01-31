@@ -8,7 +8,7 @@
 import { useEffect } from "react";
 import { useWSForisModule } from "foris";
 
-import { TOKEN_STATUS } from "./TokensTable";
+import TOKEN_STATUS from "./token_status";
 
 export function useRevokeToken(ws, setTokens) {
     const [revokeTokenNotification] = useWSForisModule(ws, "remote", "revoke");
