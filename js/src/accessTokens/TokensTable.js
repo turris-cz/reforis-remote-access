@@ -13,11 +13,7 @@ import {
 } from "foris";
 
 import API_URLs from "API";
-
-const TOKEN_STATUS = {
-    GENERATING: "generating",
-    REVOKED: "revoked",
-};
+import TOKEN_STATUS from "./token_status";
 
 const tokenShape = PropTypes.shape({
     id: PropTypes.string.isRequired,
@@ -101,4 +97,3 @@ function TokenActions({ token }) {
 }
 
 export default withErrorMessage(withSpinnerOnSending(TokensTable));
-export { TOKEN_STATUS };
