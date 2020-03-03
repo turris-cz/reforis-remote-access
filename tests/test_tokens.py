@@ -76,7 +76,7 @@ def test_get_token(client):
     response = client.get(f'{TOKENS_URL}/1234')
     assert response.status_code == HTTPStatus.OK
     assert response.headers.get('Content-Disposition') == f'attachment; filename=token-foobar.tar.gz'
-    assert response.data == bytes('FOO=BAR', 'utf-8')
+    assert response.data == b'\x14\xe3'
 
 
 @mock_backend_response({'remote': {'get_token': {'status': 'not_found'}}})

@@ -5,6 +5,7 @@
 
 from pathlib import Path
 from http import HTTPStatus
+import base64
 
 from flask import Blueprint, current_app, jsonify, request, make_response
 from flask_babel import gettext as _
@@ -110,8 +111,10 @@ def get_token(token_id):
     token_name = next(filter(lambda t: t['id'] == token_id, tokens))['name']
 
     return make_response((
-        token_data,
-        {'Content-Disposition': f'attachment; filename=token-{token_name}.tar.gz'}
+        base64.b64decode(token_data),
+        {
+            'Content-Disposition': f'attachment; filename=token-{token_name}.tar.gz'
+        }
     ))
 
 
