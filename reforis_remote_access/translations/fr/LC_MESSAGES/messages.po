@@ -8,19 +8,21 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 16:33+0100\n"
-"PO-Revision-Date: 2020-01-31 16:33+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2020-03-14 06:33+0000\n"
+"Last-Translator: Florian <floflr@zaclys.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/"
+"reforis-remote-access-plugin/fr/>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.0-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:61 js/src/app.js:13
 msgid "Remote Access"
-msgstr ""
+msgstr "Accès à distance"
 
 #: js/src/accessSettings/AccessSettings.js:33
 msgid "Access Settings"
@@ -41,7 +43,7 @@ msgstr ""
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating certificate authority"
-msgstr ""
+msgstr "Génération de l’autorité de certification"
 
 #: js/src/accessSettings/AuthorityGenerating.js:32
 msgid ""
@@ -100,7 +102,7 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:64
 msgid "Enable remote access"
-msgstr ""
+msgstr "Activer l’accès à distance"
 
 #: js/src/accessSettings/RemoteAccessForm.js:72
 msgid "Accessible via WAN"
@@ -114,7 +116,7 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: js/src/accessSettings/RemoteAccessForm.js:81
 msgid "A port which will be opened for the remote configuration of this device."
@@ -122,11 +124,11 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:94
 msgid "Save"
-msgstr ""
+msgstr "Enregistrer"
 
 #: js/src/accessSettings/RemoteAccessForm.js:103
 msgid "Should be a number in range of 1024-65536"
-msgstr ""
+msgstr "Doit être un nombre compris entre 1024 et 65536"
 
 #: js/src/accessTokens/AccessTokens.js:29
 msgid "Access Tokens"
@@ -150,7 +152,7 @@ msgstr ""
 
 #: js/src/accessTokens/CreateTokenForm.js:53
 msgid "Create new token"
-msgstr ""
+msgstr "Créer un nouveau jeton"
 
 #: js/src/accessTokens/CreateTokenForm.js:56
 msgid "Token name"
@@ -164,23 +166,23 @@ msgstr ""
 
 #: js/src/accessTokens/CreateTokenForm.js:63
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 #: js/src/accessTokens/CreateTokenForm.js:73
 msgid "Name cannot be empty"
-msgstr ""
+msgstr "Le nom ne peut pas être vide"
 
 #: js/src/accessTokens/CreateTokenForm.js:76
 msgid "Name is too long"
-msgstr ""
+msgstr "Le nom est trop long"
 
 #: js/src/accessTokens/CreateTokenForm.js:79
 msgid "Name contains invalid characters"
-msgstr ""
+msgstr "Le nom contient des caractères non valides"
 
 #: js/src/accessTokens/Tokens.js:44
 msgid "Tokens"
-msgstr ""
+msgstr "Jetons"
 
 #: js/src/accessTokens/TokensTable.js:34
 msgid "There are no tokens added yet."
@@ -188,23 +190,23 @@ msgstr ""
 
 #: js/src/accessTokens/TokensTable.js:41
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: js/src/accessTokens/TokensTable.js:42
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 #: js/src/accessTokens/TokensTable.js:84
 msgid "Access revoked"
-msgstr ""
+msgstr "Accès révoqué"
 
 #: js/src/accessTokens/TokensTable.js:94
 msgid "Download"
-msgstr ""
+msgstr "Télécharger"
 
 #: js/src/accessTokens/TokensTable.js:97
 msgid "Revoke"
-msgstr ""
+msgstr "Révoquer"
 
 #: reforis_remote_access/__init__.py:45
 msgid "Certificate authority already exists."
@@ -212,25 +214,24 @@ msgstr ""
 
 #: reforis_remote_access/__init__.py:69
 msgid "Cannot change settings."
-msgstr ""
+msgstr "Impossible de modifier les paramètres."
 
 #: reforis_remote_access/__init__.py:89
 msgid "Token '{}' already exists."
-msgstr ""
+msgstr "Le jeton \"{}\" existe déjà."
 
 #: reforis_remote_access/__init__.py:93
 msgid "Cannot create token."
-msgstr ""
+msgstr "Impossible de créer un jeton."
 
 #: reforis_remote_access/__init__.py:103
 msgid "Requested token does not exist."
-msgstr ""
+msgstr "Le jeton demandé n’existe pas."
 
 #: reforis_remote_access/__init__.py:107
 msgid "Cannot get token."
-msgstr ""
+msgstr "Impossible d'obtenir un jeton."
 
 #: reforis_remote_access/__init__.py:122
 msgid "Cannot revoke token."
-msgstr ""
-
+msgstr "Impossible de révoquer le jeton."
