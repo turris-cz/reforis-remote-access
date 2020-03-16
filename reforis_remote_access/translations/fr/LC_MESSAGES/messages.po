@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 16:33+0100\n"
-"PO-Revision-Date: 2020-03-14 06:33+0000\n"
-"Last-Translator: Florian <floflr@zaclys.net>\n"
+"PO-Revision-Date: 2020-03-18 13:36+0000\n"
+"Last-Translator: XoD DarK <xod@xoddark.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/fr/>\n"
 "Language: fr\n"
@@ -26,7 +26,7 @@ msgstr "Accès à distance"
 
 #: js/src/accessSettings/AccessSettings.js:33
 msgid "Access Settings"
-msgstr ""
+msgstr "Paramètres d'accès"
 
 #: js/src/accessSettings/AccessSettings.js:34
 msgid ""
@@ -34,12 +34,18 @@ msgid ""
 "configuration is done via secure encrypted connection and each client is "
 "required to have a token issued by this device."
 msgstr ""
+"Ici, vous pouvez configurer votre routeur pour qu'il soit configurable à "
+"distance. La configuration à distance se fait via une connexion cryptée "
+"sécurisée et chaque client doit disposer d'un jeton émis par cet appareil."
 
 #: js/src/accessSettings/AccessSettings.js:35
 msgid ""
 "This can be useful when you plan to access configuration interface "
 "another Turris router or you intend to write your own client."
 msgstr ""
+"Cela peut être utile lorsque vous prévoyez d'accéder à l'interface de "
+"configuration d'un autre routeur Turris ou que vous avez l'intention "
+"d'écrire votre propre client."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating certificate authority"
@@ -51,14 +57,17 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
+"Votre autorité de certification est en cours de création. Cela prend "
+"généralement quelques minutes. Les paramètres s'afficheront ici "
+"automatiquement une fois que l'autorité sera prête."
 
 #: js/src/accessSettings/AuthorityMissing.js:29
 msgid "Cannot generate certificate authority."
-msgstr ""
+msgstr "Impossible de générer une autorité de certification."
 
 #: js/src/accessSettings/AuthorityMissing.js:35
 msgid "No certificate authority"
-msgstr ""
+msgstr "Aucune autorité de certification"
 
 #: js/src/accessSettings/AuthorityMissing.js:36
 msgid ""
@@ -66,39 +75,47 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed you need to generate it first."
 msgstr ""
+"Actuellement, il n'existe pas d'autorité de certification (CA) dédiée à "
+"l'accès à distance. Une AC est nécessaire pour générer des jetons d'accès "
+"pour s'authentifier. Pour ce faire, vous devez d'abord les générer."
 
 #: js/src/accessSettings/AuthorityMissing.js:42
 msgid "Generate certificate authority"
-msgstr ""
+msgstr "Générer une autorité de certification"
 
 #: js/src/accessSettings/CertificateAuthority.js:37
 #: reforis_remote_access/__init__.py:53
 msgid "Cannot delete certificate authority."
-msgstr ""
+msgstr "Ne peut pas supprimer l'autorité de certification."
 
 #: js/src/accessSettings/CertificateAuthority.js:47
 msgid "Certificate Authority"
-msgstr ""
+msgstr "Autorité de certification"
 
 #: js/src/accessSettings/CertificateAuthority.js:49
 msgid ""
 "You can't delete certificate authority while remote access is enabled. In"
 " order to delete it you need to disable the access first."
 msgstr ""
+"Vous ne pouvez pas supprimer l'autorité de certification lorsque l'accès à "
+"distance est activé. Pour la supprimer, vous devez d'abord désactiver "
+"l'accès."
 
 #: js/src/accessSettings/CertificateAuthority.js:52
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it all clients will have their access revoked."
 msgstr ""
+"Votre autorité de certification est correctement configurée. Veuillez noter "
+"que si vous le supprimez, tous les clients verront leur accès révoqué."
 
 #: js/src/accessSettings/CertificateAuthority.js:58
 msgid "Delete certificate authority"
-msgstr ""
+msgstr "Supprimer l'autorité de certification"
 
 #: js/src/accessSettings/RemoteAccessForm.js:28
 msgid "Cannot save connection parameters."
-msgstr ""
+msgstr "Impossible de sauvegarder les paramètres de connexion."
 
 #: js/src/accessSettings/RemoteAccessForm.js:64
 msgid "Enable remote access"
@@ -106,13 +123,15 @@ msgstr "Activer l’accès à distance"
 
 #: js/src/accessSettings/RemoteAccessForm.js:72
 msgid "Accessible via WAN"
-msgstr ""
+msgstr "Accessible via le WAN"
 
 #: js/src/accessSettings/RemoteAccessForm.js:73
 msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise only devices on LAN will be able to access it."
 msgstr ""
+"Les appareils du réseau WAN pourront se connecter à l'interface de "
+"configuration. Sinon, seuls les appareils du réseau local pourront y accéder."
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Port"
@@ -121,6 +140,7 @@ msgstr "Port"
 #: js/src/accessSettings/RemoteAccessForm.js:81
 msgid "A port which will be opened for the remote configuration of this device."
 msgstr ""
+"Un port qui sera ouvert pour la configuration à distance de cet appareil."
 
 #: js/src/accessSettings/RemoteAccessForm.js:94
 msgid "Save"
@@ -132,23 +152,28 @@ msgstr "Doit être un nombre compris entre 1024 et 65536"
 
 #: js/src/accessTokens/AccessTokens.js:29
 msgid "Access Tokens"
-msgstr ""
+msgstr "Jetons d'accès"
 
 #: js/src/accessTokens/AccessTokens.js:50
 msgid "You need to generate certificate authority in order to create tokens."
 msgstr ""
+"Vous devez générer une autorité de certification afin de créer des jetons."
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid ""
 "You need to generate a token file for each client you want to grant "
 "access."
 msgstr ""
+"Vous devez générer un fichier de jetons pour chaque client auquel vous "
+"souhaitez accorder l'accès."
 
 #: js/src/accessTokens/AccessTokens.js:56
 msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " \"Remote Devices\" plugin on client device."
 msgstr ""
+"Pour utiliser le jeton avec un autre routeur Turris, vous devez le "
+"transférer en utilisant le plugin \"Remote Devices\" sur l'appareil client."
 
 #: js/src/accessTokens/CreateTokenForm.js:53
 msgid "Create new token"
@@ -163,6 +188,8 @@ msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
+"Moins de 64 caractères. Uniquement des caractères alphanumériques, des "
+"points, des tirets et des traits de soulignement."
 
 #: js/src/accessTokens/CreateTokenForm.js:63
 msgid "Add"
@@ -186,7 +213,7 @@ msgstr "Jetons"
 
 #: js/src/accessTokens/TokensTable.js:34
 msgid "There are no tokens added yet."
-msgstr ""
+msgstr "Il n'y a pas encore de jetons ajoutés."
 
 #: js/src/accessTokens/TokensTable.js:41
 msgid "Name"
@@ -210,7 +237,7 @@ msgstr "Révoquer"
 
 #: reforis_remote_access/__init__.py:45
 msgid "Certificate authority already exists."
-msgstr ""
+msgstr "L'autorité de certification existe déjà."
 
 #: reforis_remote_access/__init__.py:69
 msgid "Cannot change settings."
