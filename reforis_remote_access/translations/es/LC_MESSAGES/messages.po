@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 16:33+0100\n"
-"PO-Revision-Date: 2020-05-25 13:41+0000\n"
-"Last-Translator: Eduardo Cuthbert <elguber@gmail.com>\n"
+"PO-Revision-Date: 2020-05-30 12:41+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/es/>\n"
 "Language: es\n"
@@ -124,7 +124,7 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:94
 msgid "Save"
-msgstr "Salvar"
+msgstr "Guardar"
 
 #: js/src/accessSettings/RemoteAccessForm.js:103
 msgid "Should be a number in range of 1024-65536"
