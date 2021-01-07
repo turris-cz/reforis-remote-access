@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 16:33+0100\n"
-"PO-Revision-Date: 2021-01-07 01:26+0000\n"
+"PO-Revision-Date: 2021-01-08 22:32+0000\n"
 "Last-Translator: Zoli <boritek@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/hu/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:61 js/src/app.js:13
 msgid "Remote Access"
-msgstr ""
+msgstr "Távoli hozzáférés"
 
 #: js/src/accessSettings/AccessSettings.js:33
 msgid "Access Settings"
-msgstr ""
+msgstr "Hozzáférési beállítások"
 
 #: js/src/accessSettings/AccessSettings.js:34
 msgid ""
@@ -34,16 +34,21 @@ msgid ""
 "configuration is done via secure encrypted connection and each client is "
 "required to have a token issued by this device."
 msgstr ""
+"Itt állíthatja be az útválasztót távoli konfigurálásra. A távoli "
+"konfiguráció biztonságos titkosított kapcsolaton keresztül történik, és "
+"minden ügyfélnek rendelkeznie kell a készülék által kibocsátott tokennel."
 
 #: js/src/accessSettings/AccessSettings.js:35
 msgid ""
 "This can be useful when you plan to access configuration interface "
 "another Turris router or you intend to write your own client."
 msgstr ""
+"Ez akkor lehet hasznos, ha egy másik Turris útválasztó konfigurációs "
+"felületéhez kíván hozzáférni vagy saját ügyfelet kíván írni."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating certificate authority"
-msgstr ""
+msgstr "Hitelesítésszolgáltató létrehozása"
 
 #: js/src/accessSettings/AuthorityGenerating.js:32
 msgid ""
@@ -51,14 +56,17 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
+"A hitelesítésszolgáltató létrehozása folyamatban van. Általában néhány "
+"percet vesz igénybe. A beállítások automatikusan megjelennek itt, amint a "
+"hitelesítésszolgáltató készen áll."
 
 #: js/src/accessSettings/AuthorityMissing.js:29
 msgid "Cannot generate certificate authority."
-msgstr ""
+msgstr "Nem hozható létre hitelesítésszolgáltató."
 
 #: js/src/accessSettings/AuthorityMissing.js:35
 msgid "No certificate authority"
-msgstr ""
+msgstr "Nincs hitelesítésszolgáltató"
 
 #: js/src/accessSettings/AuthorityMissing.js:36
 msgid ""
@@ -66,61 +74,72 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed you need to generate it first."
 msgstr ""
+"Jelenleg nincs távoli hozzáférésre kijelölt hitelesítésszolgáltató (CA). A "
+"hitelesítéshez szükséges hozzáférési tokenek létrehozásához CA szükséges. A "
+"folytatáshoz előbb ezt létre kell hoznia."
 
 #: js/src/accessSettings/AuthorityMissing.js:42
 msgid "Generate certificate authority"
-msgstr ""
+msgstr "Hitelesítésszolgáltató létrehozása"
 
 #: js/src/accessSettings/CertificateAuthority.js:37
 #: reforis_remote_access/__init__.py:53
 msgid "Cannot delete certificate authority."
-msgstr ""
+msgstr "A hitelesítésszolgáltató nem törölhető."
 
 #: js/src/accessSettings/CertificateAuthority.js:47
 msgid "Certificate Authority"
-msgstr ""
+msgstr "Hitelesítésszolgáltató"
 
 #: js/src/accessSettings/CertificateAuthority.js:49
 msgid ""
 "You can't delete certificate authority while remote access is enabled. In"
 " order to delete it you need to disable the access first."
 msgstr ""
+"A hitelesítésszolgáltató nem törölhető, amíg a távelérés engedélyezve van. "
+"Ahhoz, hogy törölni tudja, először le kell tiltani a hozzáférést."
 
 #: js/src/accessSettings/CertificateAuthority.js:52
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it all clients will have their access revoked."
 msgstr ""
+"A hitelesítésszolgáltató (CA) megfelelően van beállítva. Kérjük, vegye "
+"figyelembe, hogy ha törli, hogy minden ügyfél hozzáférése visszavonásra "
+"kerül."
 
 #: js/src/accessSettings/CertificateAuthority.js:58
 msgid "Delete certificate authority"
-msgstr ""
+msgstr "Hitelesítésszolgáltató törlése"
 
 #: js/src/accessSettings/RemoteAccessForm.js:28
 msgid "Cannot save connection parameters."
-msgstr ""
+msgstr "A kapcsolat paraméterei nem menthetők."
 
 #: js/src/accessSettings/RemoteAccessForm.js:64
 msgid "Enable remote access"
-msgstr ""
+msgstr "Távoli hozzáférés engedélyezése"
 
 #: js/src/accessSettings/RemoteAccessForm.js:72
 msgid "Accessible via WAN"
-msgstr ""
+msgstr "WAN-on keresztül elérhető"
 
 #: js/src/accessSettings/RemoteAccessForm.js:73
 msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise only devices on LAN will be able to access it."
 msgstr ""
+"A WAN-hálózat eszközei képesek lesznek csatlakozni a konfigurációs "
+"felülethez. Ellenkező esetben csak a helyi hálózaton lévő eszközök férhetnek "
+"hozzá."
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: js/src/accessSettings/RemoteAccessForm.js:81
 msgid "A port which will be opened for the remote configuration of this device."
-msgstr ""
+msgstr "Az eszköz távoli konfigurációjához megnyíló port."
 
 #: js/src/accessSettings/RemoteAccessForm.js:94
 msgid "Save"
@@ -128,65 +147,71 @@ msgstr "Mentés"
 
 #: js/src/accessSettings/RemoteAccessForm.js:103
 msgid "Should be a number in range of 1024-65536"
-msgstr ""
+msgstr "Az 1024-65536 tartományban lévő számnak kell lennie"
 
 #: js/src/accessTokens/AccessTokens.js:29
 msgid "Access Tokens"
-msgstr ""
+msgstr "Hozzáférési tokenek"
 
 #: js/src/accessTokens/AccessTokens.js:50
 msgid "You need to generate certificate authority in order to create tokens."
-msgstr ""
+msgstr "Tokenek létrehozásához előbb hitelesítésszolgáltatót kell előállítani."
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid ""
 "You need to generate a token file for each client you want to grant "
 "access."
 msgstr ""
+"Létre kell hoznia egy token fájlt minden egyes ügyfél számára, amelyhez "
+"hozzáférést kíván adni."
 
 #: js/src/accessTokens/AccessTokens.js:56
 msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " \"Remote Devices\" plugin on client device."
 msgstr ""
+"Ahhoz, hogy a tokent egy másik Turris routerrel használhassa, át kell vinnie "
+"azt az ügyfélgép \"Távoli eszközök\" beépülő moduljának használatával."
 
 #: js/src/accessTokens/CreateTokenForm.js:53
 msgid "Create new token"
-msgstr ""
+msgstr "Új token létrehozása"
 
 #: js/src/accessTokens/CreateTokenForm.js:56
 msgid "Token name"
-msgstr ""
+msgstr "Token neve"
 
 #: js/src/accessTokens/CreateTokenForm.js:57
 msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
+"Rövidebb, mint 64 karakter. Csak alfanumerikus karakterek, pontok, kötőjelek "
+"és aláhúzások lehetségesek."
 
 #: js/src/accessTokens/CreateTokenForm.js:63
 msgid "Add"
-msgstr ""
+msgstr "Hozzáad"
 
 #: js/src/accessTokens/CreateTokenForm.js:73
 msgid "Name cannot be empty"
-msgstr ""
+msgstr "A név nem lehet üres"
 
 #: js/src/accessTokens/CreateTokenForm.js:76
 msgid "Name is too long"
-msgstr ""
+msgstr "A név túl hosszú"
 
 #: js/src/accessTokens/CreateTokenForm.js:79
 msgid "Name contains invalid characters"
-msgstr ""
+msgstr "A név érvénytelen karaktereket tartalmaz"
 
 #: js/src/accessTokens/Tokens.js:44
 msgid "Tokens"
-msgstr ""
+msgstr "Tokenek"
 
 #: js/src/accessTokens/TokensTable.js:34
 msgid "There are no tokens added yet."
-msgstr ""
+msgstr "Még nincs hozzáadva token."
 
 #: js/src/accessTokens/TokensTable.js:41
 msgid "Name"
@@ -198,40 +223,40 @@ msgstr "Műveletek"
 
 #: js/src/accessTokens/TokensTable.js:84
 msgid "Access revoked"
-msgstr ""
+msgstr "A hozzáférés visszavonva"
 
 #: js/src/accessTokens/TokensTable.js:94
 msgid "Download"
-msgstr "Letöltés"
+msgstr "Letölt"
 
 #: js/src/accessTokens/TokensTable.js:97
 msgid "Revoke"
-msgstr ""
+msgstr "Visszavon"
 
 #: reforis_remote_access/__init__.py:45
 msgid "Certificate authority already exists."
-msgstr ""
+msgstr "A hitelesítésszolgáltató már létezik."
 
 #: reforis_remote_access/__init__.py:69
 msgid "Cannot change settings."
-msgstr ""
+msgstr "A beállítások nem módosíthatók."
 
 #: reforis_remote_access/__init__.py:89
 msgid "Token '{}' already exists."
-msgstr ""
+msgstr "A(z) '{}' token már létezik."
 
 #: reforis_remote_access/__init__.py:93
 msgid "Cannot create token."
-msgstr ""
+msgstr "Nem hozható létre token."
 
 #: reforis_remote_access/__init__.py:103
 msgid "Requested token does not exist."
-msgstr ""
+msgstr "A kért token nem létezik."
 
 #: reforis_remote_access/__init__.py:107
 msgid "Cannot get token."
-msgstr ""
+msgstr "Nem lehet lekérni a tokent."
 
 #: reforis_remote_access/__init__.py:122
 msgid "Cannot revoke token."
-msgstr ""
+msgstr "A tokent nem lehet visszavonni."
