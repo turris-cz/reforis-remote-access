@@ -8,23 +8,25 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 16:33+0100\n"
-"PO-Revision-Date: 2020-01-31 16:33+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2020-11-30 20:29+0000\n"
+"Last-Translator: Johan van de Wetering <mail@jvdwetering.nl>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/turris/"
+"reforis-remote-access-plugin/nl/>\n"
 "Language: nl\n"
-"Language-Team: nl <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:61 js/src/app.js:13
 msgid "Remote Access"
-msgstr ""
+msgstr "Externe Toegang"
 
 #: js/src/accessSettings/AccessSettings.js:33
 msgid "Access Settings"
-msgstr ""
+msgstr "Toegangsinstellingen"
 
 #: js/src/accessSettings/AccessSettings.js:34
 msgid ""
@@ -32,16 +34,23 @@ msgid ""
 "configuration is done via secure encrypted connection and each client is "
 "required to have a token issued by this device."
 msgstr ""
+"Hier kunt u uw router instellen zodat deze op afstand kan worden "
+"geconfigureerd. Toegang van buitenaf gaat via een beveiligde en gecodeerde "
+"verbinding en elke client dient in het bezit te zijn van een token "
+"uitgegeven door dit apparaat."
 
 #: js/src/accessSettings/AccessSettings.js:35
 msgid ""
 "This can be useful when you plan to access configuration interface "
 "another Turris router or you intend to write your own client."
 msgstr ""
+"Dit kan nuttig zijn als u van plan bent om toegang te krijgen tot de "
+"configuratie-interface vanuit een andere Turris router of wanneer u van plan "
+"bent om uw eigen client te schrijven."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating certificate authority"
-msgstr ""
+msgstr "Certificaatautoriteit genereren"
 
 #: js/src/accessSettings/AuthorityGenerating.js:32
 msgid ""
@@ -49,14 +58,17 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
+"Uw certificaatautoriteit wordt nu gegenereerd. Dit neemt normaal gesproken "
+"een paar minuten in beslag. De instellingen worden hier automatisch "
+"weergegeven nadat de autoriteit gereed is."
 
 #: js/src/accessSettings/AuthorityMissing.js:29
 msgid "Cannot generate certificate authority."
-msgstr ""
+msgstr "Kan certificaatautoriteit niet genereren."
 
 #: js/src/accessSettings/AuthorityMissing.js:35
 msgid "No certificate authority"
-msgstr ""
+msgstr "Geen certificaatautoriteit"
 
 #: js/src/accessSettings/AuthorityMissing.js:36
 msgid ""
@@ -64,173 +76,193 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed you need to generate it first."
 msgstr ""
+"Er is momenteel geen certificaatautoriteit (CA) toegewezen aan externe "
+"toegang. Een CA is benodigd om een toegangstoken te genereren om daarmee te "
+"authenticeren. Om verder te gaan dient u deze eerst te genereren."
 
 #: js/src/accessSettings/AuthorityMissing.js:42
 msgid "Generate certificate authority"
-msgstr ""
+msgstr "Genereer certificaatautoriteit"
 
 #: js/src/accessSettings/CertificateAuthority.js:37
 #: reforis_remote_access/__init__.py:53
 msgid "Cannot delete certificate authority."
-msgstr ""
+msgstr "Kan certificaatautoriteit niet verwijderen."
 
 #: js/src/accessSettings/CertificateAuthority.js:47
 msgid "Certificate Authority"
-msgstr ""
+msgstr "Certificaatautoriteit"
 
 #: js/src/accessSettings/CertificateAuthority.js:49
 msgid ""
 "You can't delete certificate authority while remote access is enabled. In"
 " order to delete it you need to disable the access first."
 msgstr ""
+"U kunt de certificaatautoriteit niet verwijderen terwijl externe toegang is "
+"ingeschakeld. Om deze te verwijderen dient u de externe toegang eerst te "
+"stoppen."
 
 #: js/src/accessSettings/CertificateAuthority.js:52
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it all clients will have their access revoked."
 msgstr ""
+"Uw certificaatautoriteit (CA) is correct ingesteld. Merk op dat zodra u deze "
+"verwijdert, de toegang van alle clients wordt ingetrokken."
 
 #: js/src/accessSettings/CertificateAuthority.js:58
 msgid "Delete certificate authority"
-msgstr ""
+msgstr "Verwijder certificaatautoriteit"
 
 #: js/src/accessSettings/RemoteAccessForm.js:28
 msgid "Cannot save connection parameters."
-msgstr ""
+msgstr "Kan connectieparameters niet opslaan."
 
 #: js/src/accessSettings/RemoteAccessForm.js:64
 msgid "Enable remote access"
-msgstr ""
+msgstr "Externe toegang inschakelen"
 
 #: js/src/accessSettings/RemoteAccessForm.js:72
 msgid "Accessible via WAN"
-msgstr ""
+msgstr "Toegangkelijk via WAN"
 
 #: js/src/accessSettings/RemoteAccessForm.js:73
 msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise only devices on LAN will be able to access it."
 msgstr ""
+"Apparaten in het WAN netwerk hebben toegang om verbinding te maken met de "
+"configuratie interface. In andere gevallen hebben alleen de apparaten op het "
+"LAN-netwerk toegang tot deze interface."
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Port"
-msgstr ""
+msgstr "Poort"
 
 #: js/src/accessSettings/RemoteAccessForm.js:81
 msgid "A port which will be opened for the remote configuration of this device."
 msgstr ""
+"Een poort zal worden geopend voor de externe toegang tot de configuratie van "
+"dit apparaat."
 
 #: js/src/accessSettings/RemoteAccessForm.js:94
 msgid "Save"
-msgstr ""
+msgstr "Opslaan"
 
 #: js/src/accessSettings/RemoteAccessForm.js:103
 msgid "Should be a number in range of 1024-65536"
-msgstr ""
+msgstr "Moet een getal betreffen in het bereik van 1024-65536"
 
 #: js/src/accessTokens/AccessTokens.js:29
 msgid "Access Tokens"
-msgstr ""
+msgstr "Toegangstoken"
 
 #: js/src/accessTokens/AccessTokens.js:50
 msgid "You need to generate certificate authority in order to create tokens."
 msgstr ""
+"U dient een certificaatautoriteit te genereren om toegangstokens te kunnen "
+"aanmaken."
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid ""
 "You need to generate a token file for each client you want to grant "
 "access."
 msgstr ""
+"U dient een tokenbestand te genereren voor elke client die u toegang wilt "
+"verschaffen."
 
 #: js/src/accessTokens/AccessTokens.js:56
 msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " \"Remote Devices\" plugin on client device."
 msgstr ""
+"Om de token te gebruiken in een andere Turris router dient u dit te over te "
+"dragen via de \"Externe Apparaten\" plugin op het client apparaat."
 
 #: js/src/accessTokens/CreateTokenForm.js:53
 msgid "Create new token"
-msgstr ""
+msgstr "Creëer nieuw token"
 
 #: js/src/accessTokens/CreateTokenForm.js:56
 msgid "Token name"
-msgstr ""
+msgstr "Tokennaam"
 
 #: js/src/accessTokens/CreateTokenForm.js:57
 msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
+"Korter dan 64 karakters. Alleen alfanummerieke karakters, punten, streepjes "
+"en underscores."
 
 #: js/src/accessTokens/CreateTokenForm.js:63
 msgid "Add"
-msgstr ""
+msgstr "Toevoegen"
 
 #: js/src/accessTokens/CreateTokenForm.js:73
 msgid "Name cannot be empty"
-msgstr ""
+msgstr "Naam kan niet leeg zijn"
 
 #: js/src/accessTokens/CreateTokenForm.js:76
 msgid "Name is too long"
-msgstr ""
+msgstr "Naam is te lang"
 
 #: js/src/accessTokens/CreateTokenForm.js:79
 msgid "Name contains invalid characters"
-msgstr ""
+msgstr "Naam bevat niet-toegestane karakters"
 
 #: js/src/accessTokens/Tokens.js:44
 msgid "Tokens"
-msgstr ""
+msgstr "Tokens"
 
 #: js/src/accessTokens/TokensTable.js:34
 msgid "There are no tokens added yet."
-msgstr ""
+msgstr "Er zijn nog geen tokens toegevoegd."
 
 #: js/src/accessTokens/TokensTable.js:41
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: js/src/accessTokens/TokensTable.js:42
 msgid "Actions"
-msgstr ""
+msgstr "Acties"
 
 #: js/src/accessTokens/TokensTable.js:84
 msgid "Access revoked"
-msgstr ""
+msgstr "Toegang ingetrokken"
 
 #: js/src/accessTokens/TokensTable.js:94
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: js/src/accessTokens/TokensTable.js:97
 msgid "Revoke"
-msgstr ""
+msgstr "Intrekken"
 
 #: reforis_remote_access/__init__.py:45
 msgid "Certificate authority already exists."
-msgstr ""
+msgstr "Certificaatautoriteit bestaat al."
 
 #: reforis_remote_access/__init__.py:69
 msgid "Cannot change settings."
-msgstr ""
+msgstr "kan instellingen niet wijzigen."
 
 #: reforis_remote_access/__init__.py:89
 msgid "Token '{}' already exists."
-msgstr ""
+msgstr "Token '{}' bestaat al."
 
 #: reforis_remote_access/__init__.py:93
 msgid "Cannot create token."
-msgstr ""
+msgstr "Kan token niet creëren."
 
 #: reforis_remote_access/__init__.py:103
 msgid "Requested token does not exist."
-msgstr ""
+msgstr "Aangevraagde token bestaat niet."
 
 #: reforis_remote_access/__init__.py:107
 msgid "Cannot get token."
-msgstr ""
+msgstr "Kan token niet verkrijgen."
 
 #: reforis_remote_access/__init__.py:122
 msgid "Cannot revoke token."
-msgstr ""
-
+msgstr "Kan token niet intrekken."
