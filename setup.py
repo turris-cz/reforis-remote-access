@@ -32,7 +32,7 @@ class RemoteAccessBuild(build_py):
 
 setuptools.setup(
     name=NAME,
-    version='1.2.0',
+    version='1.2.1',
     packages=setuptools.find_packages(exclude=['tests']),
     include_package_data=True,
 
