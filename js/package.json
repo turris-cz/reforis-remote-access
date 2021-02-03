@@ -1,9 +1,13 @@
 {
   "name": "reforis_remote_access",
   "author": "CZ.NIC, z.s.p.o.",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.nic.cz/turris/reforis/reforis-remote-access.git"
+  },
   "license": "GPL-3.0",
   "version": "1.2.0",
-  "description": "",
+  "description": "reForis Remote Access Plugin",
   "main": "./src/app.js",
   "dependencies": {
     "foris": "^4.5.0"
