@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 16:33+0100\n"
-"PO-Revision-Date: 2020-12-14 14:29+0000\n"
+"PO-Revision-Date: 2021-02-06 17:50+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/nb_NO/>\n"
-"Language: nb\n"
+"Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:61 js/src/app.js:13
@@ -34,12 +34,17 @@ msgid ""
 "configuration is done via secure encrypted connection and each client is "
 "required to have a token issued by this device."
 msgstr ""
+"Har kan du sette opp ruteren din for oppsett annensteds fra. Fjernoppsett "
+"gjøres via sikret kryptert kryptering og hver klient må ha et symbol utstedt "
+"av denne enheten."
 
 #: js/src/accessSettings/AccessSettings.js:35
 msgid ""
 "This can be useful when you plan to access configuration interface "
 "another Turris router or you intend to write your own client."
 msgstr ""
+"Dette kan være nyttig hvis du planlegger å nå oppsettsgrensesnittet til en "
+"annen Turris-ruter eller du vil skrive din egen klient."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating certificate authority"
@@ -51,10 +56,12 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
+"Din sertifikatsmyndighet genereres. Dette tar vanligvis noen minutter. "
+"Innstillinger vil vises her automatisk når din sertifikatsmyndighet er klar."
 
 #: js/src/accessSettings/AuthorityMissing.js:29
 msgid "Cannot generate certificate authority."
-msgstr ""
+msgstr "Kan ikke generere sertifikatsmyndighet."
 
 #: js/src/accessSettings/AuthorityMissing.js:35
 msgid "No certificate authority"
@@ -66,6 +73,9 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed you need to generate it first."
 msgstr ""
+"Det finnes for tiden ingen sertifikatsmyndighet (CA) dedikert til "
+"fjerntilgang. En CA kreves for å generere tilgangssymboler for "
+"identitetsbekreftelse. For å fortsette må du generere det først."
 
 #: js/src/accessSettings/AuthorityMissing.js:42
 msgid "Generate certificate authority"
@@ -157,6 +167,8 @@ msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " \"Remote Devices\" plugin on client device."
 msgstr ""
+"For å bruke symbolet med en annen Turris-ruter må du overføre det først ved "
+"bruk av «Fjernenheter»-programtillegget på klientenheten."
 
 #: js/src/accessTokens/CreateTokenForm.js:53
 msgid "Create new token"
