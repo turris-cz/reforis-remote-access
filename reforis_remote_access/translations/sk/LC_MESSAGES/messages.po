@@ -8,23 +8,25 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 16:33+0100\n"
-"PO-Revision-Date: 2020-01-31 16:33+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2021-06-15 22:23+0000\n"
+"Last-Translator: Atec <nil.maho@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
+"reforis-remote-access-plugin/sk/>\n"
 "Language: sk\n"
-"Language-Team: sk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.7-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:61 js/src/app.js:13
 msgid "Remote Access"
-msgstr ""
+msgstr "Vzdialený prístup"
 
 #: js/src/accessSettings/AccessSettings.js:33
 msgid "Access Settings"
-msgstr ""
+msgstr "Nastavenia prístupu"
 
 #: js/src/accessSettings/AccessSettings.js:34
 msgid ""
@@ -32,6 +34,9 @@ msgid ""
 "configuration is done via secure encrypted connection and each client is "
 "required to have a token issued by this device."
 msgstr ""
+"Tu je možné nastaviť router tak, aby sa dal nastavovat na diaľku. Vzdialená "
+"konfigurácia prebieha prostredníctvom bezpečného šifrovaného spojenia a "
+"každý klient musí mať token vydaný týmto zariadením."
 
 #: js/src/accessSettings/AccessSettings.js:35
 msgid ""
@@ -114,7 +119,7 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: js/src/accessSettings/RemoteAccessForm.js:81
 msgid "A port which will be opened for the remote configuration of this device."
@@ -122,7 +127,7 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:94
 msgid "Save"
-msgstr ""
+msgstr "Uložiť"
 
 #: js/src/accessSettings/RemoteAccessForm.js:103
 msgid "Should be a number in range of 1024-65536"
@@ -161,22 +166,23 @@ msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
+"Menej ako 64 znakov. Len písmená, číslice, bodky, pomlčky a podčiarknutia."
 
 #: js/src/accessTokens/CreateTokenForm.js:63
 msgid "Add"
-msgstr ""
+msgstr "Pridať"
 
 #: js/src/accessTokens/CreateTokenForm.js:73
 msgid "Name cannot be empty"
-msgstr ""
+msgstr "Názov nesmie byť prázdny"
 
 #: js/src/accessTokens/CreateTokenForm.js:76
 msgid "Name is too long"
-msgstr ""
+msgstr "Názov je príliš dlhý"
 
 #: js/src/accessTokens/CreateTokenForm.js:79
 msgid "Name contains invalid characters"
-msgstr ""
+msgstr "Názov obsahuje neplatné znaky"
 
 #: js/src/accessTokens/Tokens.js:44
 msgid "Tokens"
@@ -188,23 +194,23 @@ msgstr ""
 
 #: js/src/accessTokens/TokensTable.js:41
 msgid "Name"
-msgstr ""
+msgstr "Názov"
 
 #: js/src/accessTokens/TokensTable.js:42
 msgid "Actions"
-msgstr ""
+msgstr "Akcie"
 
 #: js/src/accessTokens/TokensTable.js:84
 msgid "Access revoked"
-msgstr ""
+msgstr "Prístup odvolaný"
 
 #: js/src/accessTokens/TokensTable.js:94
 msgid "Download"
-msgstr ""
+msgstr "Sťahovanie"
 
 #: js/src/accessTokens/TokensTable.js:97
 msgid "Revoke"
-msgstr ""
+msgstr "Odvolať"
 
 #: reforis_remote_access/__init__.py:45
 msgid "Certificate authority already exists."
@@ -233,4 +239,3 @@ msgstr ""
 #: reforis_remote_access/__init__.py:122
 msgid "Cannot revoke token."
 msgstr ""
-
