@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 16:33+0100\n"
-"PO-Revision-Date: 2021-06-15 22:23+0000\n"
+"PO-Revision-Date: 2021-06-16 11:42+0000\n"
 "Last-Translator: Atec <nil.maho@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/sk/>\n"
@@ -35,7 +35,7 @@ msgid ""
 "required to have a token issued by this device."
 msgstr ""
 "Tu je možné nastaviť router tak, aby sa dal nastavovat na diaľku. Vzdialená "
-"konfigurácia prebieha prostredníctvom bezpečného šifrovaného spojenia a "
+"konfigurácia prebieha prostredníctvom zabezpečeného šifrovaného spojenia a "
 "každý klient musí mať token vydaný týmto zariadením."
 
 #: js/src/accessSettings/AccessSettings.js:35
@@ -43,10 +43,12 @@ msgid ""
 "This can be useful when you plan to access configuration interface "
 "another Turris router or you intend to write your own client."
 msgstr ""
+"Toto je vhodné vtedy, ak plánujete pristupovať do konfiguračného rozhrania "
+"iného routera Turris, alebo si chcete napísať vlastného klienta."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating certificate authority"
-msgstr ""
+msgstr "Generuje sa certifikačná autorita"
 
 #: js/src/accessSettings/AuthorityGenerating.js:32
 msgid ""
@@ -54,14 +56,16 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
+"Teraz sa generuje vaša certifikačná autorita. Obvykle to trvá niekoľko "
+"minút. Nastavenia sa tu objavia hneď ako bude pripravená."
 
 #: js/src/accessSettings/AuthorityMissing.js:29
 msgid "Cannot generate certificate authority."
-msgstr ""
+msgstr "Certifikačná autorita sa nedá vytvoriť."
 
 #: js/src/accessSettings/AuthorityMissing.js:35
 msgid "No certificate authority"
-msgstr ""
+msgstr "Žiadna certifikačná autorita"
 
 #: js/src/accessSettings/AuthorityMissing.js:36
 msgid ""
@@ -69,53 +73,62 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed you need to generate it first."
 msgstr ""
+"V tejto chvíli neexistuje žiadna certifikačná autorita (CA) určená na "
+"vzdialený prístup. CA je potrebná na generovanie prístupových tokenov. Aby "
+"ste mohli pokračovať, je najskôr potrebné CA vytvoriť."
 
 #: js/src/accessSettings/AuthorityMissing.js:42
 msgid "Generate certificate authority"
-msgstr ""
+msgstr "Vygenerovať certifikačnú autoritu"
 
 #: js/src/accessSettings/CertificateAuthority.js:37
 #: reforis_remote_access/__init__.py:53
 msgid "Cannot delete certificate authority."
-msgstr ""
+msgstr "Certifikačná autorita sa nedá vymazať."
 
 #: js/src/accessSettings/CertificateAuthority.js:47
 msgid "Certificate Authority"
-msgstr ""
+msgstr "Certifikačná autorita"
 
 #: js/src/accessSettings/CertificateAuthority.js:49
 msgid ""
 "You can't delete certificate authority while remote access is enabled. In"
 " order to delete it you need to disable the access first."
 msgstr ""
+"Kým je povolený vzdialený prístup, nie je možné certifikačnú autoritu "
+"vymazať. Na jej vymazanie je najskôr potrebné vzdialený prístup zakázať."
 
 #: js/src/accessSettings/CertificateAuthority.js:52
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it all clients will have their access revoked."
 msgstr ""
+"Vaša certifikačná autorita je teraz správne nastavená. Upozorňujeme, že jej "
+"vymazaním sa odvolajú prístupy všetkým klientom."
 
 #: js/src/accessSettings/CertificateAuthority.js:58
 msgid "Delete certificate authority"
-msgstr ""
+msgstr "Vymazať certifikačnú autoritu"
 
 #: js/src/accessSettings/RemoteAccessForm.js:28
 msgid "Cannot save connection parameters."
-msgstr ""
+msgstr "Parametre pripojenia sa nedajú uložiť."
 
 #: js/src/accessSettings/RemoteAccessForm.js:64
 msgid "Enable remote access"
-msgstr ""
+msgstr "Povoliť vzdialený prístup"
 
 #: js/src/accessSettings/RemoteAccessForm.js:72
 msgid "Accessible via WAN"
-msgstr ""
+msgstr "Prístupné cez WAN"
 
 #: js/src/accessSettings/RemoteAccessForm.js:73
 msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise only devices on LAN will be able to access it."
 msgstr ""
+"Zariadenia v sieti WAN budú mať prístup do konfiguračného rozhrania. Inak "
+"budú mať prístup len zariadenia v miestnej sieti LAN."
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Port"
@@ -123,7 +136,7 @@ msgstr "Port"
 
 #: js/src/accessSettings/RemoteAccessForm.js:81
 msgid "A port which will be opened for the remote configuration of this device."
-msgstr ""
+msgstr "Port, ktorý sa otvorí pre vzdialenú správu tohto zariadenia."
 
 #: js/src/accessSettings/RemoteAccessForm.js:94
 msgid "Save"
@@ -131,35 +144,39 @@ msgstr "Uložiť"
 
 #: js/src/accessSettings/RemoteAccessForm.js:103
 msgid "Should be a number in range of 1024-65536"
-msgstr ""
+msgstr "Musí byť číslo z rozsahu 1024-65536"
 
 #: js/src/accessTokens/AccessTokens.js:29
 msgid "Access Tokens"
-msgstr ""
+msgstr "Prístupové tokeny"
 
 #: js/src/accessTokens/AccessTokens.js:50
 msgid "You need to generate certificate authority in order to create tokens."
-msgstr ""
+msgstr "Na vytvárane tokenov je potrebné vygenerovať certifikačnú autoritu."
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid ""
 "You need to generate a token file for each client you want to grant "
 "access."
 msgstr ""
+"Súbor s tokenom je potrebné vygenerovať pre každého klienta, ktorý má mať "
+"povolený vzdialený prístup."
 
 #: js/src/accessTokens/AccessTokens.js:56
 msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " \"Remote Devices\" plugin on client device."
 msgstr ""
+"Token sa môže použiť v inom routeri Turris po jeho prenesení pomocou pluginu "
+"„Vzdialené zariadenia“ na klientskom zariadení."
 
 #: js/src/accessTokens/CreateTokenForm.js:53
 msgid "Create new token"
-msgstr ""
+msgstr "Vytvoriť nový token"
 
 #: js/src/accessTokens/CreateTokenForm.js:56
 msgid "Token name"
-msgstr ""
+msgstr "Názov tokenu"
 
 #: js/src/accessTokens/CreateTokenForm.js:57
 msgid ""
@@ -186,11 +203,11 @@ msgstr "Názov obsahuje neplatné znaky"
 
 #: js/src/accessTokens/Tokens.js:44
 msgid "Tokens"
-msgstr ""
+msgstr "Tokeny"
 
 #: js/src/accessTokens/TokensTable.js:34
 msgid "There are no tokens added yet."
-msgstr ""
+msgstr "Nie sú pridané žiadne tokeny."
 
 #: js/src/accessTokens/TokensTable.js:41
 msgid "Name"
@@ -214,28 +231,28 @@ msgstr "Odvolať"
 
 #: reforis_remote_access/__init__.py:45
 msgid "Certificate authority already exists."
-msgstr ""
+msgstr "Certifikačná autorita už existuje."
 
 #: reforis_remote_access/__init__.py:69
 msgid "Cannot change settings."
-msgstr ""
+msgstr "Nastavenia sa nedajú zmeniť."
 
 #: reforis_remote_access/__init__.py:89
 msgid "Token '{}' already exists."
-msgstr ""
+msgstr "Token '{}' už existuje."
 
 #: reforis_remote_access/__init__.py:93
 msgid "Cannot create token."
-msgstr ""
+msgstr "Token sa nedá vytvoriť."
 
 #: reforis_remote_access/__init__.py:103
 msgid "Requested token does not exist."
-msgstr ""
+msgstr "Požadovaný token neexistuje."
 
 #: reforis_remote_access/__init__.py:107
 msgid "Cannot get token."
-msgstr ""
+msgstr "Nedá sa získať token."
 
 #: reforis_remote_access/__init__.py:122
 msgid "Cannot revoke token."
-msgstr ""
+msgstr "Token sa nedá odvolať."
