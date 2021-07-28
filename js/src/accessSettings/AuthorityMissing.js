@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -30,11 +30,11 @@ export default function AuthorityMissing({ onAuthoritySuccess }) {
 
     return (
         <>
-            <h3>{_("No certificate authority")}</h3>
+            <h2>{_("No Certificate Authority")}</h2>
             <p>
-                {_(
-                    "Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first."
-                )}
+                {_(`Currently there is no certificate authority (CA) \
+dedicated to remote access. A CA is required to generate access tokens to \
+authenticate. To proceed you need to generate it first.`)}
             </p>
             <Button
                 onClick={() => generateCA()}

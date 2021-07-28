@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -64,10 +64,10 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
 
     return (
         <>
-            <h3>{_("Remote Access")}</h3>
+            <h2>{_("Remote Access")}</h2>
             <form onSubmit={handleSubmit}>
-                <CheckBox
-                    label={_("Enable remote access")}
+                <Switch
+                    label={_("Enable Remote Access")}
                     checked={formData.enabled}
                     onChange={formChangeHandler((value) => ({
                         enabled: { $set: value },
@@ -77,9 +77,9 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
                     <>
                         <CheckBox
                             label={_("Accessible via WAN")}
-                            helpText={_(
-                                "Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it."
-                            )}
+                            helpText={_(`Devices in the WAN network will be \
+able to connect to the configuration interface. Otherwise only devices on LAN \
+will be able to access it.`)}
                             checked={formData.wan_access}
                             onChange={formChangeHandler((value) => ({
                                 wan_access: { $set: value },
@@ -87,9 +87,8 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
                         />
                         <NumberInput
                             label={_("Port")}
-                            helpText={_(
-                                "A port which will be opened for the remote configuration of this device."
-                            )}
+                            helpText={_(`A port which will be opened for the \
+remote configuration of this device.`)}
                             value={formData.port}
                             error={formErrors.port}
                             onChange={formChangeHandler((value) => ({

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -51,9 +51,8 @@ function TokensWrapper({ ws, authority }) {
     if (authority.status !== "ready") {
         return (
             <p>
-                {_(
-                    "You need to generate certificate authority in order to create tokens."
-                )}
+                {_(`You need to generate certificate authority in order to \
+create tokens.`)}
             </p>
         );
     }
@@ -61,14 +60,12 @@ function TokensWrapper({ ws, authority }) {
     return (
         <>
             <p>
-                {_(
-                    "You need to generate a token file for each client you want to grant access."
-                )}
+                {_(`You need to generate a token file for each client you want \
+to grant access.`)}
             </p>
             <p>
-                {_(
-                    'To use the token with another Turris router you need to transfer it using "Remote Devices" plugin on client device.'
-                )}
+                {_(`To use the token with another Turris router you need to \
+transfer it using "Remote Devices" plugin on client device.`)}
             </p>
             <CreateTokenForm
                 generating={generating}

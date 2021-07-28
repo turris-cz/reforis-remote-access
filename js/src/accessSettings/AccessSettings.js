@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -32,14 +32,13 @@ export default function AccessSettings({ ws }) {
         <>
             <h1>{_("Access Settings")}</h1>
             <p>
-                {_(
-                    "Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device."
-                )}
+                {_(`Here you can set up your router to be configured remotely. \
+The remote configuration is done via secure encrypted connection and each \
+client is required to have a token issued by this device.`)}
             </p>
             <p>
-                {_(
-                    "This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client."
-                )}
+                {_(`This can be useful when you plan to access configuration \
+interface another Turris router or you intend to write your own client.`)}
             </p>
             <Settings
                 apiState={[
