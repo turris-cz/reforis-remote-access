@@ -9,7 +9,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 import {
-    CheckBox,
+    Switch,
     NumberInput,
     Button,
     useForm,
@@ -17,6 +17,7 @@ import {
     useAlert,
     useAPIPut,
     undefinedIfEmpty,
+    formFieldsSize,
 } from "foris";
 
 import API_URLs from "API";
@@ -63,7 +64,7 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
         putSettingsResponse.state === API_STATE.SENDING;
 
     return (
-        <>
+        <div className={formFieldsSize}>
             <h2>{_("Remote Access")}</h2>
             <form onSubmit={handleSubmit}>
                 <Switch
@@ -75,7 +76,7 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
                 />
                 {formData.enabled && (
                     <>
-                        <CheckBox
+                        <Switch
                             label={_("Accessible via WAN")}
                             helpText={_(`Devices in the WAN network will be \
 able to connect to the configuration interface. Otherwise only devices on LAN \
@@ -97,16 +98,20 @@ remote configuration of this device.`)}
                         />
                     </>
                 )}
-                <Button
-                    type="submit"
-                    forisFormSize
-                    disabled={saveButtonDisabled}
-                    loading={putSettingsResponse.state === API_STATE.SENDING}
-                >
-                    {_("Save")}
-                </Button>
+                <div className="text-right">
+                    <Button
+                        type="submit"
+                        forisFormSize
+                        disabled={saveButtonDisabled}
+                        loading={
+                            putSettingsResponse.state === API_STATE.SENDING
+                        }
+                    >
+                        {_("Save")}
+                    </Button>
+                </div>
             </form>
-        </>
+        </div>
     );
 }
 

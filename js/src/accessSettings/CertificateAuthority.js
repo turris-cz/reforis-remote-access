@@ -8,7 +8,13 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
-import { Button, useAlert, useAPIDelete, API_STATE } from "foris";
+import {
+    Button,
+    useAlert,
+    useAPIDelete,
+    API_STATE,
+    formFieldsSize,
+} from "foris";
 
 import API_URLs from "API";
 
@@ -45,7 +51,7 @@ export default function CertificateAuthority({
     }
 
     return (
-        <>
+        <div className={formFieldsSize}>
             <h2>{_("Certificate Authority")}</h2>
             {accessEnabled ? (
                 <p>
@@ -58,15 +64,17 @@ access is enabled. In order to delete it you need to disable the access first.`)
                         {_(`Your certificate authority is set up properly. \
 Please note that if you delete it all clients will have their access revoked.`)}
                     </p>
-                    <Button
-                        onClick={() => deleteCA()}
-                        loading={deleteResponse.state === API_STATE.SENDING}
-                        forisFormSize
-                    >
-                        {_("Delete certificate authority")}
-                    </Button>
+                    <div className="text-right">
+                        <Button
+                            onClick={() => deleteCA()}
+                            loading={deleteResponse.state === API_STATE.SENDING}
+                            forisFormSize
+                        >
+                            {_("Delete Certificate Authority")}
+                        </Button>
+                    </div>
                 </>
             )}
-        </>
+        </div>
     );
 }

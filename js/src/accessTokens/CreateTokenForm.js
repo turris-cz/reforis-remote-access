@@ -16,6 +16,7 @@ import {
     useAlert,
     undefinedIfEmpty,
     API_STATE,
+    formFieldsSize,
 } from "foris";
 
 import API_URLs from "API";
@@ -36,9 +37,8 @@ export default function CreateTokenForm({ generating, setGenerating }) {
         }
     }, [createTokenResponse, setAlert, setGenerating]);
 
-    const [formState, formChangeHandler, reloadForm] = useForm(
-        createTokenValidator
-    );
+    const [formState, formChangeHandler, reloadForm] =
+        useForm(createTokenValidator);
     const formData = formState.data;
     const formErrors = formState.errors || {};
     useEffect(() => {
@@ -57,7 +57,7 @@ export default function CreateTokenForm({ generating, setGenerating }) {
 
     const addButtonDisabled = undefinedIfEmpty(formErrors) || generating;
     return (
-        <>
+        <div className={formFieldsSize}>
             <h2>{_("Create Token")}</h2>
             <form onSubmit={handleSubmit}>
                 <TextInput
@@ -70,15 +70,17 @@ characters, dots, dashes and underscores.`)}
                         name: { $set: value },
                     }))}
                 />
-                <Button
-                    type="submit"
-                    forisFormSize
-                    disabled={addButtonDisabled}
-                >
-                    {_("Add")}
-                </Button>
+                <div className="text-right">
+                    <Button
+                        type="submit"
+                        forisFormSize
+                        disabled={addButtonDisabled}
+                    >
+                        {_("Add")}
+                    </Button>
+                </div>
             </form>
-        </>
+        </div>
     );
 }
 

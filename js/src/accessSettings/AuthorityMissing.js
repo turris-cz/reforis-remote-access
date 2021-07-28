@@ -8,7 +8,7 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
-import { Button, useAlert, useAPIPost, API_STATE } from "foris";
+import { Button, useAlert, useAPIPost, API_STATE, formFieldsSize } from "foris";
 
 import API_URLs from "API";
 
@@ -29,20 +29,22 @@ export default function AuthorityMissing({ onAuthoritySuccess }) {
     }, [generateResponse, onAuthoritySuccess, setAlert]);
 
     return (
-        <>
+        <div className={formFieldsSize}>
             <h2>{_("No Certificate Authority")}</h2>
             <p>
                 {_(`Currently there is no certificate authority (CA) \
 dedicated to remote access. A CA is required to generate access tokens to \
 authenticate. To proceed you need to generate it first.`)}
             </p>
-            <Button
-                onClick={() => generateCA()}
-                loading={generateResponse.state === API_STATE.SENDING}
-                forisFormSize
-            >
-                {_("Generate certificate authority")}
-            </Button>
-        </>
+            <div className="text-right">
+                <Button
+                    onClick={() => generateCA()}
+                    loading={generateResponse.state === API_STATE.SENDING}
+                    forisFormSize
+                >
+                    {_("Generate Certificate Authority")}
+                </Button>
+            </div>
+        </div>
     );
 }

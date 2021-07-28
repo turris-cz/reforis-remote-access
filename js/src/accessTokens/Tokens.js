@@ -8,7 +8,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-import { useAPIGet, API_STATE } from "foris";
+import { useAPIGet, API_STATE, formFieldsSize } from "foris";
 
 import API_URLs from "API";
 import TokensTable from "./TokensTable";
@@ -40,9 +40,9 @@ export default function Tokens({ ws, setGenerating }) {
     useRevokeToken(ws, setTokens);
 
     return (
-        <>
+        <div className={formFieldsSize}>
             <h2>{_("Tokens")}</h2>
             <TokensTable apiState={getTokensResponse.state} tokens={tokens} />
-        </>
+        </div>
     );
 }
