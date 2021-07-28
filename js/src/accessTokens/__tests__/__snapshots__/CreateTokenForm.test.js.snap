@@ -2,48 +2,54 @@
 
 exports[`<CreateTokenForm /> should be rendered 1`] = `
 <div>
-  <h3>
-    Create new token
-  </h3>
-  <form>
-    <div
-      class="form-group"
-    >
-      <label
-        for="1"
-      >
-        Token name
-      </label>
+  <div
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
+  >
+    <h2>
+      Create Token
+    </h2>
+    <form>
       <div
-        class="input-group"
+        class="form-group"
       >
-        <input
-          class="form-control  is-invalid"
-          id="1"
-          type="text"
-          value=""
-        />
+        <label
+          for="1"
+        >
+          Token name
+        </label>
+        <div
+          class="input-group"
+        >
+          <input
+            class="form-control  is-invalid"
+            id="1"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="invalid-feedback"
+        >
+          Name cannot be empty
+        </div>
+        <small
+          class="form-text text-muted"
+        >
+          Shorter than 64 characters. Only alphanumeric characters, dots, dashes and underscores.
+        </small>
       </div>
       <div
-        class="invalid-feedback"
+        class="text-right"
       >
-        Name cannot be empty
+        <button
+          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+          disabled=""
+          type="submit"
+        >
+          Add
+        </button>
       </div>
-      <small
-        class="form-text text-muted"
-      >
-        Shorter than 64 characters. Only alphanumeric characters, dots, dashes and underscores.
-      </small>
-    </div>
-    <button
-      class="btn btn-primary  col-sm-12 col-lg-3"
-      disabled=""
-      type="submit"
-    >
-       
-       
-      Add
-    </button>
-  </form>
+    </form>
+  </div>
 </div>
 `;

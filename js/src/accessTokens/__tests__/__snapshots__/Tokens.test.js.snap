@@ -2,32 +2,40 @@
 
 exports[`<Tokens /> should render error 1`] = `
 <div>
-  <h3>
-    Tokens
-  </h3>
-  <p
-    class="text-center text-danger"
+  <div
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
   >
-    An error occurred while fetching data.
-  </p>
+    <h2>
+      Tokens
+    </h2>
+    <p
+      class="text-center text-danger"
+    >
+      An error occurred while fetching data.
+    </p>
+  </div>
 </div>
 `;
 
 exports[`<Tokens /> should render spinner 1`] = `
 <div>
-  <h3>
-    Tokens
-  </h3>
   <div
-    class="spinner-wrapper my-3 text-center"
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
   >
+    <h2>
+      Tokens
+    </h2>
     <div
-      class="spinner-border"
-      role="status"
+      class="spinner-wrapper my-3 text-center"
     >
-      <span
-        class="sr-only"
-      />
+      <div
+        class="spinner-border"
+        role="status"
+      >
+        <span
+          class="sr-only"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -35,93 +43,101 @@ exports[`<Tokens /> should render spinner 1`] = `
 
 exports[`<Tokens /> should render tokens 1`] = `
 <div>
-  <h3>
-    Tokens
-  </h3>
-  <table
-    class="table table-hover col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3"
+  <div
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
   >
-    <thead>
-      <tr>
-        <th
-          scope="col"
+    <h2>
+      Tokens
+    </h2>
+    <div
+      class="table-responsive"
+    >
+      <table
+        class="table table-hover"
+      >
+        <thead
+          class="thead-light"
         >
-          Name
-        </th>
-        <th
-          aria-label="Actions"
-          scope="col"
-        />
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          foo
-        </td>
-        <td
-          class="text-center"
-        >
-          <div
-            class="btn-group"
-            role="group"
-          >
-            <a
-              class="btn btn-primary btn-sm"
-              download=""
-              href="/reforis/remote-access/api/tokens/1"
+          <tr>
+            <th
+              scope="col"
             >
-              Download
-            </a>
-            <button
-              class="btn btn-danger btn-sm"
-              type="button"
-            >
-               
-               
-              Revoke
-            </button>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          bar
-        </td>
-        <td
-          class="text-center"
-        >
-          <span
-            class="text-muted"
-          >
-            Access revoked
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          baz
-        </td>
-        <td
-          class="text-center"
-        >
-          <div
-            class="spinner-border"
-            role="status"
-          >
-            <span
-              class="sr-only"
+              Name
+            </th>
+            <th
+              aria-label="Actions"
+              scope="col"
             />
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="align-middle"
+            >
+              foo
+            </td>
+            <td
+              class="text-right"
+            >
+              <div
+                class="btn-group"
+                role="group"
+              >
+                <a
+                  class="btn btn-primary btn-sm"
+                  download=""
+                  href="/reforis/remote-access/api/tokens/1"
+                >
+                  Download
+                </a>
+                <button
+                  class="btn btn-danger btn-sm"
+                  type="button"
+                >
+                  Revoke
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="align-middle"
+            >
+              bar
+            </td>
+            <td
+              class="text-right"
+            >
+              <span
+                class="text-muted"
+              >
+                Access revoked
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="align-middle"
+            >
+              baz
+            </td>
+            <td
+              class="text-right"
+            >
+              <div
+                class="spinner-border spinner-border-sm"
+                role="status"
+              >
+                <span
+                  class="sr-only"
+                />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 `;
