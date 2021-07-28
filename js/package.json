@@ -10,7 +10,7 @@
     "description": "reForis Remote Access Plugin",
     "main": "./src/app.js",
     "dependencies": {
-        "foris": "^4.5.0"
+        "foris": "^5.1.13"
     },
     "peerDependencies": {
         "prop-types": "15.7.2",
