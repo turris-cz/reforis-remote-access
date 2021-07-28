@@ -36,7 +36,7 @@ describe("<CertificateAuthority />", () => {
     }
 
     function deleteCA() {
-        fireEvent.click(getByText(container, "Delete certificate authority"));
+        fireEvent.click(getByText(container, "Delete Certificate Authority"));
     }
 
     describe("when remote access is disabled", () => {

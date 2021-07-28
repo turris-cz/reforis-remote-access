@@ -24,7 +24,7 @@ describe("<AuthorityMissing />", () => {
 
     function generateCA() {
         fireEvent.click(
-            getByText(componentContainer, "Generate certificate authority")
+            getByText(componentContainer, "Generate Certificate Authority")
         );
     }
 

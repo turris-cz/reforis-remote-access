@@ -73,7 +73,7 @@ describe("<AccessTokens />", () => {
     it("should add new token to the table", async () => {
         // Response to GET authority
         mockAxios.mockResponse({ data: { status: "ready" } });
-        await wait(() => getByText(container, "Create new token"));
+        await wait(() => getByText(container, "Create Token"));
         // Response to GET tokens
         mockAxios.mockResponse({ data: [] });
         await wait(() =>
@@ -90,7 +90,7 @@ describe("<AccessTokens />", () => {
             expect.anything()
         );
         mockAxios.mockResponse({ data: { task_id: "1234" } });
-        await wait(() => getByText(container, "Create new token"));
+        await wait(() => getByText(container, "Create Token"));
 
         // Generating new token
         act(() =>

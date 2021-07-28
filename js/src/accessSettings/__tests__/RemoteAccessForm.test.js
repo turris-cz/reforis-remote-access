@@ -42,7 +42,7 @@ describe("<RemoteAccessForm />", () => {
     }
 
     function enableRemoteAccess() {
-        fireEvent.click(getByLabelText(container, "Enable remote access"));
+        fireEvent.click(getByLabelText(container, "Enable Remote Access"));
     }
 
     function setPort(port) {
