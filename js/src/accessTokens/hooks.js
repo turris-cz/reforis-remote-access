@@ -20,9 +20,10 @@ export function useRevokeToken(ws, setTokens) {
             setTokens((tokensList) => {
                 const tokensAfterRevoke = [...tokensList];
                 const revokedTokenIdx = tokensAfterRevoke.findIndex(
-                    (token) => token.id === revokeTokenNotification.id,
+                    (token) => token.id === revokeTokenNotification.id
                 );
-                tokensAfterRevoke[revokedTokenIdx].status = TOKEN_STATUS.REVOKED;
+                tokensAfterRevoke[revokedTokenIdx].status =
+                    TOKEN_STATUS.REVOKED;
                 return tokensAfterRevoke;
             });
         }
@@ -30,12 +31,20 @@ export function useRevokeToken(ws, setTokens) {
 }
 
 export function useGenerateToken(ws, getTokens, setGenerating) {
-    const [generateTokenNotification] = useWSForisModule(ws, "remote", "generate_token");
+    const [generateTokenNotification] = useWSForisModule(
+        ws,
+        "remote",
+        "generate_token"
+    );
     useEffect(() => {
         if (!generateTokenNotification) {
             return;
         }
-        if (["token_generating", "succeeded"].includes(generateTokenNotification.status)) {
+        if (
+            ["token_generating", "succeeded"].includes(
+                generateTokenNotification.status
+            )
+        ) {
             getTokens();
             if (generateTokenNotification.status === "succeeded") {
                 setGenerating(false);

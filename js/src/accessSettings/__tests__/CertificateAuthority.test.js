@@ -6,9 +6,14 @@
  */
 
 import React from "react";
-import mockAxios from 'jest-mock-axios';
+import mockAxios from "jest-mock-axios";
 import { WebSockets } from "foris";
-import { render, getByText, wait, fireEvent } from "foris/testUtils/customTestRender";
+import {
+    render,
+    getByText,
+    wait,
+    fireEvent,
+} from "foris/testUtils/customTestRender";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
 import { mockJSONError } from "foris/testUtils/network";
 
@@ -38,7 +43,7 @@ describe("<CertificateAuthority />", () => {
         it("should render component", () => {
             ({ container } = renderComponent(
                 { status: CA_STATUS.READY },
-                true,
+                true
             ));
             expect(container).toMatchSnapshot();
         });
@@ -46,9 +51,7 @@ describe("<CertificateAuthority />", () => {
 
     describe("when remote access is enabled", () => {
         beforeEach(() => {
-            ({ container } = renderComponent(
-                { status: CA_STATUS.READY },
-            ));
+            ({ container } = renderComponent({ status: CA_STATUS.READY }));
         });
 
         it("should render component", () => {
@@ -57,14 +60,19 @@ describe("<CertificateAuthority />", () => {
 
         it("should send request when button is clicked", () => {
             deleteCA();
-            expect(mockAxios.delete).toBeCalledWith("/reforis/remote-access/api/authority", expect.anything());
+            expect(mockAxios.delete).toBeCalledWith(
+                "/reforis/remote-access/api/authority",
+                expect.anything()
+            );
         });
 
         it("should handle error", async () => {
             deleteCA();
             mockJSONError();
             await wait(() => {
-                expect(mockSetAlert).toHaveBeenCalledWith("Cannot delete certificate authority.");
+                expect(mockSetAlert).toHaveBeenCalledWith(
+                    "Cannot delete certificate authority."
+                );
             });
         });
 

@@ -17,7 +17,7 @@ describe("<Settings />", () => {
     const onAuthoritySuccess = jest.fn();
     const onSettingsSuccess = jest.fn();
 
-    function renderComponent(apiState, authority = {}, settings={}) {
+    function renderComponent(apiState, authority = {}, settings = {}) {
         return render(
             <Settings
                 apiState={apiState}
@@ -31,18 +31,16 @@ describe("<Settings />", () => {
     }
 
     it("should render missing component", () => {
-        const { container } = renderComponent(
-            API_STATE.SUCCESS,
-            { status: CA_STATUS.MISSING },
-        );
+        const { container } = renderComponent(API_STATE.SUCCESS, {
+            status: CA_STATUS.MISSING,
+        });
         expect(container).toMatchSnapshot();
     });
 
     it("should render generating component", () => {
-        const { container } = renderComponent(
-            API_STATE.SUCCESS,
-            { status: CA_STATUS.GENERATING },
-        );
+        const { container } = renderComponent(API_STATE.SUCCESS, {
+            status: CA_STATUS.GENERATING,
+        });
         expect(container).toMatchSnapshot();
     });
 

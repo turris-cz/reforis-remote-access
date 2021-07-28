@@ -14,12 +14,16 @@ import AuthorityGenerating, { SUCCESS_STATUS } from "../AuthorityGenerating";
 
 describe("<AuthorityGenerating />", () => {
     const onSuccess = jest.fn();
-    let webSockets,
-        componentContainer;
+    let webSockets, componentContainer;
 
     beforeEach(() => {
         webSockets = new WebSockets();
-        const { container } = render(<AuthorityGenerating ws={webSockets} onAuthoritySuccess={onSuccess} />);
+        const { container } = render(
+            <AuthorityGenerating
+                ws={webSockets}
+                onAuthoritySuccess={onSuccess}
+            />
+        );
         componentContainer = container;
     });
 
@@ -29,7 +33,11 @@ describe("<AuthorityGenerating />", () => {
 
     it("should call onSuccess when CA is ready", () => {
         expect(onSuccess).not.toBeCalled();
-        const wsMessage = { module: "remote", action: "generate_ca", data: {status: SUCCESS_STATUS} };
+        const wsMessage = {
+            module: "remote",
+            action: "generate_ca",
+            data: { status: SUCCESS_STATUS },
+        };
         act(() => webSockets.dispatch(wsMessage));
         expect(onSuccess).toHaveBeenCalledTimes(1);
     });

@@ -9,7 +9,13 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 import {
-    TextInput, Button, useAPIPost, useForm, useAlert, undefinedIfEmpty, API_STATE,
+    TextInput,
+    Button,
+    useAPIPost,
+    useForm,
+    useAlert,
+    undefinedIfEmpty,
+    API_STATE,
 } from "foris";
 
 import API_URLs from "API";
@@ -30,7 +36,9 @@ export default function CreateTokenForm({ generating, setGenerating }) {
         }
     }, [createTokenResponse, setAlert, setGenerating]);
 
-    const [formState, formChangeHandler, reloadForm] = useForm(createTokenValidator);
+    const [formState, formChangeHandler, reloadForm] = useForm(
+        createTokenValidator
+    );
     const formData = formState.data;
     const formErrors = formState.errors || {};
     useEffect(() => {
@@ -54,12 +62,20 @@ export default function CreateTokenForm({ generating, setGenerating }) {
             <form onSubmit={handleSubmit}>
                 <TextInput
                     label={_("Token name")}
-                    helpText={_("Shorter than 64 characters. Only alphanumeric characters, dots, dashes and underscores.")}
+                    helpText={_(
+                        "Shorter than 64 characters. Only alphanumeric characters, dots, dashes and underscores."
+                    )}
                     value={formData.name}
                     error={formErrors.name}
-                    onChange={formChangeHandler((value) => ({ name: { $set: value } }))}
+                    onChange={formChangeHandler((value) => ({
+                        name: { $set: value },
+                    }))}
                 />
-                <Button type="submit" forisFormSize disabled={addButtonDisabled}>
+                <Button
+                    type="submit"
+                    forisFormSize
+                    disabled={addButtonDisabled}
+                >
                     {_("Add")}
                 </Button>
             </form>

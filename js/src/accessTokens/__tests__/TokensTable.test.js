@@ -6,7 +6,12 @@
  */
 
 import React from "react";
-import { render, getByText, fireEvent, wait } from "foris/testUtils/customTestRender";
+import {
+    render,
+    getByText,
+    fireEvent,
+    wait,
+} from "foris/testUtils/customTestRender";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
 import { mockJSONError } from "foris/testUtils/network";
 import mockAxios from "jest-mock-axios";
@@ -36,7 +41,10 @@ describe("<TokensTable />", () => {
     it("should display spinner while sending delete request", () => {
         const { container } = renderTable(tokensFixture);
         revokeToken(container);
-        expect(mockAxios.delete).toBeCalledWith("/reforis/remote-access/api/tokens/1", expect.anything());
+        expect(mockAxios.delete).toBeCalledWith(
+            "/reforis/remote-access/api/tokens/1",
+            expect.anything()
+        );
         expect(container).toMatchSnapshot();
     });
 

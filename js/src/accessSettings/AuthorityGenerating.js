@@ -29,7 +29,11 @@ export default function AuthorityGenerating({ ws, onAuthoritySuccess }) {
         <>
             <h3>{_("Generating certificate authority")}</h3>
             <Spinner />
-            <p>{_("Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.")}</p>
+            <p>
+                {_(
+                    "Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready."
+                )}
+            </p>
         </>
     );
 }

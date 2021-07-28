@@ -9,7 +9,14 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 import {
-    CheckBox, NumberInput, Button, useForm, API_STATE, useAlert, useAPIPut, undefinedIfEmpty,
+    CheckBox,
+    NumberInput,
+    Button,
+    useForm,
+    API_STATE,
+    useAlert,
+    useAPIPut,
+    undefinedIfEmpty,
 } from "foris";
 
 import API_URLs from "API";
@@ -51,10 +58,9 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
         }
     }
 
-    const saveButtonDisabled = (
-        !!undefinedIfEmpty(formErrors)
-        || putSettingsResponse.state === API_STATE.SENDING
-    );
+    const saveButtonDisabled =
+        !!undefinedIfEmpty(formErrors) ||
+        putSettingsResponse.state === API_STATE.SENDING;
 
     return (
         <>
@@ -63,28 +69,35 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
                 <CheckBox
                     label={_("Enable remote access")}
                     checked={formData.enabled}
-                    onChange={formChangeHandler((value) => ({ enabled: { $set: value } }))}
+                    onChange={formChangeHandler((value) => ({
+                        enabled: { $set: value },
+                    }))}
                 />
-                {formData.enabled
-                    && (
-                        <>
-                            <CheckBox
-                                label={_("Accessible via WAN")}
-                                helpText={_("Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.")}
-                                checked={formData.wan_access}
-                                onChange={
-                                    formChangeHandler((value) => ({ wan_access: { $set: value } }))
-                                }
-                            />
-                            <NumberInput
-                                label={_("Port")}
-                                helpText={_("A port which will be opened for the remote configuration of this device.")}
-                                value={formData.port}
-                                error={formErrors.port}
-                                onChange={formChangeHandler((value) => ({ port: { $set: value } }))}
-                            />
-                        </>
-                    )}
+                {formData.enabled && (
+                    <>
+                        <CheckBox
+                            label={_("Accessible via WAN")}
+                            helpText={_(
+                                "Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it."
+                            )}
+                            checked={formData.wan_access}
+                            onChange={formChangeHandler((value) => ({
+                                wan_access: { $set: value },
+                            }))}
+                        />
+                        <NumberInput
+                            label={_("Port")}
+                            helpText={_(
+                                "A port which will be opened for the remote configuration of this device."
+                            )}
+                            value={formData.port}
+                            error={formErrors.port}
+                            onChange={formChangeHandler((value) => ({
+                                port: { $set: value },
+                            }))}
+                        />
+                    </>
+                )}
                 <Button
                     type="submit"
                     forisFormSize

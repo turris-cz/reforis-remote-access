@@ -8,8 +8,15 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import {
-    withErrorMessage, withSpinnerOnSending, Button, DownloadButton, useAlert, useAPIDelete,
-    API_STATE, SpinnerElement, formFieldsSize,
+    withErrorMessage,
+    withSpinnerOnSending,
+    Button,
+    DownloadButton,
+    useAlert,
+    useAPIDelete,
+    API_STATE,
+    SpinnerElement,
+    formFieldsSize,
 } from "foris";
 
 import API_URLs from "API";
@@ -27,7 +34,11 @@ TokensTable.propTypes = {
 
 function TokensTable({ tokens }) {
     if (!tokens || tokens.length === 0) {
-        return <p className="text-muted text-center">{_("There are no tokens added yet.")}</p>;
+        return (
+            <p className="text-muted text-center">
+                {_("There are no tokens added yet.")}
+            </p>
+        );
     }
 
     return (
@@ -39,9 +50,9 @@ function TokensTable({ tokens }) {
                 </tr>
             </thead>
             <tbody>
-                {tokens.map(
-                    (token) => <TokenRow key={token.id} token={token} />,
-                )}
+                {tokens.map((token) => (
+                    <TokenRow key={token.id} token={token} />
+                ))}
             </tbody>
         </table>
     );
@@ -69,7 +80,9 @@ TokenActions.propTypes = {
 function TokenActions({ token }) {
     const [setAlert] = useAlert();
 
-    const [deleteTokenResponse, deleteToken] = useAPIDelete(`${API_URLs.tokens}/${token.id}`);
+    const [deleteTokenResponse, deleteToken] = useAPIDelete(
+        `${API_URLs.tokens}/${token.id}`
+    );
     useEffect(() => {
         if (deleteTokenResponse.state === API_STATE.ERROR) {
             setAlert(deleteTokenResponse.data);
@@ -79,14 +92,19 @@ function TokenActions({ token }) {
     if (token.status === TOKEN_STATUS.REVOKED) {
         return <span className="text-muted">{_("Access revoked")}</span>;
     }
-    if (token.status === TOKEN_STATUS.GENERATING
-        || deleteTokenResponse.state === API_STATE.SENDING) {
+    if (
+        token.status === TOKEN_STATUS.GENERATING ||
+        deleteTokenResponse.state === API_STATE.SENDING
+    ) {
         return <SpinnerElement />;
     }
 
     return (
         <div className="btn-group" role="group">
-            <DownloadButton href={`${API_URLs.tokens}/${token.id}`} className="btn-primary btn-sm">
+            <DownloadButton
+                href={`${API_URLs.tokens}/${token.id}`}
+                className="btn-primary btn-sm"
+            >
                 {_("Download")}
             </DownloadButton>
             <Button className="btn-danger btn-sm" onClick={deleteToken}>

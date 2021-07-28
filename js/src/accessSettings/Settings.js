@@ -23,7 +23,10 @@ Settings.propTypes = {
 };
 
 function Settings({
-    authority, settings, onAuthoritySuccess, onSettingsSuccess,
+    authority,
+    settings,
+    onAuthoritySuccess,
+    onSettingsSuccess,
 }) {
     return (
         <>
@@ -42,17 +45,12 @@ function Settings({
 
 const withMissing = withEither(
     (props) => props.authority.status === CA_STATUS.MISSING,
-    AuthorityMissing,
+    AuthorityMissing
 );
 const withGenerating = withEither(
     (props) => props.authority.status === CA_STATUS.GENERATING,
-    AuthorityGenerating,
+    AuthorityGenerating
 );
-export default (
-    withErrorMessage(
-        withSpinnerOnSending(
-            withMissing(
-                withGenerating(Settings),
-            ),
-        ),
-    ));
+export default withErrorMessage(
+    withSpinnerOnSending(withMissing(withGenerating(Settings)))
+);

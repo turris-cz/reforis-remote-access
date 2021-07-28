@@ -36,7 +36,9 @@ export default function AccessTokens({ ws }) {
     );
 }
 
-const TokensWrapperWithErrorAndSpinner = withErrorMessage(withSpinnerOnSending(TokensWrapper));
+const TokensWrapperWithErrorAndSpinner = withErrorMessage(
+    withSpinnerOnSending(TokensWrapper)
+);
 
 TokensWrapper.propTypes = {
     ws: PropTypes.object.isRequired,
@@ -47,14 +49,31 @@ function TokensWrapper({ ws, authority }) {
     const [generating, setGenerating] = useState(false);
 
     if (authority.status !== "ready") {
-        return <p>{_("You need to generate certificate authority in order to create tokens.")}</p>;
+        return (
+            <p>
+                {_(
+                    "You need to generate certificate authority in order to create tokens."
+                )}
+            </p>
+        );
     }
 
     return (
         <>
-            <p>{_("You need to generate a token file for each client you want to grant access.")}</p>
-            <p>{_("To use the token with another Turris router you need to transfer it using \"Remote Devices\" plugin on client device.")}</p>
-            <CreateTokenForm generating={generating} setGenerating={setGenerating} />
+            <p>
+                {_(
+                    "You need to generate a token file for each client you want to grant access."
+                )}
+            </p>
+            <p>
+                {_(
+                    'To use the token with another Turris router you need to transfer it using "Remote Devices" plugin on client device.'
+                )}
+            </p>
+            <CreateTokenForm
+                generating={generating}
+                setGenerating={setGenerating}
+            />
             <Tokens ws={ws} setGenerating={setGenerating} />
         </>
     );

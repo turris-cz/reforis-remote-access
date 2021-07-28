@@ -6,10 +6,15 @@
  */
 
 import React from "react";
-import { render, getByText, fireEvent, wait } from "foris/testUtils/customTestRender";
+import {
+    render,
+    getByText,
+    fireEvent,
+    wait,
+} from "foris/testUtils/customTestRender";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
 import { mockJSONError } from "foris/testUtils/network";
-import mockAxios from 'jest-mock-axios';
+import mockAxios from "jest-mock-axios";
 
 import AuthorityMissing from "../AuthorityMissing";
 
@@ -18,11 +23,15 @@ describe("<AuthorityMissing />", () => {
     const onSuccess = jest.fn();
 
     function generateCA() {
-        fireEvent.click(getByText(componentContainer, "Generate certificate authority"));
+        fireEvent.click(
+            getByText(componentContainer, "Generate certificate authority")
+        );
     }
 
     beforeEach(() => {
-        const { container } = render(<AuthorityMissing onAuthoritySuccess={onSuccess} />);
+        const { container } = render(
+            <AuthorityMissing onAuthoritySuccess={onSuccess} />
+        );
         componentContainer = container;
     });
 
@@ -32,7 +41,11 @@ describe("<AuthorityMissing />", () => {
 
     it("should send request when button is clicked", () => {
         generateCA();
-        expect(mockAxios.post).toBeCalledWith("/reforis/remote-access/api/authority", undefined, expect.anything());
+        expect(mockAxios.post).toBeCalledWith(
+            "/reforis/remote-access/api/authority",
+            undefined,
+            expect.anything()
+        );
     });
 
     it("should display spinner when sending request", () => {
@@ -44,7 +57,9 @@ describe("<AuthorityMissing />", () => {
         generateCA();
         mockJSONError();
         await wait(() => {
-            expect(mockSetAlert).toHaveBeenCalledWith("Cannot generate certificate authority.");
+            expect(mockSetAlert).toHaveBeenCalledWith(
+                "Cannot generate certificate authority."
+            );
         });
     });
 

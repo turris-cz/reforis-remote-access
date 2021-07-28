@@ -42,10 +42,7 @@ export default function Tokens({ ws, setGenerating }) {
     return (
         <>
             <h3>{_("Tokens")}</h3>
-            <TokensTable
-                apiState={getTokensResponse.state}
-                tokens={tokens}
-            />
+            <TokensTable apiState={getTokensResponse.state} tokens={tokens} />
         </>
     );
 }
