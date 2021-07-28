@@ -16,7 +16,6 @@ import {
     useAPIDelete,
     API_STATE,
     SpinnerElement,
-    formFieldsSize,
 } from "foris";
 
 import API_URLs from "API";
@@ -42,19 +41,21 @@ function TokensTable({ tokens }) {
     }
 
     return (
-        <table className={`table table-hover ${formFieldsSize}`}>
-            <thead>
-                <tr>
-                    <th scope="col">{_("Name")}</th>
-                    <th scope="col" aria-label={_("Actions")} />
-                </tr>
-            </thead>
-            <tbody>
-                {tokens.map((token) => (
-                    <TokenRow key={token.id} token={token} />
-                ))}
-            </tbody>
-        </table>
+        <div className="table-responsive">
+            <table className="table table-hover">
+                <thead className="thead-light">
+                    <tr>
+                        <th scope="col">{_("Name")}</th>
+                        <th scope="col" aria-label={_("Actions")} />
+                    </tr>
+                </thead>
+                <tbody>
+                    {tokens.map((token) => (
+                        <TokenRow key={token.id} token={token} />
+                    ))}
+                </tbody>
+            </table>
+        </div>
     );
 }
 
@@ -66,7 +67,7 @@ function TokenRow({ token }) {
     return (
         <tr>
             <td className="align-middle">{token.name}</td>
-            <td className="text-center">
+            <td className="text-right">
                 <TokenActions token={token} />
             </td>
         </tr>
@@ -96,7 +97,7 @@ function TokenActions({ token }) {
         token.status === TOKEN_STATUS.GENERATING ||
         deleteTokenResponse.state === API_STATE.SENDING
     ) {
-        return <SpinnerElement />;
+        return <SpinnerElement small />;
     }
 
     return (
