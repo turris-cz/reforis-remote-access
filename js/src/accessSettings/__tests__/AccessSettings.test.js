@@ -9,7 +9,7 @@ import React from "react";
 import { render, wait } from "foris/testUtils/customTestRender";
 import { WebSockets } from "foris";
 import { mockJSONError } from "foris/testUtils/network";
-import mockAxios from 'jest-mock-axios';
+import mockAxios from "jest-mock-axios";
 
 import AccessSettings from "../AccessSettings";
 import { CA_STATUS } from "../CertificateAuthority";
@@ -27,33 +27,39 @@ describe("<AccessSettings />", () => {
     });
 
     it("should render error", async () => {
-        expect(mockAxios.get).toBeCalledWith("/reforis/remote-access/api/authority", expect.anything());
-        expect(mockAxios.get).toBeCalledWith("/reforis/remote-access/api/settings", expect.anything());
+        expect(mockAxios.get).toBeCalledWith(
+            "/reforis/remote-access/api/authority",
+            expect.anything()
+        );
+        expect(mockAxios.get).toBeCalledWith(
+            "/reforis/remote-access/api/settings",
+            expect.anything()
+        );
         mockJSONError();
         await wait(() => expect(container).toMatchSnapshot());
     });
 
     it("should handle missing certificate", async () => {
         // Response to GET authority
-        mockAxios.mockResponse({ data: { status: CA_STATUS.MISSING }});
+        mockAxios.mockResponse({ data: { status: CA_STATUS.MISSING } });
         // Response to GET settings
-        mockAxios.mockResponse({ data: { enabled: false }});
+        mockAxios.mockResponse({ data: { enabled: false } });
         await wait(() => expect(container).toMatchSnapshot());
     });
 
     it("should handle generating certificate", async () => {
         // Response to GET authority
-        mockAxios.mockResponse({ data: { status: CA_STATUS.GENERATING }});
+        mockAxios.mockResponse({ data: { status: CA_STATUS.GENERATING } });
         // Response to GET settings
-        mockAxios.mockResponse({ data: { enabled: false }});
+        mockAxios.mockResponse({ data: { enabled: false } });
         await wait(() => expect(container).toMatchSnapshot());
     });
 
     it("should handle ready certificate", async () => {
         // Response to GET authority
-        mockAxios.mockResponse({ data: { status: CA_STATUS.READY }});
+        mockAxios.mockResponse({ data: { status: CA_STATUS.READY } });
         // Response to GET settings
-        mockAxios.mockResponse({ data: { enabled: false }});
+        mockAxios.mockResponse({ data: { enabled: false } });
         await wait(() => expect(container).toMatchSnapshot());
     });
 });

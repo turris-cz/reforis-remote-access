@@ -6,7 +6,13 @@
  */
 
 import React from "react";
-import { render, getByText, getByLabelText, fireEvent, wait } from "foris/testUtils/customTestRender";
+import {
+    render,
+    getByText,
+    getByLabelText,
+    fireEvent,
+    wait,
+} from "foris/testUtils/customTestRender";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
 import { mockJSONError } from "foris/testUtils/network";
 import mockAxios from "jest-mock-axios";
@@ -25,7 +31,9 @@ describe("<CreateTokenForm />", () => {
     const setGenerating = jest.fn();
 
     beforeEach(() => {
-        ({ container } = render(<CreateTokenForm generating={false} setGenerating={setGenerating} />));
+        ({ container } = render(
+            <CreateTokenForm generating={false} setGenerating={setGenerating} />
+        ));
     });
 
     it("should be rendered", () => {
@@ -49,7 +57,9 @@ describe("<CreateTokenForm />", () => {
     it("should check if name contains invalid characters", () => {
         const { nameInput, submitButton } = getFormElements(container);
         fireEvent.change(nameInput, { target: { value: "!@#$%" } });
-        expect(getByText(container, "Name contains invalid characters")).toBeDefined();
+        expect(
+            getByText(container, "Name contains invalid characters")
+        ).toBeDefined();
         expect(submitButton.disabled).toBe(true);
     });
 
@@ -66,7 +76,7 @@ describe("<CreateTokenForm />", () => {
         expect(mockAxios.post).toBeCalledWith(
             "/reforis/remote-access/api/tokens",
             { name: "propername" },
-            expect.anything(),
+            expect.anything()
         );
     });
 

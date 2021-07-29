@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -9,7 +9,15 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 import {
-    CheckBox, NumberInput, Button, useForm, API_STATE, useAlert, useAPIPut, undefinedIfEmpty,
+    Switch,
+    NumberInput,
+    Button,
+    useForm,
+    API_STATE,
+    useAlert,
+    useAPIPut,
+    undefinedIfEmpty,
+    formFieldsSize,
 } from "foris";
 
 import API_URLs from "API";
@@ -51,50 +59,59 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
         }
     }
 
-    const saveButtonDisabled = (
-        !!undefinedIfEmpty(formErrors)
-        || putSettingsResponse.state === API_STATE.SENDING
-    );
+    const saveButtonDisabled =
+        !!undefinedIfEmpty(formErrors) ||
+        putSettingsResponse.state === API_STATE.SENDING;
 
     return (
-        <>
-            <h3>{_("Remote Access")}</h3>
+        <div className={formFieldsSize}>
+            <h2>{_("Remote Access")}</h2>
             <form onSubmit={handleSubmit}>
-                <CheckBox
-                    label={_("Enable remote access")}
+                <Switch
+                    label={_("Enable Remote Access")}
                     checked={formData.enabled}
-                    onChange={formChangeHandler((value) => ({ enabled: { $set: value } }))}
+                    onChange={formChangeHandler((value) => ({
+                        enabled: { $set: value },
+                    }))}
                 />
-                {formData.enabled
-                    && (
-                        <>
-                            <CheckBox
-                                label={_("Accessible via WAN")}
-                                helpText={_("Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.")}
-                                checked={formData.wan_access}
-                                onChange={
-                                    formChangeHandler((value) => ({ wan_access: { $set: value } }))
-                                }
-                            />
-                            <NumberInput
-                                label={_("Port")}
-                                helpText={_("A port which will be opened for the remote configuration of this device.")}
-                                value={formData.port}
-                                error={formErrors.port}
-                                onChange={formChangeHandler((value) => ({ port: { $set: value } }))}
-                            />
-                        </>
-                    )}
-                <Button
-                    type="submit"
-                    forisFormSize
-                    disabled={saveButtonDisabled}
-                    loading={putSettingsResponse.state === API_STATE.SENDING}
-                >
-                    {_("Save")}
-                </Button>
+                {formData.enabled && (
+                    <>
+                        <Switch
+                            label={_("Accessible via WAN")}
+                            helpText={_(`Devices in the WAN network will be \
+able to connect to the configuration interface. Otherwise only devices on LAN \
+will be able to access it.`)}
+                            checked={formData.wan_access}
+                            onChange={formChangeHandler((value) => ({
+                                wan_access: { $set: value },
+                            }))}
+                        />
+                        <NumberInput
+                            label={_("Port")}
+                            helpText={_(`A port which will be opened for the \
+remote configuration of this device.`)}
+                            value={formData.port}
+                            error={formErrors.port}
+                            onChange={formChangeHandler((value) => ({
+                                port: { $set: value },
+                            }))}
+                        />
+                    </>
+                )}
+                <div className="text-right">
+                    <Button
+                        type="submit"
+                        forisFormSize
+                        disabled={saveButtonDisabled}
+                        loading={
+                            putSettingsResponse.state === API_STATE.SENDING
+                        }
+                    >
+                        {_("Save")}
+                    </Button>
+                </div>
             </form>
-        </>
+        </div>
     );
 }
 

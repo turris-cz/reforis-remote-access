@@ -12,168 +12,178 @@ exports[`<TokensTable /> should be rendered - empty table 1`] = `
 
 exports[`<TokensTable /> should be rendered - filled table 1`] = `
 <div>
-  <table
-    class="table table-hover col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3"
+  <div
+    class="table-responsive"
   >
-    <thead>
-      <tr>
-        <th
-          scope="col"
-        >
-          Name
-        </th>
-        <th
-          aria-label="Actions"
-          scope="col"
-        />
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          foo
-        </td>
-        <td
-          class="text-center"
-        >
-          <div
-            class="btn-group"
-            role="group"
+    <table
+      class="table table-hover"
+    >
+      <thead
+        class="thead-light"
+      >
+        <tr>
+          <th
+            scope="col"
           >
-            <a
-              class="btn btn-primary btn-sm"
-              download=""
-              href="/reforis/remote-access/api/tokens/1"
-            >
-              Download
-            </a>
-            <button
-              class="btn btn-danger btn-sm"
-              type="button"
-            >
-               
-               
-              Revoke
-            </button>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          bar
-        </td>
-        <td
-          class="text-center"
-        >
-          <span
-            class="text-muted"
+            Name
+          </th>
+          <th
+            aria-label="Actions"
+            scope="col"
+          />
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            class="align-middle"
           >
-            Access revoked
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          baz
-        </td>
-        <td
-          class="text-center"
-        >
-          <div
-            class="spinner-border"
-            role="status"
+            foo
+          </td>
+          <td
+            class="text-right"
+          >
+            <div
+              class="btn-group"
+              role="group"
+            >
+              <a
+                class="btn btn-primary btn-sm"
+                download=""
+                href="/reforis/remote-access/api/tokens/1"
+              >
+                Download
+              </a>
+              <button
+                class="btn btn-danger btn-sm"
+                type="button"
+              >
+                Revoke
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="align-middle"
+          >
+            bar
+          </td>
+          <td
+            class="text-right"
           >
             <span
-              class="sr-only"
-            />
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+              class="text-muted"
+            >
+              Access revoked
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="align-middle"
+          >
+            baz
+          </td>
+          <td
+            class="text-right"
+          >
+            <div
+              class="spinner-border spinner-border-sm"
+              role="status"
+            >
+              <span
+                class="sr-only"
+              />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 `;
 
 exports[`<TokensTable /> should display spinner while sending delete request 1`] = `
 <div>
-  <table
-    class="table table-hover col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3"
+  <div
+    class="table-responsive"
   >
-    <thead>
-      <tr>
-        <th
-          scope="col"
-        >
-          Name
-        </th>
-        <th
-          aria-label="Actions"
-          scope="col"
-        />
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          foo
-        </td>
-        <td
-          class="text-center"
-        >
-          <div
-            class="spinner-border"
-            role="status"
+    <table
+      class="table table-hover"
+    >
+      <thead
+        class="thead-light"
+      >
+        <tr>
+          <th
+            scope="col"
+          >
+            Name
+          </th>
+          <th
+            aria-label="Actions"
+            scope="col"
+          />
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            class="align-middle"
+          >
+            foo
+          </td>
+          <td
+            class="text-right"
+          >
+            <div
+              class="spinner-border spinner-border-sm"
+              role="status"
+            >
+              <span
+                class="sr-only"
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="align-middle"
+          >
+            bar
+          </td>
+          <td
+            class="text-right"
           >
             <span
-              class="sr-only"
-            />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          bar
-        </td>
-        <td
-          class="text-center"
-        >
-          <span
-            class="text-muted"
+              class="text-muted"
+            >
+              Access revoked
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="align-middle"
           >
-            Access revoked
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td
-          class="align-middle"
-        >
-          baz
-        </td>
-        <td
-          class="text-center"
-        >
-          <div
-            class="spinner-border"
-            role="status"
+            baz
+          </td>
+          <td
+            class="text-right"
           >
-            <span
-              class="sr-only"
-            />
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+            <div
+              class="spinner-border spinner-border-sm"
+              role="status"
+            >
+              <span
+                class="sr-only"
+              />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 `;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -8,7 +8,7 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
-import { useWSForisModule, Spinner } from "foris";
+import { useWSForisModule, Spinner, formFieldsSize } from "foris";
 
 AuthorityGenerating.propTypes = {
     ws: PropTypes.object.isRequired,
@@ -26,10 +26,14 @@ export default function AuthorityGenerating({ ws, onAuthoritySuccess }) {
     }, [generateCA, onAuthoritySuccess]);
 
     return (
-        <>
-            <h3>{_("Generating certificate authority")}</h3>
+        <div className={formFieldsSize}>
+            <h2>{_("Generating Certificate Authority")}</h2>
+            <p>
+                {_(`Your certificate authority is now being generated. It \
+usually takes a few minutes. Settings will appear here automatically once the \
+authority is ready.`)}
+            </p>
             <Spinner />
-            <p>{_("Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready.")}</p>
-        </>
+        </div>
     );
 }

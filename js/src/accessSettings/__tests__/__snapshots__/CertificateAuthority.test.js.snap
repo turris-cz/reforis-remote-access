@@ -2,30 +2,40 @@
 
 exports[`<CertificateAuthority /> when remote access is disabled should render component 1`] = `
 <div>
-  <h3>
-    Certificate Authority
-  </h3>
-  <p>
-    You can't delete certificate authority while remote access is enabled. In order to delete it you need to disable the access first.
-  </p>
+  <div
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
+  >
+    <h2>
+      Certificate Authority
+    </h2>
+    <p>
+      You can't delete certificate authority while remote access is enabled. In order to delete it you need to disable the access first.
+    </p>
+  </div>
 </div>
 `;
 
 exports[`<CertificateAuthority /> when remote access is enabled should render component 1`] = `
 <div>
-  <h3>
-    Certificate Authority
-  </h3>
-  <p>
-    Your certificate authority is set up properly. Please note that if you delete it all clients will have their access revoked.
-  </p>
-  <button
-    class="btn btn-primary  col-sm-12 col-lg-3"
-    type="button"
+  <div
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
   >
-     
-     
-    Delete certificate authority
-  </button>
+    <h2>
+      Certificate Authority
+    </h2>
+    <p>
+      Your certificate authority is set up properly. Please note that if you delete it all clients will have their access revoked.
+    </p>
+    <div
+      class="text-right"
+    >
+      <button
+        class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+        type="button"
+      >
+        Delete Certificate Authority
+      </button>
+    </div>
+  </div>
 </div>
 `;

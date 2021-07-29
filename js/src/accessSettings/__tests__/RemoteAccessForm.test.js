@@ -8,7 +8,14 @@
 import React from "react";
 
 import mockAxios from "jest-mock-axios";
-import { render, fireEvent, getByLabelText, getByText, queryByText, wait } from "foris/testUtils/customTestRender";
+import {
+    render,
+    fireEvent,
+    getByLabelText,
+    getByText,
+    queryByText,
+    wait,
+} from "foris/testUtils/customTestRender";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
 import { mockJSONError } from "foris/testUtils/network";
 
@@ -21,28 +28,27 @@ describe("<RemoteAccessForm />", () => {
     const settingsDisabled = { enabled: false, wan_enabled: false, port: 1194 };
 
     function renderForm(settings) {
-        return render(<RemoteAccessForm settings={settings} onSuccess={onSuccess} />);
-    };
+        return render(
+            <RemoteAccessForm settings={settings} onSuccess={onSuccess} />
+        );
+    }
 
     function getSaveButton() {
         return getByText(container, "Save");
-    };
+    }
 
     function saveForm() {
         fireEvent.click(getSaveButton());
     }
 
     function enableRemoteAccess() {
-        fireEvent.click(
-            getByLabelText(container, "Enable remote access")
-        );
-    };
+        fireEvent.click(getByLabelText(container, "Enable Remote Access"));
+    }
 
     function setPort(port) {
-        fireEvent.change(
-            getByLabelText(container, "Port"),
-            { target: { value: port } },
-        );
+        fireEvent.change(getByLabelText(container, "Port"), {
+            target: { value: port },
+        });
     }
 
     it("should render only checkbox when access is disabled", () => {
@@ -68,13 +74,20 @@ describe("<RemoteAccessForm />", () => {
         for (const port of [-1, 9999999999999999, 80]) {
             setPort(port);
             expect(getSaveButton().disabled).toBeTruthy();
-            expect(getByText(container, "Should be a number in range of 1024-65536")).toBeTruthy();
+            expect(
+                getByText(
+                    container,
+                    "Should be a number in range of 1024-65536"
+                )
+            ).toBeTruthy();
         }
 
         // Valid port
         setPort(9090);
         expect(getSaveButton().disabled).toBeFalsy();
-        expect(queryByText(container, "Should be a number in range of 1024-65536")).toBeNull();
+        expect(
+            queryByText(container, "Should be a number in range of 1024-65536")
+        ).toBeNull();
     });
 
     it("should handle success", async () => {
@@ -112,7 +125,11 @@ describe("<RemoteAccessForm />", () => {
         ({ container } = renderForm(settings));
         saveForm();
         mockJSONError();
-        await wait(() => expect(mockSetAlert).toBeCalledWith("Cannot save connection parameters."));
+        await wait(() =>
+            expect(mockSetAlert).toBeCalledWith(
+                "Cannot save connection parameters."
+            )
+        );
     });
 
     it("should display a spinner and disable save button while sending request", async () => {
