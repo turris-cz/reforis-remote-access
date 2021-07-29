@@ -79,7 +79,7 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
                         <Switch
                             label={_("Accessible via WAN")}
                             helpText={_(`Devices in the WAN network will be \
-able to connect to the configuration interface. Otherwise only devices on LAN \
+able to connect to the configuration interface. Otherwise, only devices on LAN \
 will be able to access it.`)}
                             checked={formData.wan_access}
                             onChange={formChangeHandler((value) => ({

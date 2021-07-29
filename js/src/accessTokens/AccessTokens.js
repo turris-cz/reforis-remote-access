@@ -51,8 +51,9 @@ function TokensWrapper({ ws, authority }) {
     if (authority.status !== "ready") {
         return (
             <p>
-                {_(`You need to generate certificate authority in order to \
-create tokens.`)}
+                {_(
+                    "You need to generate certificate authority to create tokens."
+                )}
             </p>
         );
     }
@@ -61,11 +62,11 @@ create tokens.`)}
         <>
             <p>
                 {_(`You need to generate a token file for each client you want \
-to grant access.`)}
+to grant access to.`)}
             </p>
             <p>
                 {_(`To use the token with another Turris router you need to \
-transfer it using "Remote Devices" plugin on client device.`)}
+transfer it using the "Remote Devices" plugin on the client device.`)}
             </p>
             <CreateTokenForm
                 generating={generating}
