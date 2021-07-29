@@ -60,7 +60,7 @@ describe("<AccessTokens />", () => {
         await wait(() =>
             getByText(
                 container,
-                "You need to generate certificate authority in order to create tokens."
+                "You need to generate certificate authority to create tokens."
             )
         );
     });

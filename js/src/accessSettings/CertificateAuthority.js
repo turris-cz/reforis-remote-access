@@ -56,13 +56,13 @@ export default function CertificateAuthority({
             {accessEnabled ? (
                 <p>
                     {_(`You can't delete certificate authority while remote \
-access is enabled. In order to delete it you need to disable the access first.`)}
+access is enabled. To delete it, you need to disable the access first.`)}
                 </p>
             ) : (
                 <>
                     <p>
                         {_(`Your certificate authority is set up properly. \
-Please note that if you delete it all clients will have their access revoked.`)}
+Please note that if you delete it, all clients will have their access revoked.`)}
                     </p>
                     <div className="text-right">
                         <Button

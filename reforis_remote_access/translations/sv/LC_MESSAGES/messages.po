@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-31 16:33+0100\n"
+"POT-Creation-Date: 2021-07-29 13:47+0300\n"
 "PO-Revision-Date: 2020-01-31 16:33+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sv\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
-#: js/src/accessSettings/RemoteAccessForm.js:61 js/src/app.js:13
+#: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
 msgstr ""
 
@@ -26,105 +26,52 @@ msgstr ""
 msgid "Access Settings"
 msgstr ""
 
-#: js/src/accessSettings/AccessSettings.js:34
-msgid ""
-"Here you can set up your router to be configured remotely. The remote "
-"configuration is done via secure encrypted connection and each client is "
-"required to have a token issued by this device."
-msgstr ""
-
-#: js/src/accessSettings/AccessSettings.js:35
-msgid ""
-"This can be useful when you plan to access configuration interface "
-"another Turris router or you intend to write your own client."
-msgstr ""
-
 #: js/src/accessSettings/AuthorityGenerating.js:30
-msgid "Generating certificate authority"
+msgid "Generating Certificate Authority"
 msgstr ""
 
-#: js/src/accessSettings/AuthorityGenerating.js:32
-msgid ""
-"Your certificate authority is now being generated. It usually takes a few"
-" minutes. Settings will appear here automatically once the authority is "
-"ready."
-msgstr ""
-
-#: js/src/accessSettings/AuthorityMissing.js:29
+#: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
 msgstr ""
 
-#: js/src/accessSettings/AuthorityMissing.js:35
-msgid "No certificate authority"
+#: js/src/accessSettings/AuthorityMissing.js:33
+msgid "No Certificate Authority"
 msgstr ""
 
-#: js/src/accessSettings/AuthorityMissing.js:36
-msgid ""
-"Currently there is no certificate authority (CA) dedicated to remote "
-"access. A CA is required to generate access tokens to authenticate. To "
-"proceed you need to generate it first."
+#: js/src/accessSettings/AuthorityMissing.js:45
+msgid "Generate Certificate Authority"
 msgstr ""
 
-#: js/src/accessSettings/AuthorityMissing.js:42
-msgid "Generate certificate authority"
-msgstr ""
-
-#: js/src/accessSettings/CertificateAuthority.js:37
-#: reforis_remote_access/__init__.py:53
+#: js/src/accessSettings/CertificateAuthority.js:45
+#: reforis_remote_access/__init__.py:54
 msgid "Cannot delete certificate authority."
 msgstr ""
 
-#: js/src/accessSettings/CertificateAuthority.js:47
+#: js/src/accessSettings/CertificateAuthority.js:55
 msgid "Certificate Authority"
 msgstr ""
 
-#: js/src/accessSettings/CertificateAuthority.js:49
-msgid ""
-"You can't delete certificate authority while remote access is enabled. In"
-" order to delete it you need to disable the access first."
+#: js/src/accessSettings/CertificateAuthority.js:73
+msgid "Delete Certificate Authority"
 msgstr ""
 
-#: js/src/accessSettings/CertificateAuthority.js:52
-msgid ""
-"Your certificate authority is set up properly. Please note that if you "
-"delete it all clients will have their access revoked."
-msgstr ""
-
-#: js/src/accessSettings/CertificateAuthority.js:58
-msgid "Delete certificate authority"
-msgstr ""
-
-#: js/src/accessSettings/RemoteAccessForm.js:28
+#: js/src/accessSettings/RemoteAccessForm.js:36
 msgid "Cannot save connection parameters."
 msgstr ""
 
-#: js/src/accessSettings/RemoteAccessForm.js:64
-msgid "Enable remote access"
-msgstr ""
-
-#: js/src/accessSettings/RemoteAccessForm.js:72
-msgid "Accessible via WAN"
-msgstr ""
-
-#: js/src/accessSettings/RemoteAccessForm.js:73
-msgid ""
-"Devices in the WAN network will be able to connect to the configuration "
-"interface. Otherwise only devices on LAN will be able to access it."
+#: js/src/accessSettings/RemoteAccessForm.js:71
+msgid "Enable Remote Access"
 msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
-msgid "Port"
+msgid "Accessible via WAN"
 msgstr ""
 
-#: js/src/accessSettings/RemoteAccessForm.js:81
-msgid "A port which will be opened for the remote configuration of this device."
-msgstr ""
-
-#: js/src/accessSettings/RemoteAccessForm.js:94
+#: js/src/accessSettings/RemoteAccessForm.js:110
 msgid "Save"
 msgstr ""
 
-#: js/src/accessSettings/RemoteAccessForm.js:103
+#: js/src/accessSettings/RemoteAccessForm.js:120
 msgid "Should be a number in range of 1024-65536"
 msgstr ""
 
@@ -132,49 +79,35 @@ msgstr ""
 msgid "Access Tokens"
 msgstr ""
 
-#: js/src/accessTokens/AccessTokens.js:50
-msgid "You need to generate certificate authority in order to create tokens."
+#: js/src/accessTokens/AccessTokens.js:54
+msgid "You need to generate certificate authority to create tokens."
 msgstr ""
 
-#: js/src/accessTokens/AccessTokens.js:55
-msgid ""
-"You need to generate a token file for each client you want to grant "
-"access."
+#: js/src/accessTokens/AccessTokens.js:64
+msgid "Remote Devices"
 msgstr ""
 
-#: js/src/accessTokens/AccessTokens.js:56
-msgid ""
-"To use the token with another Turris router you need to transfer it using"
-" \"Remote Devices\" plugin on client device."
+#: js/src/accessTokens/CreateTokenForm.js:61
+msgid "Create Token"
 msgstr ""
 
-#: js/src/accessTokens/CreateTokenForm.js:53
-msgid "Create new token"
-msgstr ""
-
-#: js/src/accessTokens/CreateTokenForm.js:56
+#: js/src/accessTokens/CreateTokenForm.js:64
 msgid "Token name"
 msgstr ""
 
-#: js/src/accessTokens/CreateTokenForm.js:57
-msgid ""
-"Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
-"and underscores."
-msgstr ""
-
-#: js/src/accessTokens/CreateTokenForm.js:63
+#: js/src/accessTokens/CreateTokenForm.js:79
 msgid "Add"
 msgstr ""
 
-#: js/src/accessTokens/CreateTokenForm.js:73
+#: js/src/accessTokens/CreateTokenForm.js:90
 msgid "Name cannot be empty"
 msgstr ""
 
-#: js/src/accessTokens/CreateTokenForm.js:76
+#: js/src/accessTokens/CreateTokenForm.js:93
 msgid "Name is too long"
 msgstr ""
 
-#: js/src/accessTokens/CreateTokenForm.js:79
+#: js/src/accessTokens/CreateTokenForm.js:96
 msgid "Name contains invalid characters"
 msgstr ""
 
@@ -182,55 +115,158 @@ msgstr ""
 msgid "Tokens"
 msgstr ""
 
-#: js/src/accessTokens/TokensTable.js:34
+#: js/src/accessTokens/TokensTable.js:38
 msgid "There are no tokens added yet."
 msgstr ""
 
-#: js/src/accessTokens/TokensTable.js:41
+#: js/src/accessTokens/TokensTable.js:48
 msgid "Name"
 msgstr ""
 
-#: js/src/accessTokens/TokensTable.js:42
+#: js/src/accessTokens/TokensTable.js:49
 msgid "Actions"
 msgstr ""
 
-#: js/src/accessTokens/TokensTable.js:84
+#: js/src/accessTokens/TokensTable.js:94
 msgid "Access revoked"
 msgstr ""
 
-#: js/src/accessTokens/TokensTable.js:94
+#: js/src/accessTokens/TokensTable.js:109
 msgid "Download"
 msgstr ""
 
-#: js/src/accessTokens/TokensTable.js:97
+#: js/src/accessTokens/TokensTable.js:112
 msgid "Revoke"
 msgstr ""
 
-#: reforis_remote_access/__init__.py:45
+#: reforis_remote_access/__init__.py:46
 msgid "Certificate authority already exists."
 msgstr ""
 
-#: reforis_remote_access/__init__.py:69
+#: reforis_remote_access/__init__.py:70
 msgid "Cannot change settings."
 msgstr ""
 
-#: reforis_remote_access/__init__.py:89
+#: reforis_remote_access/__init__.py:90
 msgid "Token '{}' already exists."
 msgstr ""
 
-#: reforis_remote_access/__init__.py:93
+#: reforis_remote_access/__init__.py:94
 msgid "Cannot create token."
 msgstr ""
 
-#: reforis_remote_access/__init__.py:103
+#: reforis_remote_access/__init__.py:104
 msgid "Requested token does not exist."
 msgstr ""
 
-#: reforis_remote_access/__init__.py:107
+#: reforis_remote_access/__init__.py:108
 msgid "Cannot get token."
 msgstr ""
 
-#: reforis_remote_access/__init__.py:122
+#: reforis_remote_access/__init__.py:125
 msgid "Cannot revoke token."
 msgstr ""
+
+#~ msgid ""
+#~ "Here you can set up your router"
+#~ " to be configured remotely. The "
+#~ "remote configuration is done via secure"
+#~ " encrypted connection and each client "
+#~ "is required to have a token issued"
+#~ " by this device."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This can be useful when you plan"
+#~ " to access configuration interface another"
+#~ " Turris router or you intend to "
+#~ "write your own client."
+#~ msgstr ""
+
+#~ msgid "Generating certificate authority"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your certificate authority is now being"
+#~ " generated. It usually takes a few"
+#~ " minutes. Settings will appear here "
+#~ "automatically once the authority is "
+#~ "ready."
+#~ msgstr ""
+
+#~ msgid "No certificate authority"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Currently there is no certificate "
+#~ "authority (CA) dedicated to remote "
+#~ "access. A CA is required to "
+#~ "generate access tokens to authenticate. "
+#~ "To proceed you need to generate it"
+#~ " first."
+#~ msgstr ""
+
+#~ msgid "Generate certificate authority"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can't delete certificate authority "
+#~ "while remote access is enabled. In "
+#~ "order to delete it you need to "
+#~ "disable the access first."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your certificate authority is set up "
+#~ "properly. Please note that if you "
+#~ "delete it all clients will have "
+#~ "their access revoked."
+#~ msgstr ""
+
+#~ msgid "Delete certificate authority"
+#~ msgstr ""
+
+#~ msgid "Enable remote access"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Devices in the WAN network will be"
+#~ " able to connect to the configuration"
+#~ " interface. Otherwise only devices on "
+#~ "LAN will be able to access it."
+#~ msgstr ""
+
+#~ msgid "Port"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A port which will be opened for"
+#~ " the remote configuration of this "
+#~ "device."
+#~ msgstr ""
+
+#~ msgid "You need to generate certificate authority in order to create tokens."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to generate a token file"
+#~ " for each client you want to "
+#~ "grant access."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To use the token with another "
+#~ "Turris router you need to transfer "
+#~ "it using \"Remote Devices\" plugin on"
+#~ " client device."
+#~ msgstr ""
+
+#~ msgid "Create new token"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Shorter than 64 characters. Only "
+#~ "alphanumeric characters, dots, dashes and "
+#~ "underscores."
+#~ msgstr ""
 

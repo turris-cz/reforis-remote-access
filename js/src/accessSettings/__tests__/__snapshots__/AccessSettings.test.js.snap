@@ -6,10 +6,10 @@ exports[`<AccessSettings /> should handle generating certificate 1`] = `
     Access Settings
   </h1>
   <p>
-    Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
+    Here you can set up your router to be configured remotely. The remote configuration is done via a secure encrypted connection, and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
+    It can be useful when you plan to access the configuration interface from another Turris router, or you intend to write your client.
   </p>
   <div
     class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
@@ -42,10 +42,10 @@ exports[`<AccessSettings /> should handle missing certificate 1`] = `
     Access Settings
   </h1>
   <p>
-    Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
+    Here you can set up your router to be configured remotely. The remote configuration is done via a secure encrypted connection, and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
+    It can be useful when you plan to access the configuration interface from another Turris router, or you intend to write your client.
   </p>
   <div
     class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
@@ -54,7 +54,7 @@ exports[`<AccessSettings /> should handle missing certificate 1`] = `
       No Certificate Authority
     </h2>
     <p>
-      Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
+      Currently, there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed, you need to generate it first.
     </p>
     <div
       class="text-right"
@@ -76,10 +76,10 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
     Access Settings
   </h1>
   <p>
-    Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
+    Here you can set up your router to be configured remotely. The remote configuration is done via a secure encrypted connection, and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
+    It can be useful when you plan to access the configuration interface from another Turris router, or you intend to write your client.
   </p>
   <div
     class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
@@ -126,7 +126,7 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
       Certificate Authority
     </h2>
     <p>
-      Your certificate authority is set up properly. Please note that if you delete it all clients will have their access revoked.
+      Your certificate authority is set up properly. Please note that if you delete it, all clients will have their access revoked.
     </p>
     <div
       class="text-right"
@@ -148,10 +148,10 @@ exports[`<AccessSettings /> should render error 1`] = `
     Access Settings
   </h1>
   <p>
-    Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
+    Here you can set up your router to be configured remotely. The remote configuration is done via a secure encrypted connection, and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
+    It can be useful when you plan to access the configuration interface from another Turris router, or you intend to write your client.
   </p>
   <p
     class="text-center text-danger"
@@ -167,10 +167,10 @@ exports[`<AccessSettings /> should render spinner 1`] = `
     Access Settings
   </h1>
   <p>
-    Here you can set up your router to be configured remotely. The remote configuration is done via secure encrypted connection and each client is required to have a token issued by this device.
+    Here you can set up your router to be configured remotely. The remote configuration is done via a secure encrypted connection, and each client is required to have a token issued by this device.
   </p>
   <p>
-    This can be useful when you plan to access configuration interface another Turris router or you intend to write your own client.
+    It can be useful when you plan to access the configuration interface from another Turris router, or you intend to write your client.
   </p>
   <div
     class="spinner-wrapper my-3 text-center"
