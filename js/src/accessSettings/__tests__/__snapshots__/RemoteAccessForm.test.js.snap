@@ -49,7 +49,7 @@ exports[`<RemoteAccessForm /> should display a spinner and disable save button w
           <small
             class="form-text text-muted mt-0 mb-3"
           >
-            Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+            Devices in the WAN network will be able to connect to the configuration interface. Otherwise, only devices on LAN will be able to access it.
           </small>
         </div>
       </div>
@@ -169,7 +169,7 @@ exports[`<RemoteAccessForm /> should expose the rest of the form when enabled 1`
           <small
             class="form-text text-muted mt-0 mb-3"
           >
-            Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+            Devices in the WAN network will be able to connect to the configuration interface. Otherwise, only devices on LAN will be able to access it.
           </small>
         </div>
       </div>
@@ -283,7 +283,7 @@ exports[`<RemoteAccessForm /> should render full form when access is enabled 1`]
           <small
             class="form-text text-muted mt-0 mb-3"
           >
-            Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+            Devices in the WAN network will be able to connect to the configuration interface. Otherwise, only devices on LAN will be able to access it.
           </small>
         </div>
       </div>

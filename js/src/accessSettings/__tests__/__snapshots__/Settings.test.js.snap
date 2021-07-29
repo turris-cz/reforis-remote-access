@@ -46,7 +46,7 @@ exports[`<Settings /> should render missing component 1`] = `
       No Certificate Authority
     </h2>
     <p>
-      Currently there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed you need to generate it first.
+      Currently, there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed, you need to generate it first.
     </p>
     <div
       class="text-right"
@@ -111,7 +111,7 @@ exports[`<Settings /> should render settings component 1`] = `
           <small
             class="form-text text-muted mt-0 mb-3"
           >
-            Devices in the WAN network will be able to connect to the configuration interface. Otherwise only devices on LAN will be able to access it.
+            Devices in the WAN network will be able to connect to the configuration interface. Otherwise, only devices on LAN will be able to access it.
           </small>
         </div>
       </div>
@@ -180,7 +180,7 @@ exports[`<Settings /> should render settings component 1`] = `
       Certificate Authority
     </h2>
     <p>
-      You can't delete certificate authority while remote access is enabled. In order to delete it you need to disable the access first.
+      You can't delete certificate authority while remote access is enabled. To delete it, you need to disable the access first.
     </p>
   </div>
 </div>

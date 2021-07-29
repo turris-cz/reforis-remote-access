@@ -6,10 +6,10 @@ exports[`<AccessTokens /> should handle proper CA 1`] = `
     Access Tokens
   </h1>
   <p>
-    You need to generate a token file for each client you want to grant access.
+    You need to generate a token file for each client you want to grant access to.
   </p>
   <p>
-    To use the token with another Turris router you need to transfer it using "Remote Devices" plugin on client device.
+    To use the token with another Turris router you need to transfer it using the "Remote Devices" plugin on the client device.
   </p>
   <div
     class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"

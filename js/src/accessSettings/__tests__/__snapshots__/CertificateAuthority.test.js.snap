@@ -9,7 +9,7 @@ exports[`<CertificateAuthority /> when remote access is disabled should render c
       Certificate Authority
     </h2>
     <p>
-      You can't delete certificate authority while remote access is enabled. In order to delete it you need to disable the access first.
+      You can't delete certificate authority while remote access is enabled. To delete it, you need to disable the access first.
     </p>
   </div>
 </div>
@@ -24,7 +24,7 @@ exports[`<CertificateAuthority /> when remote access is enabled should render co
       Certificate Authority
     </h2>
     <p>
-      Your certificate authority is set up properly. Please note that if you delete it all clients will have their access revoked.
+      Your certificate authority is set up properly. Please note that if you delete it, all clients will have their access revoked.
     </p>
     <div
       class="text-right"
