@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-07-29 13:47+0300\n"
-"PO-Revision-Date: 2021-09-21 18:35+0000\n"
+"PO-Revision-Date: 2021-09-22 19:34+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/sk/>\n"
@@ -34,7 +34,7 @@ msgstr "Generuje sa certifikačná autorita"
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
-msgstr "Certifikačná autorita sa nedá vytvoriť."
+msgstr "Certifikačná autorita sa nedá vygenerovať."
 
 #: js/src/accessSettings/AuthorityMissing.js:33
 msgid "No Certificate Authority"
@@ -119,7 +119,7 @@ msgstr "Tokeny"
 
 #: js/src/accessTokens/TokensTable.js:38
 msgid "There are no tokens added yet."
-msgstr "Nie sú pridané žiadne tokeny."
+msgstr "Zatiaľ nie sú pridané žiadne tokeny."
 
 #: js/src/accessTokens/TokensTable.js:48
 msgid "Name"
@@ -135,7 +135,7 @@ msgstr "Prístup odvolaný"
 
 #: js/src/accessTokens/TokensTable.js:109
 msgid "Download"
-msgstr "Sťahovanie"
+msgstr "Stiahnuť"
 
 #: js/src/accessTokens/TokensTable.js:112
 msgid "Revoke"
