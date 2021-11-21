@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-07-29 13:47+0300\n"
-"PO-Revision-Date: 2020-04-15 20:11+0000\n"
-"Last-Translator: Florian <floflr@zaclys.net>\n"
+"PO-Revision-Date: 2021-11-22 10:52+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/"
+"reforis-remote-access-plugin/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://hosted.weblate.org/projects/turris"
-"/reforis-remote-access-plugin/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.10-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
@@ -28,21 +29,18 @@ msgid "Access Settings"
 msgstr "Paramètres d'accès"
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
-#, fuzzy
 msgid "Generating Certificate Authority"
-msgstr "Génération de l’autorité de certification"
+msgstr "Génération de l'autorité de certification"
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
 msgstr "Impossible de générer une autorité de certification."
 
 #: js/src/accessSettings/AuthorityMissing.js:33
-#, fuzzy
 msgid "No Certificate Authority"
 msgstr "Aucune autorité de certification"
 
 #: js/src/accessSettings/AuthorityMissing.js:45
-#, fuzzy
 msgid "Generate Certificate Authority"
 msgstr "Générer une autorité de certification"
 
@@ -56,7 +54,6 @@ msgid "Certificate Authority"
 msgstr "Autorité de certification"
 
 #: js/src/accessSettings/CertificateAuthority.js:73
-#, fuzzy
 msgid "Delete Certificate Authority"
 msgstr "Supprimer l'autorité de certification"
 
@@ -65,9 +62,8 @@ msgid "Cannot save connection parameters."
 msgstr "Impossible de sauvegarder les paramètres de connexion."
 
 #: js/src/accessSettings/RemoteAccessForm.js:71
-#, fuzzy
 msgid "Enable Remote Access"
-msgstr "Activer l’accès à distance"
+msgstr "Activer l'accès à distance"
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Accessible via WAN"
@@ -86,19 +82,17 @@ msgid "Access Tokens"
 msgstr "Jetons d'accès"
 
 #: js/src/accessTokens/AccessTokens.js:54
-#, fuzzy
 msgid "You need to generate certificate authority to create tokens."
-msgstr "Vous devez générer une autorité de certification afin de créer des jetons."
+msgstr ""
+"Vous devez générer une autorité de certification afin de créer des jetons."
 
 #: js/src/accessTokens/AccessTokens.js:64
-#, fuzzy
 msgid "Remote Devices"
-msgstr "Accès à distance"
+msgstr "Appareils à distance"
 
 #: js/src/accessTokens/CreateTokenForm.js:61
-#, fuzzy
 msgid "Create Token"
-msgstr "Créer un nouveau jeton"
+msgstr "Créer un jeton"
 
 #: js/src/accessTokens/CreateTokenForm.js:64
 msgid "Token name"
@@ -166,7 +160,7 @@ msgstr "Impossible de créer un jeton."
 
 #: reforis_remote_access/__init__.py:104
 msgid "Requested token does not exist."
-msgstr "Le jeton demandé n’existe pas."
+msgstr "Le jeton demandé n'existe pas."
 
 #: reforis_remote_access/__init__.py:108
 msgid "Cannot get token."
@@ -305,4 +299,3 @@ msgstr "Impossible de révoquer le jeton."
 #~ " caractères alphanumériques, des points, "
 #~ "des tirets et des traits de "
 #~ "soulignement."
-
