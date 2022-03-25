@@ -78,9 +78,9 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
                     <>
                         <Switch
                             label={_("Accessible via WAN")}
-                            helpText={_(`Devices in the WAN network will be \
-able to connect to the configuration interface. Otherwise, only devices on LAN \
-will be able to access it.`)}
+                            helpText={_(
+                                "Devices in the WAN network will be able to connect to the configuration interface. Otherwise, only devices on LAN will be able to access it."
+                            )}
                             checked={formData.wan_access}
                             onChange={formChangeHandler((value) => ({
                                 wan_access: { $set: value },
@@ -88,8 +88,9 @@ will be able to access it.`)}
                         />
                         <NumberInput
                             label={_("Port")}
-                            helpText={_(`A port which will be opened for the \
-remote configuration of this device.`)}
+                            helpText={_(
+                                "A port which will be opened for the remote configuration of this device."
+                            )}
                             value={formData.port}
                             error={formErrors.port}
                             onChange={formChangeHandler((value) => ({

@@ -62,8 +62,9 @@ export default function CreateTokenForm({ generating, setGenerating }) {
             <form onSubmit={handleSubmit}>
                 <TextInput
                     label={_("Token name")}
-                    helpText={_(`Shorter than 64 characters. Only alphanumeric \
-characters, dots, dashes and underscores.`)}
+                    helpText={_(
+                        `Shorter than 64 characters. Only alphanumeric characters, dots, dashes and underscores.`
+                    )}
                     value={formData.name}
                     error={formErrors.name}
                     onChange={formChangeHandler((value) => ({
