@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-07-29 13:47+0300\n"
-"PO-Revision-Date: 2021-02-06 17:50+0000\n"
+"PO-Revision-Date: 2022-05-25 13:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
+"reforis-remote-access-plugin/nb_NO/>\n"
 "Language: nb_NO\n"
-"Language-Team: Norwegian Bokmål "
-"<https://hosted.weblate.org/projects/turris/reforis-remote-access-"
-"plugin/nb_NO/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
@@ -50,7 +50,7 @@ msgstr "Generer sertifikatsmyndighet"
 #: js/src/accessSettings/CertificateAuthority.js:45
 #: reforis_remote_access/__init__.py:54
 msgid "Cannot delete certificate authority."
-msgstr "Kan ikke slette sertifikatsmyndighet"
+msgstr "Kan ikke slette sertifikatsmyndighet."
 
 #: js/src/accessSettings/CertificateAuthority.js:55
 msgid "Certificate Authority"
@@ -299,4 +299,3 @@ msgstr "Kan ikke tilbakekalle symbol."
 #~ "Kortere enn 64 tegn. Kun alfanumeriske"
 #~ " tegn, punktum, bindestreker og "
 #~ "understreker."
-
