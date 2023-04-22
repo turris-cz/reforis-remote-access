@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-07-29 13:47+0300\n"
-"PO-Revision-Date: 2023-01-03 16:48+0000\n"
-"Last-Translator: Jonas Wiegner <jonas.wiegner@posteo.de>\n"
+"PO-Revision-Date: 2023-04-23 22:52+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/de/>\n"
 "Language: de\n"
@@ -17,16 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
-msgstr ""
+msgstr "Fernzugriff"
 
 #: js/src/accessSettings/AccessSettings.js:33
 msgid "Access Settings"
-msgstr ""
+msgstr "Zugangseinstellungen"
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
@@ -59,15 +59,15 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:36
 msgid "Cannot save connection parameters."
-msgstr ""
+msgstr "Kann Verbindungsparameter nicht speichern."
 
 #: js/src/accessSettings/RemoteAccessForm.js:71
 msgid "Enable Remote Access"
-msgstr ""
+msgstr "Fernzugriff aktivieren"
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Accessible via WAN"
-msgstr ""
+msgstr "Über WAN zugänglich"
 
 #: js/src/accessSettings/RemoteAccessForm.js:110
 msgid "Save"
@@ -91,31 +91,31 @@ msgstr "Externe Geräte"
 
 #: js/src/accessTokens/CreateTokenForm.js:61
 msgid "Create Token"
-msgstr ""
+msgstr "Token erstellen"
 
 #: js/src/accessTokens/CreateTokenForm.js:64
 msgid "Token name"
-msgstr ""
+msgstr "Tokenname"
 
 #: js/src/accessTokens/CreateTokenForm.js:79
 msgid "Add"
-msgstr ""
+msgstr "Hinzufügen"
 
 #: js/src/accessTokens/CreateTokenForm.js:90
 msgid "Name cannot be empty"
-msgstr ""
+msgstr "Name darf nicht leer sein"
 
 #: js/src/accessTokens/CreateTokenForm.js:93
 msgid "Name is too long"
-msgstr ""
+msgstr "Name ist zu lang"
 
 #: js/src/accessTokens/CreateTokenForm.js:96
 msgid "Name contains invalid characters"
-msgstr ""
+msgstr "Name enthält ungültige Zeichen"
 
 #: js/src/accessTokens/Tokens.js:44
 msgid "Tokens"
-msgstr ""
+msgstr "Token"
 
 #: js/src/accessTokens/TokensTable.js:38
 msgid "There are no tokens added yet."
@@ -131,7 +131,7 @@ msgstr "Aktionen"
 
 #: js/src/accessTokens/TokensTable.js:94
 msgid "Access revoked"
-msgstr ""
+msgstr "Zugang widerrufen"
 
 #: js/src/accessTokens/TokensTable.js:109
 msgid "Download"
@@ -139,7 +139,7 @@ msgstr "Herunterladen"
 
 #: js/src/accessTokens/TokensTable.js:112
 msgid "Revoke"
-msgstr ""
+msgstr "Widerrufen"
 
 #: reforis_remote_access/__init__.py:46
 msgid "Certificate authority already exists."
