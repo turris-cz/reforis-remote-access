@@ -1,4 +1,4 @@
-#  Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+#  Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
 #
 #  This is free software, licensed under the GNU General Public License v3.
 #  See /LICENSE for more information.
@@ -52,6 +52,7 @@ setuptools.setup(
             'pylint',
             'pycodestyle',
             'reforis @ git+https://gitlab.nic.cz/turris/reforis/reforis#egg=reforis',
+            'werkzeug == 2.0.3',  # TODO remove pin when werkzeug is fixed see https://gitlab.nic.cz/turris/reforis/reforis/-/merge_requests/316#note_249166
         ],
     },
     setup_requires=[
