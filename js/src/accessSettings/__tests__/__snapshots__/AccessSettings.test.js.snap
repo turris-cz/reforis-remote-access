@@ -60,10 +60,12 @@ exports[`<AccessSettings /> should handle missing certificate 1`] = `
       class="text-right"
     >
       <button
-        class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+        class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
         type="button"
       >
-        Generate Certificate Authority
+        <span>
+          Generate Certificate Authority
+        </span>
       </button>
     </div>
   </div>
@@ -111,10 +113,13 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
         class="text-right"
       >
         <button
-          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+          class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+          data-testid="save-settings-button"
           type="submit"
         >
-          Save
+          <span>
+            Save
+          </span>
         </button>
       </div>
     </form>
@@ -132,10 +137,12 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
       class="text-right"
     >
       <button
-        class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+        class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
         type="button"
       >
-        Delete Certificate Authority
+        <span>
+          Delete Certificate Authority
+        </span>
       </button>
     </div>
   </div>
