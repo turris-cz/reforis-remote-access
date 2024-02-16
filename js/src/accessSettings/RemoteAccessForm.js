@@ -101,6 +101,7 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
                 )}
                 <div className="text-right">
                     <Button
+                        data-testid="save-settings-button"
                         type="submit"
                         forisFormSize
                         disabled={saveButtonDisabled}

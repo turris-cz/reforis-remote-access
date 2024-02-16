@@ -73,6 +73,7 @@ export default function CreateTokenForm({ generating, setGenerating }) {
                 />
                 <div className="text-right">
                     <Button
+                        data-testid="add-token-button"
                         type="submit"
                         forisFormSize
                         disabled={addButtonDisabled}
