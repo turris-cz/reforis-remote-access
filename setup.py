@@ -36,9 +36,10 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=['tests']),
     include_package_data=True,
 
-    description='',
-    author='CZ.NIC, z.s.p.o.',
-    author_email='bogdan.bodnar@nic.cz',
+    description='reForis Remote Access plugin allows accessing Turris from an external network.',
+    url='https://gitlab.nic.cz/turris/reforis/reforis-remote-access',
+    author='CZ.NIC, z.s.p.o. (https://www.nic.cz/)',
+    author_email='software@turris.com',
 
     install_requires=[
         'flask',
