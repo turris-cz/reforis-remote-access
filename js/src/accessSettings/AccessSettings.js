@@ -6,11 +6,12 @@
  */
 
 import React, { useEffect } from "react";
-import PropTypes from "prop-types";
 
 import { useAPIGet } from "foris";
+import PropTypes from "prop-types";
 
 import API_URLs from "API";
+
 import Settings from "./Settings";
 
 AccessSettings.propTypes = {
@@ -32,13 +33,14 @@ export default function AccessSettings({ ws }) {
         <>
             <h1>{_("Access Settings")}</h1>
             <p>
-                {_(`Here you can set up your router to be configured remotely. \
-The remote configuration is done via a secure encrypted connection, and each \
-client is required to have a token issued by this device.`)}
+                {_(
+                    "Here you can set up your router to be configured remotely. The remote configuration is done via a secure encrypted connection, and each client is required to have a token issued by this device."
+                )}
             </p>
             <p>
-                {_(`It can be useful when you plan to access the configuration \
-interface from another Turris router, or you intend to write your client.`)}
+                {_(
+                    "It can be useful when you plan to access the configuration interface from another Turris router, or you intend to write your client."
+                )}
             </p>
             <Settings
                 apiState={[

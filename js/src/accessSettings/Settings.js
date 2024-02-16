@@ -6,12 +6,12 @@
  */
 
 import React from "react";
-import PropTypes from "prop-types";
 
 import { withErrorMessage, withSpinnerOnSending, withEither } from "foris";
+import PropTypes from "prop-types";
 
-import AuthorityMissing from "./AuthorityMissing";
 import AuthorityGenerating from "./AuthorityGenerating";
+import AuthorityMissing from "./AuthorityMissing";
 import CertificateAuthority, { CA_STATUS } from "./CertificateAuthority";
 import RemoteAccessForm from "./RemoteAccessForm";
 

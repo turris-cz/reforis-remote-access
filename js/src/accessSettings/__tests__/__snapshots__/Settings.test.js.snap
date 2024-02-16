@@ -52,10 +52,12 @@ exports[`<Settings /> should render missing component 1`] = `
       class="text-right"
     >
       <button
-        class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+        class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
         type="button"
       >
-        Generate Certificate Authority
+        <span>
+          Generate Certificate Authority
+        </span>
       </button>
     </div>
   </div>
@@ -165,10 +167,13 @@ exports[`<Settings /> should render settings component 1`] = `
         class="text-right"
       >
         <button
-          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+          class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+          data-testid="save-settings-button"
           type="submit"
         >
-          Save
+          <span>
+            Save
+          </span>
         </button>
       </div>
     </form>

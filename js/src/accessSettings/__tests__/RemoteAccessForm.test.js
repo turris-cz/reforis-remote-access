@@ -15,6 +15,7 @@ import {
     getByText,
     queryByText,
     wait,
+    getByTestId,
 } from "foris/testUtils/customTestRender";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
 import { mockJSONError } from "foris/testUtils/network";
@@ -34,7 +35,7 @@ describe("<RemoteAccessForm />", () => {
     }
 
     function getSaveButton() {
-        return getByText(container, "Save");
+        return getByTestId(container, "save-settings-button");
     }
 
     function saveForm() {

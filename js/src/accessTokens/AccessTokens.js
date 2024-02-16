@@ -6,11 +6,12 @@
  */
 
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 
 import { useAPIGet, withErrorMessage, withSpinnerOnSending } from "foris";
+import PropTypes from "prop-types";
 
 import API_URLs from "API";
+
 import CreateTokenForm from "./CreateTokenForm";
 import Tokens from "./Tokens";
 
@@ -61,12 +62,14 @@ function TokensWrapper({ ws, authority }) {
     return (
         <>
             <p>
-                {_(`You need to generate a token file for each client you want \
-to grant access to.`)}
+                {_(
+                    `You need to generate a token file for each client you want to grant access to.`
+                )}
             </p>
             <p>
-                {_(`To use the token with another Turris router you need to \
-transfer it using the "Remote Devices" plugin on the client device.`)}
+                {_(
+                    `To use the token with another Turris router you need to transfer it using the "Remote Devices" plugin on the client device.`
+                )}
             </p>
             <CreateTokenForm
                 generating={generating}

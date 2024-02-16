@@ -6,7 +6,6 @@
  */
 
 import React, { useEffect } from "react";
-import PropTypes from "prop-types";
 
 import {
     TextInput,
@@ -18,6 +17,7 @@ import {
     API_STATE,
     formFieldsSize,
 } from "foris";
+import PropTypes from "prop-types";
 
 import API_URLs from "API";
 
@@ -62,8 +62,9 @@ export default function CreateTokenForm({ generating, setGenerating }) {
             <form onSubmit={handleSubmit}>
                 <TextInput
                     label={_("Token name")}
-                    helpText={_(`Shorter than 64 characters. Only alphanumeric \
-characters, dots, dashes and underscores.`)}
+                    helpText={_(
+                        `Shorter than 64 characters. Only alphanumeric characters, dots, dashes and underscores.`
+                    )}
                     value={formData.name}
                     error={formErrors.name}
                     onChange={formChangeHandler((value) => ({
@@ -72,6 +73,7 @@ characters, dots, dashes and underscores.`)}
                 />
                 <div className="text-right">
                     <Button
+                        data-testid="add-token-button"
                         type="submit"
                         forisFormSize
                         disabled={addButtonDisabled}

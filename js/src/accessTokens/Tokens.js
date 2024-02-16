@@ -6,13 +6,14 @@
  */
 
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 
 import { useAPIGet, API_STATE, formFieldsSize } from "foris";
+import PropTypes from "prop-types";
 
 import API_URLs from "API";
-import TokensTable from "./TokensTable";
+
 import { useRevokeToken, useGenerateToken } from "./hooks";
+import TokensTable from "./TokensTable";
 
 Tokens.propTypes = {
     ws: PropTypes.object.isRequired,

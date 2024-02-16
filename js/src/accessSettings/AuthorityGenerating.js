@@ -6,9 +6,9 @@
  */
 
 import React, { useEffect } from "react";
-import PropTypes from "prop-types";
 
 import { useWSForisModule, Spinner, formFieldsSize } from "foris";
+import PropTypes from "prop-types";
 
 AuthorityGenerating.propTypes = {
     ws: PropTypes.object.isRequired,
@@ -29,9 +29,9 @@ export default function AuthorityGenerating({ ws, onAuthoritySuccess }) {
         <div className={formFieldsSize}>
             <h2>{_("Generating Certificate Authority")}</h2>
             <p>
-                {_(`Your certificate authority is now being generated. It \
-usually takes a few minutes. Settings will appear here automatically once the \
-authority is ready.`)}
+                {_(
+                    "Your certificate authority is now being generated. It usually takes a few minutes. Settings will appear here automatically once the authority is ready."
+                )}
             </p>
             <Spinner />
         </div>

@@ -1,7 +1,9 @@
-#  Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+#  Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
 #
 #  This is free software, licensed under the GNU General Public License v3.
 #  See /LICENSE for more information.
+
+""" reForis Remote Access plugin """
 
 from pathlib import Path
 from http import HTTPStatus
@@ -10,9 +12,8 @@ import base64
 from flask import Blueprint, current_app, jsonify, request, make_response
 from flask_babel import gettext as _
 
-from reforis.foris_controller_api.utils import log_error, validate_json, APIError
+from reforis.foris_controller_api.utils import validate_json, APIError
 
-# pylint: disable=invalid-name
 blueprint = Blueprint(
     'Remote Access',
     __name__,
@@ -21,7 +22,6 @@ blueprint = Blueprint(
 
 BASE_DIR = Path(__file__).parent
 
-# pylint: disable=invalid-name
 remote_access = {
     'blueprint': blueprint,
     # Define {python_module_name}/js/app.min.js
@@ -35,12 +35,14 @@ remote_access = {
 
 @blueprint.route('/authority', methods=['GET'])
 def get_authority():
+    """ Get certificate authority status """
     remote_status = current_app.backend.perform('remote', 'get_status')
     return jsonify({'status': remote_status['status']})
 
 
 @blueprint.route('/authority', methods=['POST'])
 def post_authority():
+    """ Generate certificate authority """
     ca_status = current_app.backend.perform('remote', 'get_status').get('status')
     if ca_status == 'ready':
         raise APIError(_('Certificate authority already exists.'))
@@ -49,6 +51,7 @@ def post_authority():
 
 @blueprint.route('/authority', methods=['DELETE'])
 def delete_authority():
+    """ Delete certificate authority """
     response = current_app.backend.perform('remote', 'delete_ca')
     if response.get('result') is not True:
         raise APIError(_('Cannot delete certificate authority.'), HTTPStatus.INTERNAL_SERVER_ERROR)
@@ -59,11 +62,13 @@ def delete_authority():
 
 @blueprint.route('/settings', methods=['GET'])
 def get_connection_settings():
+    """ Get connection settings """
     return jsonify(current_app.backend.perform('remote', 'get_settings'))
 
 
 @blueprint.route('/settings', methods=['PUT'])
 def put_connection_settings():
+    """ Update connection settings """
     validate_json(request.json)
     response = current_app.backend.perform('remote', 'update_settings', request.json)
     if response.get('result') is not True:
@@ -75,12 +80,14 @@ def put_connection_settings():
 
 @blueprint.route('/tokens', methods=['GET'])
 def get_tokens():
+    """ Get tokens """
     remote_status = current_app.backend.perform('remote', 'get_status')
     return jsonify(remote_status['tokens'])
 
 
 @blueprint.route('/tokens', methods=['POST'])
 def post_tokens():
+    """ Generate token """
     validate_json(request.json, {'name': str})
     # Check for conflict (name)
     tokens = current_app.backend.perform('remote', 'get_status')['tokens']
@@ -97,6 +104,7 @@ def post_tokens():
 
 @blueprint.route('/tokens/<token_id>', methods=['GET'])
 def get_token(token_id):
+    """ Get token """
     token_request = {'id': token_id}
 
     response = current_app.backend.perform('remote', 'get_token', token_request)
@@ -120,6 +128,7 @@ def get_token(token_id):
 
 @blueprint.route('/tokens/<token_id>', methods=['DELETE'])
 def delete_token(token_id):
+    """ Revoke token """
     response = current_app.backend.perform('remote', 'revoke', {'id': token_id})
     if response.get('result') is not True:
         raise APIError(_('Cannot revoke token.'), HTTPStatus.INTERNAL_SERVER_ERROR)

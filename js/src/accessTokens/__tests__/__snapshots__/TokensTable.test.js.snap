@@ -55,10 +55,12 @@ exports[`<TokensTable /> should be rendered - filled table 1`] = `
                 Download
               </a>
               <button
-                class="btn btn-danger btn-sm"
+                class="btn btn-danger btn-sm d-inline-flex justify-content-center align-items-center"
                 type="button"
               >
-                Revoke
+                <span>
+                  Revoke
+                </span>
               </button>
             </div>
           </td>
