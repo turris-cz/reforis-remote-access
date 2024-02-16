@@ -6,11 +6,12 @@
  */
 
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 
 import { useAPIGet, withErrorMessage, withSpinnerOnSending } from "foris";
+import PropTypes from "prop-types";
 
 import API_URLs from "API";
+
 import CreateTokenForm from "./CreateTokenForm";
 import Tokens from "./Tokens";
 

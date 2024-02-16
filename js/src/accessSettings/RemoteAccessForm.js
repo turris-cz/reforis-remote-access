@@ -6,7 +6,6 @@
  */
 
 import React, { useEffect } from "react";
-import PropTypes from "prop-types";
 
 import {
     Switch,
@@ -19,6 +18,7 @@ import {
     undefinedIfEmpty,
     formFieldsSize,
 } from "foris";
+import PropTypes from "prop-types";
 
 import API_URLs from "API";
 

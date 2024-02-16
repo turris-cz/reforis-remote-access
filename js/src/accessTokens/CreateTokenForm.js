@@ -6,7 +6,6 @@
  */
 
 import React, { useEffect } from "react";
-import PropTypes from "prop-types";
 
 import {
     TextInput,
@@ -18,6 +17,7 @@ import {
     API_STATE,
     formFieldsSize,
 } from "foris";
+import PropTypes from "prop-types";
 
 import API_URLs from "API";
 

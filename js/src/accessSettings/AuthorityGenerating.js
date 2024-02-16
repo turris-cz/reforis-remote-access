@@ -6,9 +6,9 @@
  */
 
 import React, { useEffect } from "react";
-import PropTypes from "prop-types";
 
 import { useWSForisModule, Spinner, formFieldsSize } from "foris";
+import PropTypes from "prop-types";
 
 AuthorityGenerating.propTypes = {
     ws: PropTypes.object.isRequired,

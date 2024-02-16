@@ -6,7 +6,7 @@
  */
 
 import React, { useEffect } from "react";
-import PropTypes from "prop-types";
+
 import {
     withErrorMessage,
     withSpinnerOnSending,
@@ -17,8 +17,10 @@ import {
     API_STATE,
     SpinnerElement,
 } from "foris";
+import PropTypes from "prop-types";
 
 import API_URLs from "API";
+
 import TOKEN_STATUS from "./token_status";
 
 const tokenShape = PropTypes.shape({
