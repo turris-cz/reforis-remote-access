@@ -50,7 +50,6 @@ setuptools.setup(
         'devel': [
             'pytest',
             'pylint',
-            'pylint-quotes',
             'pycodestyle',
         ],
     },
