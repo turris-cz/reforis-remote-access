@@ -10,6 +10,7 @@ import {
     render,
     getByText,
     getByLabelText,
+    getByTestId,
     fireEvent,
     wait,
 } from "foris/testUtils/customTestRender";
@@ -22,7 +23,7 @@ import CreateTokenForm from "../CreateTokenForm";
 function getFormElements(container) {
     return {
         nameInput: getByLabelText(container, "Token name"),
-        submitButton: getByText(container, "Add"),
+        submitButton: getByTestId(container, "add-token-button"),
     };
 }
 
