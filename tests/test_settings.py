@@ -26,7 +26,7 @@ def test_put_settings(client):
 
 @mock_backend_response({"remote": {"update_settings": {}}})
 def test_put_settings_invalid_json(client):
-    response = client.put(SETTINGS_URL)
+    response = client.put(SETTINGS_URL, json=False)
     assert response.status_code == HTTPStatus.BAD_REQUEST
     assert response.json == "Invalid JSON"
 

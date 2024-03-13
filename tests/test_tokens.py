@@ -45,7 +45,7 @@ def test_post_token_missing_field(client):
 
 
 def test_post_token_invalid_json(client):
-    response = client.post(TOKENS_URL)
+    response = client.post(TOKENS_URL, json=False)
     assert response.status_code == HTTPStatus.BAD_REQUEST
     assert response.json == "Invalid JSON"
 
