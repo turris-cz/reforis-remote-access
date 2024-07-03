@@ -44,7 +44,7 @@ function TokensTable({ tokens }) {
 
     return (
         <div className="table-responsive">
-            <table className="table table-hover">
+            <table className="table table-hover mb-0">
                 <thead className="thead-light">
                     <tr>
                         <th scope="col">{_("Name")}</th>
@@ -69,7 +69,7 @@ function TokenRow({ token }) {
     return (
         <tr>
             <td className="align-middle">{token.name}</td>
-            <td className="text-right">
+            <td className="text-end">
                 <TokenActions token={token} />
             </td>
         </tr>

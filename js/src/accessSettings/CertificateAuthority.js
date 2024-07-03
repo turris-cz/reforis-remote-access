@@ -66,7 +66,7 @@ export default function CertificateAuthority({
                             "Your certificate authority is set up properly. Please note that if you delete it, all clients will have their access revoked."
                         )}
                     </p>
-                    <div className="text-right">
+                    <div className="text-end">
                         <Button
                             onClick={() => deleteCA()}
                             loading={deleteResponse.state === API_STATE.SENDING}
