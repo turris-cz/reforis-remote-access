@@ -49,10 +49,10 @@ exports[`<Settings /> should render missing component 1`] = `
       Currently, there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed, you need to generate it first.
     </p>
     <div
-      class="text-right"
+      class="text-end"
     >
       <button
-        class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+        class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
         type="button"
       >
         <span>
@@ -74,53 +74,50 @@ exports[`<Settings /> should render settings component 1`] = `
     </h2>
     <form>
       <div
-        class="form-group"
+        class="form-check form-switch mb-3"
       >
-        <div
-          class="custom-control custom-switch custom-control-inline"
+        <input
+          checked=""
+          class="form-check-input"
+          id="1"
+          role="switch"
+          type="checkbox"
+        />
+        <label
+          class="form-check-label"
+          for="1"
         >
-          <input
-            checked=""
-            class="custom-control-input"
-            id="1"
-            type="checkbox"
-          />
-          <label
-            class="custom-control-label"
-            for="1"
-          >
-            Enable Remote Access
-          </label>
-        </div>
+          Enable Remote Access
+        </label>
       </div>
       <div
-        class="form-group"
+        class="form-check form-switch mb-3"
       >
-        <div
-          class="custom-control custom-switch"
+        <input
+          class="form-check-input"
+          id="2"
+          role="switch"
+          type="checkbox"
+        />
+        <label
+          class="form-check-label"
+          for="2"
         >
-          <input
-            class="custom-control-input"
-            id="2"
-            type="checkbox"
-          />
-          <label
-            class="custom-control-label"
-            for="2"
-          >
-            Accessible via WAN
-          </label>
-          <small
-            class="form-text text-muted mt-0 mb-3"
-          >
+          Accessible via WAN
+        </label>
+        <div
+          class="form-text"
+        >
+          <small>
             Devices in the WAN network will be able to connect to the configuration interface. Otherwise, only devices on LAN will be able to access it.
           </small>
         </div>
       </div>
       <div
-        class="form-group"
+        class="mb-3"
       >
         <label
+          class="form-label"
           for="3"
         >
           Port
@@ -134,40 +131,38 @@ exports[`<Settings /> should render settings component 1`] = `
             type="number"
             value="1234"
           />
-          <div
-            class="input-group-append"
+          <button
+            aria-label="Increase"
+            class="btn btn-outline-secondary"
+            type="button"
           >
-            <button
-              aria-label="Increase"
-              class="btn btn-outline-secondary"
-              type="button"
-            >
-              <i
-                class="fas fa-plus"
-              />
-            </button>
-            <button
-              aria-label="Decrease"
-              class="btn btn-outline-secondary"
-              type="button"
-            >
-              <i
-                class="fas fa-minus"
-              />
-            </button>
-          </div>
+            <i
+              class="fas fa-plus"
+            />
+          </button>
+          <button
+            aria-label="Decrease"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            <i
+              class="fas fa-minus"
+            />
+          </button>
         </div>
-        <small
-          class="form-text text-muted"
+        <div
+          class="form-text"
         >
-          A port which will be opened for the remote configuration of this device.
-        </small>
+          <small>
+            A port which will be opened for the remote configuration of this device.
+          </small>
+        </div>
       </div>
       <div
-        class="text-right"
+        class="text-end"
       >
         <button
-          class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+          class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
           data-testid="save-settings-button"
           type="submit"
         >
