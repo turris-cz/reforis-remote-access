@@ -6,7 +6,7 @@
         "url": "https://gitlab.nic.cz/turris/reforis/reforis-remote-access.git"
     },
     "license": "GPL-3.0",
-    "version": "2.0.,0",
+    "version": "2.1.0",
     "description": "reForis Remote Access plugin allows accessing Turris from an external network.",
     "main": "./src/app.js",
     "eslintConfig": {
