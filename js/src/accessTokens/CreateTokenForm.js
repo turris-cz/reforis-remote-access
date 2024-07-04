@@ -71,7 +71,7 @@ export default function CreateTokenForm({ generating, setGenerating }) {
                         name: { $set: value },
                     }))}
                 />
-                <div className="text-right">
+                <div className="text-end">
                     <Button
                         data-testid="add-token-button"
                         type="submit"

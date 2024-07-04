@@ -8,6 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.1.0] - 2024-07-03
+
+### Added
+
+### Changed
+
+### Removed
+
 ## [2.0.0] - 2024-03-13
 
 ### Added
@@ -89,7 +97,8 @@ and this project adheres to
 -   Mange certificate authority
 -   Configure remote access
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.0.0...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.1.0...master
+[2.1.0]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.0.0...v2.1.0
 [2.0.0]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v1.3.0...v2.0.0
 [1.3.0]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v1.2.1...v1.3.0
 [1.2.1]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v1.2.0...v1.2.1

@@ -36,7 +36,7 @@ export default function AuthorityMissing({ onAuthoritySuccess }) {
                     "Currently, there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed, you need to generate it first."
                 )}
             </p>
-            <div className="text-right">
+            <div className="text-end">
                 <Button
                     onClick={() => generateCA()}
                     loading={generateResponse.state === API_STATE.SENDING}

@@ -99,7 +99,7 @@ export default function RemoteAccessForm({ settings, onSuccess }) {
                         />
                     </>
                 )}
-                <div className="text-right">
+                <div className="text-end">
                     <Button
                         data-testid="save-settings-button"
                         type="submit"

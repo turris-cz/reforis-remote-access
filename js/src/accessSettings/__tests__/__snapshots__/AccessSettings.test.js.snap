@@ -57,10 +57,10 @@ exports[`<AccessSettings /> should handle missing certificate 1`] = `
       Currently, there is no certificate authority (CA) dedicated to remote access. A CA is required to generate access tokens to authenticate. To proceed, you need to generate it first.
     </p>
     <div
-      class="text-right"
+      class="text-end"
     >
       <button
-        class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+        class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
         type="button"
       >
         <span>
@@ -91,29 +91,26 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
     </h2>
     <form>
       <div
-        class="form-group"
+        class="form-check form-switch mb-3"
       >
-        <div
-          class="custom-control custom-switch custom-control-inline"
+        <input
+          class="form-check-input"
+          id="1"
+          role="switch"
+          type="checkbox"
+        />
+        <label
+          class="form-check-label"
+          for="1"
         >
-          <input
-            class="custom-control-input"
-            id="1"
-            type="checkbox"
-          />
-          <label
-            class="custom-control-label"
-            for="1"
-          >
-            Enable Remote Access
-          </label>
-        </div>
+          Enable Remote Access
+        </label>
       </div>
       <div
-        class="text-right"
+        class="text-end"
       >
         <button
-          class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+          class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
           data-testid="save-settings-button"
           type="submit"
         >
@@ -134,10 +131,10 @@ exports[`<AccessSettings /> should handle ready certificate 1`] = `
       Your certificate authority is set up properly. Please note that if you delete it, all clients will have their access revoked.
     </p>
     <div
-      class="text-right"
+      class="text-end"
     >
       <button
-        class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+        class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
         type="button"
       >
         <span>
