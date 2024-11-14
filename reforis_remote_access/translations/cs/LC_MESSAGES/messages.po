@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-03-13 12:11+0100\n"
-"PO-Revision-Date: 2024-06-25 10:09+0000\n"
-"Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
+"PO-Revision-Date: 2024-11-15 14:00+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/cs/>\n"
 "Language: cs\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.6-rc\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
@@ -35,21 +35,21 @@ msgid ""
 "configuration is done via a secure encrypted connection, and each client "
 "is required to have a token issued by this device."
 msgstr ""
-"Zde můžete nastavit svůj router tak, aby byl konfigurován vzdáleně. Dálková "
-"konfigurace se provádí přes bezpečné šifrované spojení a každý klient musí "
-"mít token vydaný tímto zařízením."
+"Zde můžete nastavit svůj směrovač tak, aby byl nastavován vzdáleně. To je "
+"prováděno přes bezpečné šifrované spojení a je třeba, aby každý klient měl "
+"token vydaný tímto zařízením."
 
 #: js/src/accessSettings/AccessSettings.js:41
 msgid ""
 "It can be useful when you plan to access the configuration interface from"
 " another Turris router, or you intend to write your client."
 msgstr ""
-"Může to být užitečné, pokud plánujete přistupovat ke konfiguračnímu rozhraní "
-"z jiného routeru Turris nebo když si chcete napsat vlastní klient."
+"Může to být užitečné, pokud plánujete přistupovat ke nastavovacímu rozhraní "
+"z jiného směrovače Turris nebo když si chcete napsat vlastního klienta."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
-msgstr "Generování certifikační autority"
+msgstr "Vytváření certifikační autority"
 
 #: js/src/accessSettings/AuthorityGenerating.js:32
 msgid ""
@@ -57,12 +57,12 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
-"Vaše certifikační autorita se nyní generuje. Obvykle to trvá několik minut. "
+"Vaše certifikační autorita je nyní vytvářena. Obvykle to trvá několik minut. "
 "Nastavení se zde automaticky objeví, jakmile bude autorita připravena."
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
-msgstr "Nelze vygenerovat certifikační autoritu."
+msgstr "Nedaří se vytvořit certifikační autoritu."
 
 #: js/src/accessSettings/AuthorityMissing.js:33
 msgid "No Certificate Authority"
@@ -76,7 +76,7 @@ msgid ""
 msgstr ""
 "Aktuálně neexistuje žádná certifikační autorita (CA) určená pro vzdálený "
 "přístup. CA je nezbytná pro generování přístupových tokenů k ověřování. "
-"Nejdřív musíte autoritu vygenerovat."
+"Nejprve je třeba autoritu vytvořit."
 
 #: js/src/accessSettings/AuthorityMissing.js:45
 msgid "Generate Certificate Authority"
@@ -128,7 +128,7 @@ msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
-"Zařízení v síti WAN budou schopna se připojovat ke konfiguračnímu rozhraní. "
+"Zařízení v síti WAN budou schopna se připojovat k nastavovacímu rozhraní. "
 "Jinak mají přístup jen zařízení v síti LAN."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
@@ -137,7 +137,7 @@ msgstr "Port"
 
 #: js/src/accessSettings/RemoteAccessForm.js:91
 msgid "A port which will be opened for the remote configuration of this device."
-msgstr "Port, který bude otevřen pro vzdálenou konfiguraci tohoto zařízení."
+msgstr "Port, který bude otevřen pro vzdálené nastavování tohoto zařízení."
 
 #: js/src/accessSettings/RemoteAccessForm.js:112
 msgid "Save"
@@ -145,7 +145,7 @@ msgstr "Uložit"
 
 #: js/src/accessSettings/RemoteAccessForm.js:122
 msgid "Should be a number in range of 1024-65536"
-msgstr "Musí být číslo v rozsahu 1024-65536"
+msgstr "Je třeba, aby bylo číslo z rozsahu 1024-65536"
 
 #: js/src/accessTokens/AccessTokens.js:30
 msgid "Access Tokens"
@@ -153,14 +153,14 @@ msgstr "Přístupové tokeny"
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid "You need to generate certificate authority to create tokens."
-msgstr "Pro vytváření tokenů potřebujete vygenerovat certifikační autoritu."
+msgstr "Pro vytváření tokenů je třeba vytvořit certifikační autoritu."
 
 #: js/src/accessTokens/AccessTokens.js:65
 msgid ""
 "You need to generate a token file for each client you want to grant "
 "access to."
 msgstr ""
-"Musíte vygenerovat soubor s tokenem pro každého klienta, kterému chcete "
+"Soubor s tokenem je třeba vytvořit pro každého klienta, kterému chcete "
 "povolit přístup."
 
 #: js/src/accessTokens/AccessTokens.js:70
@@ -168,8 +168,8 @@ msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " the \"Remote Devices\" plugin on the client device."
 msgstr ""
-"Pro použití tokenu s jiným routerem Turris ho musíte přenést pomocí pluginu "
-"\"Remote Devices\" na klientském zařízení."
+"Pro použití tokenu s jiným směrovačem Turris je třeba ho přenést pomocí "
+"zásuvného modulu „Vzdálená zařízení“ na klientském zařízení."
 
 #: js/src/accessTokens/CreateTokenForm.js:61
 msgid "Create Token"
@@ -193,7 +193,7 @@ msgstr "Přidat"
 
 #: js/src/accessTokens/CreateTokenForm.js:92
 msgid "Name cannot be empty"
-msgstr "Název nesmí být prázdný"
+msgstr "Název nemůže zůstat nevyplněný"
 
 #: js/src/accessTokens/CreateTokenForm.js:95
 msgid "Name is too long"
@@ -241,7 +241,7 @@ msgstr "Nelze změnit nastavení."
 
 #: reforis_remote_access/__init__.py:100
 msgid "Token '{}' already exists."
-msgstr "Token '{}' už existuje."
+msgstr "Token „{}“ už existuje."
 
 #: reforis_remote_access/__init__.py:104
 msgid "Cannot create token."
