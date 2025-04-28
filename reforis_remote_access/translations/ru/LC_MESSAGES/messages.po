@@ -1,25 +1,25 @@
 # Russian translations for reForis Remote Access.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Remote
 # Access project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-13 12:11+0100\n"
-"PO-Revision-Date: 2021-08-03 11:32+0000\n"
+"POT-Creation-Date: 2025-04-28 16:17+0200\n"
+"PO-Revision-Date: 2025-04-18 14:13+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language: ru\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris"
 "/reforis-remote-access-plugin/ru/>\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
@@ -35,12 +35,18 @@ msgid ""
 "configuration is done via a secure encrypted connection, and each client "
 "is required to have a token issued by this device."
 msgstr ""
+"Здесь вы можете настроить маршрутизатор для удаленной настройки. "
+"Удаленная настройка происходит через безопасное зашифрованное соединение,"
+" и каждому клиенту необходимо иметь токен, выпущенный этим устройством."
 
 #: js/src/accessSettings/AccessSettings.js:41
 msgid ""
 "It can be useful when you plan to access the configuration interface from"
 " another Turris router, or you intend to write your client."
 msgstr ""
+"Это может быть полезно, если вы планируете получить доступ к интерфейсу "
+"конфигурации с другого маршрутизатора Turris или собираетесь написать "
+"свой клиент."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
@@ -52,6 +58,9 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
+"Ваш центр сертификации сейчас генерируется. Обычно это занимает несколько"
+" минут. Настройки появятся здесь автоматически, как только центр будет "
+"готов."
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
@@ -67,13 +76,17 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed, you need to generate it first."
 msgstr ""
+"В настоящее время нет центра сертификации (CA), предназначенного для "
+"удаленного доступа. Для генерации токенов доступа для аутентификации "
+"требуется центр сертификации. Чтобы продолжить, вам нужно сначала его "
+"сгенерировать."
 
 #: js/src/accessSettings/AuthorityMissing.js:45
 msgid "Generate Certificate Authority"
 msgstr "Создать центр сертификации"
 
 #: js/src/accessSettings/CertificateAuthority.js:45
-#: reforis_remote_access/__init__.py:58
+#: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
 msgstr "Невозможно удалить центр сертификации."
 
@@ -86,12 +99,16 @@ msgid ""
 "You can't delete certificate authority while remote access is enabled. To"
 " delete it, you need to disable the access first."
 msgstr ""
+"Вы не можете удалить центр сертификации, пока включен удаленный доступ. "
+"Чтобы удалить центр, вам нужно сначала отключить доступ."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it, all clients will have their access revoked."
 msgstr ""
+"Ваш центр сертификации настроен правильно. Обратите внимание, что если вы"
+" удалите его, доступ всех клиентов будет отозван."
 
 #: js/src/accessSettings/CertificateAuthority.js:75
 msgid "Delete Certificate Authority"
@@ -114,14 +131,17 @@ msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
+"Устройства в сети WAN смогут подключиться к интерфейсу конфигурации. В "
+"противном случае доступ к нему смогут получить только устройства в "
+"локальной сети."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
-msgstr ""
+msgstr "Порт"
 
 #: js/src/accessSettings/RemoteAccessForm.js:91
 msgid "A port which will be opened for the remote configuration of this device."
-msgstr ""
+msgstr "Порт, который будет открыт для удаленной настройки этого устройства."
 
 #: js/src/accessSettings/RemoteAccessForm.js:112
 msgid "Save"
@@ -144,12 +164,17 @@ msgid ""
 "You need to generate a token file for each client you want to grant "
 "access to."
 msgstr ""
+"Вам необходимо сгенерировать файл токена для каждого клиента, которому вы"
+" хотите предоставить доступ."
 
 #: js/src/accessTokens/AccessTokens.js:70
 msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " the \"Remote Devices\" plugin on the client device."
 msgstr ""
+"Чтобы использовать токен с другим маршрутизатором Turris, вам необходимо "
+"передать его с помощью плагина «Удаленные устройства» на клиентском "
+"устройстве."
 
 #: js/src/accessTokens/CreateTokenForm.js:61
 msgid "Create Token"
@@ -164,6 +189,8 @@ msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
+"Короче 64 символов. Только буквенно-цифровые символы, точки, тире и "
+"подчеркивания."
 
 #: js/src/accessTokens/CreateTokenForm.js:81
 msgid "Add"
@@ -209,31 +236,32 @@ msgstr "Скачать"
 msgid "Revoke"
 msgstr "Отменить"
 
-#: reforis_remote_access/__init__.py:49
+#: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
 msgstr "Центр сертификации уже существует."
 
-#: reforis_remote_access/__init__.py:77
+#: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
 msgstr "Невозможно изменить настройки."
 
-#: reforis_remote_access/__init__.py:100
+#: reforis_remote_access/__init__.py:98
+#, python-brace-format
 msgid "Token '{}' already exists."
 msgstr "Токен '{}' уже существует."
 
-#: reforis_remote_access/__init__.py:104
+#: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
 msgstr "Невозможно создать токен."
 
-#: reforis_remote_access/__init__.py:115
+#: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
 msgstr "Запрашиваемый токен не существует."
 
-#: reforis_remote_access/__init__.py:119
+#: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
 msgstr "Невозможно получить токен."
 
-#: reforis_remote_access/__init__.py:134
+#: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
 msgstr "Невозможно отозвать токен."
 

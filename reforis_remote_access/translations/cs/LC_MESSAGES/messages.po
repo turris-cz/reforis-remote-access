@@ -1,24 +1,24 @@
 # Czech translations for reForis Remote Access.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Remote
 # Access project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-13 12:11+0100\n"
-"PO-Revision-Date: 2021-12-28 08:52+0000\n"
-"Last-Translator: Josef Schlehofer <pepe@bloodkings.eu>\n"
+"POT-Creation-Date: 2025-04-28 16:17+0200\n"
+"PO-Revision-Date: 2024-11-15 14:00+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language: cs\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/reforis-"
 "remote-access-plugin/cs/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
@@ -34,16 +34,22 @@ msgid ""
 "configuration is done via a secure encrypted connection, and each client "
 "is required to have a token issued by this device."
 msgstr ""
+"Zde můžete nastavit svůj směrovač tak, aby byl nastavován vzdáleně. To je"
+" prováděno přes bezpečné šifrované spojení a je třeba, aby každý klient "
+"měl token vydaný tímto zařízením."
 
 #: js/src/accessSettings/AccessSettings.js:41
 msgid ""
 "It can be useful when you plan to access the configuration interface from"
 " another Turris router, or you intend to write your client."
 msgstr ""
+"Může to být užitečné, pokud plánujete přistupovat ke nastavovacímu "
+"rozhraní z jiného směrovače Turris nebo když si chcete napsat vlastního "
+"klienta."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
-msgstr "Generování certifikační autority"
+msgstr "Vytváření certifikační autority"
 
 #: js/src/accessSettings/AuthorityGenerating.js:32
 msgid ""
@@ -51,10 +57,13 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
+"Vaše certifikační autorita je nyní vytvářena. Obvykle to trvá několik "
+"minut. Nastavení se zde automaticky objeví, jakmile bude autorita "
+"připravena."
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
-msgstr "Nelze vygenerovat certifikační autoritu."
+msgstr "Nedaří se vytvořit certifikační autoritu."
 
 #: js/src/accessSettings/AuthorityMissing.js:33
 msgid "No Certificate Authority"
@@ -66,13 +75,16 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed, you need to generate it first."
 msgstr ""
+"Aktuálně neexistuje žádná certifikační autorita (CA) určená pro vzdálený "
+"přístup. CA je nezbytná pro generování přístupových tokenů k ověřování. "
+"Nejprve je třeba autoritu vytvořit."
 
 #: js/src/accessSettings/AuthorityMissing.js:45
 msgid "Generate Certificate Authority"
 msgstr "Vygenerovat certifikační autoritu"
 
 #: js/src/accessSettings/CertificateAuthority.js:45
-#: reforis_remote_access/__init__.py:58
+#: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
 msgstr "Nelze smazat certifikační autoritu."
 
@@ -85,12 +97,16 @@ msgid ""
 "You can't delete certificate authority while remote access is enabled. To"
 " delete it, you need to disable the access first."
 msgstr ""
+"Nemůžete smazat certifikační autoritu, pokud je povolen vzdálený přístup."
+" Ke jejímu smazání musíte přístup nejdřív zakázat."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it, all clients will have their access revoked."
 msgstr ""
+"Vaše certifikační autorita je správně nastavena. Mějte na paměti, že když"
+" ji smažete, všem klientům tím zakážete přístup."
 
 #: js/src/accessSettings/CertificateAuthority.js:75
 msgid "Delete Certificate Authority"
@@ -113,14 +129,16 @@ msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
+"Zařízení v síti WAN budou schopna se připojovat k nastavovacímu rozhraní."
+" Jinak mají přístup jen zařízení v síti LAN."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: js/src/accessSettings/RemoteAccessForm.js:91
 msgid "A port which will be opened for the remote configuration of this device."
-msgstr ""
+msgstr "Port, který bude otevřen pro vzdálené nastavování tohoto zařízení."
 
 #: js/src/accessSettings/RemoteAccessForm.js:112
 msgid "Save"
@@ -128,7 +146,7 @@ msgstr "Uložit"
 
 #: js/src/accessSettings/RemoteAccessForm.js:122
 msgid "Should be a number in range of 1024-65536"
-msgstr "Musí být číslo v rozsahu 1024-65536"
+msgstr "Je třeba, aby bylo číslo z rozsahu 1024-65536"
 
 #: js/src/accessTokens/AccessTokens.js:30
 msgid "Access Tokens"
@@ -136,19 +154,23 @@ msgstr "Přístupové tokeny"
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid "You need to generate certificate authority to create tokens."
-msgstr "Pro vytváření tokenů potřebujete vygenerovat certifikační autoritu."
+msgstr "Pro vytváření tokenů je třeba vytvořit certifikační autoritu."
 
 #: js/src/accessTokens/AccessTokens.js:65
 msgid ""
 "You need to generate a token file for each client you want to grant "
 "access to."
 msgstr ""
+"Soubor s tokenem je třeba vytvořit pro každého klienta, kterému chcete "
+"povolit přístup."
 
 #: js/src/accessTokens/AccessTokens.js:70
 msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " the \"Remote Devices\" plugin on the client device."
 msgstr ""
+"Pro použití tokenu s jiným směrovačem Turris je třeba ho přenést pomocí "
+"zásuvného modulu „Vzdálená zařízení“ na klientském zařízení."
 
 #: js/src/accessTokens/CreateTokenForm.js:61
 msgid "Create Token"
@@ -163,6 +185,8 @@ msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
+"Kratší než 64 znaků. Pouze alfanumerické znaky, tečky, spojovníky a "
+"podtržítka."
 
 #: js/src/accessTokens/CreateTokenForm.js:81
 msgid "Add"
@@ -170,7 +194,7 @@ msgstr "Přidat"
 
 #: js/src/accessTokens/CreateTokenForm.js:92
 msgid "Name cannot be empty"
-msgstr "Název nesmí být prázdný"
+msgstr "Název nemůže zůstat nevyplněný"
 
 #: js/src/accessTokens/CreateTokenForm.js:95
 msgid "Name is too long"
@@ -208,31 +232,32 @@ msgstr "Stáhnout"
 msgid "Revoke"
 msgstr "Odvolat"
 
-#: reforis_remote_access/__init__.py:49
+#: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
 msgstr "Certifikační autorita už existuje."
 
-#: reforis_remote_access/__init__.py:77
+#: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
 msgstr "Nelze změnit nastavení."
 
-#: reforis_remote_access/__init__.py:100
+#: reforis_remote_access/__init__.py:98
+#, python-brace-format
 msgid "Token '{}' already exists."
-msgstr "Token '{}' už existuje."
+msgstr "Token „{}“ už existuje."
 
-#: reforis_remote_access/__init__.py:104
+#: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
 msgstr "Nelze vytvořit token."
 
-#: reforis_remote_access/__init__.py:115
+#: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
 msgstr "Požadovaný token neexistuje."
 
-#: reforis_remote_access/__init__.py:119
+#: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
 msgstr "Nelze získat token."
 
-#: reforis_remote_access/__init__.py:134
+#: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
 msgstr "Nelze odvolat token."
 
