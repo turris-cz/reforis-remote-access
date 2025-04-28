@@ -1,25 +1,24 @@
 # Czech translations for reForis Remote Access.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Remote
 # Access project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-13 12:11+0100\n"
+"POT-Creation-Date: 2025-04-28 16:17+0200\n"
 "PO-Revision-Date: 2024-11-15 14:00+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
-"reforis-remote-access-plugin/cs/>\n"
 "Language: cs\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/reforis-"
+"remote-access-plugin/cs/>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.9-dev\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
@@ -35,17 +34,18 @@ msgid ""
 "configuration is done via a secure encrypted connection, and each client "
 "is required to have a token issued by this device."
 msgstr ""
-"Zde můžete nastavit svůj směrovač tak, aby byl nastavován vzdáleně. To je "
-"prováděno přes bezpečné šifrované spojení a je třeba, aby každý klient měl "
-"token vydaný tímto zařízením."
+"Zde můžete nastavit svůj směrovač tak, aby byl nastavován vzdáleně. To je"
+" prováděno přes bezpečné šifrované spojení a je třeba, aby každý klient "
+"měl token vydaný tímto zařízením."
 
 #: js/src/accessSettings/AccessSettings.js:41
 msgid ""
 "It can be useful when you plan to access the configuration interface from"
 " another Turris router, or you intend to write your client."
 msgstr ""
-"Může to být užitečné, pokud plánujete přistupovat ke nastavovacímu rozhraní "
-"z jiného směrovače Turris nebo když si chcete napsat vlastního klienta."
+"Může to být užitečné, pokud plánujete přistupovat ke nastavovacímu "
+"rozhraní z jiného směrovače Turris nebo když si chcete napsat vlastního "
+"klienta."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
@@ -57,8 +57,9 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
-"Vaše certifikační autorita je nyní vytvářena. Obvykle to trvá několik minut. "
-"Nastavení se zde automaticky objeví, jakmile bude autorita připravena."
+"Vaše certifikační autorita je nyní vytvářena. Obvykle to trvá několik "
+"minut. Nastavení se zde automaticky objeví, jakmile bude autorita "
+"připravena."
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
@@ -83,7 +84,7 @@ msgid "Generate Certificate Authority"
 msgstr "Vygenerovat certifikační autoritu"
 
 #: js/src/accessSettings/CertificateAuthority.js:45
-#: reforis_remote_access/__init__.py:58
+#: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
 msgstr "Nelze smazat certifikační autoritu."
 
@@ -96,16 +97,16 @@ msgid ""
 "You can't delete certificate authority while remote access is enabled. To"
 " delete it, you need to disable the access first."
 msgstr ""
-"Nemůžete smazat certifikační autoritu, pokud je povolen vzdálený přístup. Ke "
-"jejímu smazání musíte přístup nejdřív zakázat."
+"Nemůžete smazat certifikační autoritu, pokud je povolen vzdálený přístup."
+" Ke jejímu smazání musíte přístup nejdřív zakázat."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it, all clients will have their access revoked."
 msgstr ""
-"Vaše certifikační autorita je správně nastavena. Mějte na paměti, že když ji "
-"smažete, všem klientům tím zakážete přístup."
+"Vaše certifikační autorita je správně nastavena. Mějte na paměti, že když"
+" ji smažete, všem klientům tím zakážete přístup."
 
 #: js/src/accessSettings/CertificateAuthority.js:75
 msgid "Delete Certificate Authority"
@@ -128,8 +129,8 @@ msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
-"Zařízení v síti WAN budou schopna se připojovat k nastavovacímu rozhraní. "
-"Jinak mají přístup jen zařízení v síti LAN."
+"Zařízení v síti WAN budou schopna se připojovat k nastavovacímu rozhraní."
+" Jinak mají přístup jen zařízení v síti LAN."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
@@ -231,31 +232,32 @@ msgstr "Stáhnout"
 msgid "Revoke"
 msgstr "Odvolat"
 
-#: reforis_remote_access/__init__.py:49
+#: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
 msgstr "Certifikační autorita už existuje."
 
-#: reforis_remote_access/__init__.py:77
+#: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
 msgstr "Nelze změnit nastavení."
 
-#: reforis_remote_access/__init__.py:100
+#: reforis_remote_access/__init__.py:98
+#, python-brace-format
 msgid "Token '{}' already exists."
 msgstr "Token „{}“ už existuje."
 
-#: reforis_remote_access/__init__.py:104
+#: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
 msgstr "Nelze vytvořit token."
 
-#: reforis_remote_access/__init__.py:115
+#: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
 msgstr "Požadovaný token neexistuje."
 
-#: reforis_remote_access/__init__.py:119
+#: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
 msgstr "Nelze získat token."
 
-#: reforis_remote_access/__init__.py:134
+#: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
 msgstr "Nelze odvolat token."
 
@@ -382,3 +384,4 @@ msgstr "Nelze odvolat token."
 
 #~ msgid "Remote Devices"
 #~ msgstr "Vzdálená zařízení"
+

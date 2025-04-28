@@ -1,25 +1,24 @@
 # Slovak translations for reForis Remote Access.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Remote
 # Access project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-13 12:11+0100\n"
+"POT-Creation-Date: 2025-04-28 16:17+0200\n"
 "PO-Revision-Date: 2024-08-03 21:09+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
-"reforis-remote-access-plugin/sk/>\n"
 "Language: sk\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris"
+"/reforis-remote-access-plugin/sk/>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.7-dev\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
@@ -36,8 +35,8 @@ msgid ""
 "is required to have a token issued by this device."
 msgstr ""
 "Tu je možné nastaviť vzdialenú konfiguráciu vášho routra. Prebieha "
-"prostredníctvom zabezpečeného šifrovaného pripojenia a každý klient musí mať "
-"token vydaný týmto zariadením."
+"prostredníctvom zabezpečeného šifrovaného pripojenia a každý klient musí "
+"mať token vydaný týmto zariadením."
 
 #: js/src/accessSettings/AccessSettings.js:41
 msgid ""
@@ -58,7 +57,8 @@ msgid ""
 "ready."
 msgstr ""
 "Teraz sa generuje vaša certifikačná autorita. Zvyčajne to trvá niekoľko "
-"minút. Keď bude autorita pripravená, automaticky sa tu zobrazia nastavenia."
+"minút. Keď bude autorita pripravená, automaticky sa tu zobrazia "
+"nastavenia."
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
@@ -75,15 +75,16 @@ msgid ""
 "proceed, you need to generate it first."
 msgstr ""
 "V tejto chvíli neexistuje žiadna certifikačná autorita (CA) určená na "
-"vzdialený prístup. CA je nevyhnutná na generovanie overovacích prístupových "
-"tokenov. Ak chcete pokračovať, je najskôr potrebné CA vygenerovať."
+"vzdialený prístup. CA je nevyhnutná na generovanie overovacích "
+"prístupových tokenov. Ak chcete pokračovať, je najskôr potrebné CA "
+"vygenerovať."
 
 #: js/src/accessSettings/AuthorityMissing.js:45
 msgid "Generate Certificate Authority"
 msgstr "Vygenerovať certifikačnú autoritu"
 
 #: js/src/accessSettings/CertificateAuthority.js:45
-#: reforis_remote_access/__init__.py:58
+#: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
 msgstr "Certifikačná autorita sa nedá vymazať."
 
@@ -96,8 +97,9 @@ msgid ""
 "You can't delete certificate authority while remote access is enabled. To"
 " delete it, you need to disable the access first."
 msgstr ""
-"Kým je povolený vzdialený prístup, vymazanie certifikačnej autority nie je "
-"možné. Ak ju chcete odstrániť, je predtým potrebné vzdialený prístup zakázať."
+"Kým je povolený vzdialený prístup, vymazanie certifikačnej autority nie "
+"je možné. Ak ju chcete odstrániť, je predtým potrebné vzdialený prístup "
+"zakázať."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
@@ -128,8 +130,9 @@ msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
-"Zariadenia v sieti WAN sa budú môcť pripojiť ku konfiguračnému rozhraniu. V "
-"opačnom prípade k nemu budú môcť pristupovať len zariadenia v sieti LAN."
+"Zariadenia v sieti WAN sa budú môcť pripojiť ku konfiguračnému rozhraniu."
+" V opačnom prípade k nemu budú môcť pristupovať len zariadenia v sieti "
+"LAN."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
@@ -160,8 +163,8 @@ msgid ""
 "You need to generate a token file for each client you want to grant "
 "access to."
 msgstr ""
-"Pre každého klienta, ktorému sa má povoliť prístup, je potrebné vygenerovať "
-"súbor s tokenom."
+"Pre každého klienta, ktorému sa má povoliť prístup, je potrebné "
+"vygenerovať súbor s tokenom."
 
 #: js/src/accessTokens/AccessTokens.js:70
 msgid ""
@@ -231,31 +234,32 @@ msgstr "Stiahnuť"
 msgid "Revoke"
 msgstr "Odvolať"
 
-#: reforis_remote_access/__init__.py:49
+#: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
 msgstr "Certifikačná autorita už existuje."
 
-#: reforis_remote_access/__init__.py:77
+#: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
 msgstr "Nastavenia sa nedajú zmeniť."
 
-#: reforis_remote_access/__init__.py:100
+#: reforis_remote_access/__init__.py:98
+#, python-brace-format
 msgid "Token '{}' already exists."
 msgstr "Token '{}' už existuje."
 
-#: reforis_remote_access/__init__.py:104
+#: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
 msgstr "Token sa nedá vytvoriť."
 
-#: reforis_remote_access/__init__.py:115
+#: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
 msgstr "Požadovaný token neexistuje."
 
-#: reforis_remote_access/__init__.py:119
+#: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
 msgstr "Nedá sa získať token."
 
-#: reforis_remote_access/__init__.py:134
+#: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
 msgstr "Token sa nedá odvolať."
 
@@ -384,3 +388,4 @@ msgstr "Token sa nedá odvolať."
 
 #~ msgid "Remote Devices"
 #~ msgstr "Vzdialené zariadenia"
+

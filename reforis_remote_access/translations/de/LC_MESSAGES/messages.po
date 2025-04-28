@@ -1,25 +1,24 @@
 # German translations for reForis Remote Access.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Remote
 # Access project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-13 12:11+0100\n"
+"POT-Creation-Date: 2025-04-28 16:17+0200\n"
 "PO-Revision-Date: 2024-10-23 02:15+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris/"
-"reforis-remote-access-plugin/de/>\n"
 "Language: de\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris"
+"/reforis-remote-access-plugin/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
@@ -73,7 +72,7 @@ msgid "Generate Certificate Authority"
 msgstr "Zertifizierungsstelle anlegen"
 
 #: js/src/accessSettings/CertificateAuthority.js:45
-#: reforis_remote_access/__init__.py:58
+#: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
 msgstr "Zertifizierungsstelle kann nicht gelöscht werden."
 
@@ -86,16 +85,18 @@ msgid ""
 "You can't delete certificate authority while remote access is enabled. To"
 " delete it, you need to disable the access first."
 msgstr ""
-"Sie können die Zertifizierungsstelle nicht löschen, solange der Fernzugriff "
-"aktiviert ist. Um sie zu löschen, müssen Sie zuerst den Zugriff deaktivieren."
+"Sie können die Zertifizierungsstelle nicht löschen, solange der "
+"Fernzugriff aktiviert ist. Um sie zu löschen, müssen Sie zuerst den "
+"Zugriff deaktivieren."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it, all clients will have their access revoked."
 msgstr ""
-"Ihre Zertifizierungsstelle ist ordnungsgemäß eingerichtet. Bitte beachten "
-"Sie, dass der Zugang für alle Clients widerrufen wird, wenn Sie sie löschen."
+"Ihre Zertifizierungsstelle ist ordnungsgemäß eingerichtet. Bitte beachten"
+" Sie, dass der Zugang für alle Clients widerrufen wird, wenn Sie sie "
+"löschen."
 
 #: js/src/accessSettings/CertificateAuthority.js:75
 msgid "Delete Certificate Authority"
@@ -118,8 +119,8 @@ msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
-"Geräte im WAN-Netz können eine Verbindung zur Konfigurationsschnittstelle "
-"herstellen. Andernfalls können nur Geräte im LAN darauf zugreifen."
+"Geräte im WAN-Netz können eine Verbindung zur Konfigurationsschnittstelle"
+" herstellen. Andernfalls können nur Geräte im LAN darauf zugreifen."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
@@ -174,8 +175,8 @@ msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
-"Kürzer als 64 Zeichen. Nur alphanumerische Zeichen, Punkte, Bindestriche und "
-"Unterstriche."
+"Kürzer als 64 Zeichen. Nur alphanumerische Zeichen, Punkte, Bindestriche "
+"und Unterstriche."
 
 #: js/src/accessTokens/CreateTokenForm.js:81
 msgid "Add"
@@ -221,31 +222,32 @@ msgstr "Herunterladen"
 msgid "Revoke"
 msgstr "Widerrufen"
 
-#: reforis_remote_access/__init__.py:49
+#: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
 msgstr "Zertifizierungsstelle existiert bereits."
 
-#: reforis_remote_access/__init__.py:77
+#: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
 msgstr "Einstellungen können nicht geändert werden."
 
-#: reforis_remote_access/__init__.py:100
+#: reforis_remote_access/__init__.py:98
+#, python-brace-format
 msgid "Token '{}' already exists."
 msgstr "Token '{}' existiert bereits."
 
-#: reforis_remote_access/__init__.py:104
+#: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
 msgstr "Token kann nicht erstellt werden."
 
-#: reforis_remote_access/__init__.py:115
+#: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
 msgstr "Angefragter Token existiert nicht."
 
-#: reforis_remote_access/__init__.py:119
+#: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
 msgstr "Token kann nicht abgerufen werden."
 
-#: reforis_remote_access/__init__.py:134
+#: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
 msgstr "Token kann nicht widerrufen werden."
 
@@ -354,3 +356,4 @@ msgstr "Token kann nicht widerrufen werden."
 
 #~ msgid "Remote Devices"
 #~ msgstr "Externe Geräte"
+

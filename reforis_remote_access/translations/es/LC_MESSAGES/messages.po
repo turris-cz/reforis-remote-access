@@ -1,25 +1,24 @@
 # Spanish translations for reForis Remote Access.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Remote
 # Access project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-13 12:11+0100\n"
+"POT-Creation-Date: 2025-04-28 16:17+0200\n"
 "PO-Revision-Date: 2025-03-23 04:01+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/"
-"reforis-remote-access-plugin/es/>\n"
 "Language: es\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris"
+"/reforis-remote-access-plugin/es/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
@@ -35,17 +34,17 @@ msgid ""
 "configuration is done via a secure encrypted connection, and each client "
 "is required to have a token issued by this device."
 msgstr ""
-"Aquí puede configurar su router para que se configure de forma remota. La "
-"configuración remota se realiza a través de una conexión encriptada segura, "
-"y cada cliente debe tener un token emitido por este dispositivo."
+"Aquí puede configurar su router para que se configure de forma remota. La"
+" configuración remota se realiza a través de una conexión encriptada "
+"segura, y cada cliente debe tener un token emitido por este dispositivo."
 
 #: js/src/accessSettings/AccessSettings.js:41
 msgid ""
 "It can be useful when you plan to access the configuration interface from"
 " another Turris router, or you intend to write your client."
 msgstr ""
-"Puede ser útil cuando se planea acceder a la interfaz de configuración desde "
-"otro router Turris, o si se pretende escribir en el cliente."
+"Puede ser útil cuando se planea acceder a la interfaz de configuración "
+"desde otro router Turris, o si se pretende escribir en el cliente."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
@@ -57,9 +56,9 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
-"Su autoridad de certificación está siendo generada. Normalmente toma unos "
-"minutos. Las opciones de configuración aparecerán aquí automáticamente una "
-"vez que la autoridad esté lista."
+"Su autoridad de certificación está siendo generada. Normalmente toma unos"
+" minutos. Las opciones de configuración aparecerán aquí automáticamente "
+"una vez que la autoridad esté lista."
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
@@ -75,8 +74,8 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed, you need to generate it first."
 msgstr ""
-"Actualmente no existe ninguna autoridad de certificación (CA) dedicada al "
-"acceso remoto. Se necesita una CA para generar tokens de acceso para "
+"Actualmente no existe ninguna autoridad de certificación (CA) dedicada al"
+" acceso remoto. Se necesita una CA para generar tokens de acceso para "
 "autenticarse. Para proceder, es necesario generarla primero."
 
 #: js/src/accessSettings/AuthorityMissing.js:45
@@ -84,7 +83,7 @@ msgid "Generate Certificate Authority"
 msgstr "Generar una autoridad de certificación"
 
 #: js/src/accessSettings/CertificateAuthority.js:45
-#: reforis_remote_access/__init__.py:58
+#: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
 msgstr "No se puede eliminar la autoridad de certificación."
 
@@ -105,8 +104,8 @@ msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it, all clients will have their access revoked."
 msgstr ""
-"Su CA está configurada correctamente. Tenga en cuenta que eliminarlo negará "
-"el acceso a todos los clientes."
+"Su CA está configurada correctamente. Tenga en cuenta que eliminarlo "
+"negará el acceso a todos los clientes."
 
 #: js/src/accessSettings/CertificateAuthority.js:75
 msgid "Delete Certificate Authority"
@@ -129,8 +128,9 @@ msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
-"Los dispositivos en la WAN podrán conectarse a la interfaz de configuración. "
-"De lo contrario, sólo los dispositivos de la LAN tienen acceso."
+"Los dispositivos en la WAN podrán conectarse a la interfaz de "
+"configuración. De lo contrario, sólo los dispositivos de la LAN tienen "
+"acceso."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
@@ -138,8 +138,7 @@ msgstr "Puerto"
 
 #: js/src/accessSettings/RemoteAccessForm.js:91
 msgid "A port which will be opened for the remote configuration of this device."
-msgstr ""
-"El puerto que se abrirá para la configuración remota de este dispositivo."
+msgstr "El puerto que se abrirá para la configuración remota de este dispositivo."
 
 #: js/src/accessSettings/RemoteAccessForm.js:112
 msgid "Save"
@@ -162,15 +161,16 @@ msgid ""
 "You need to generate a token file for each client you want to grant "
 "access to."
 msgstr ""
-"Debe generar un archivo token para cada cliente al que desee otorgar acceso."
+"Debe generar un archivo token para cada cliente al que desee otorgar "
+"acceso."
 
 #: js/src/accessTokens/AccessTokens.js:70
 msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " the \"Remote Devices\" plugin on the client device."
 msgstr ""
-"Para usar el token con otro enrutador Turris, debe transferirlo usando el "
-"complemento \"Dispositivos remotos\" en el dispositivo cliente."
+"Para usar el token con otro enrutador Turris, debe transferirlo usando el"
+" complemento \"Dispositivos remotos\" en el dispositivo cliente."
 
 #: js/src/accessTokens/CreateTokenForm.js:61
 msgid "Create Token"
@@ -232,31 +232,32 @@ msgstr "Descargar"
 msgid "Revoke"
 msgstr "Revocar"
 
-#: reforis_remote_access/__init__.py:49
+#: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
 msgstr "La autoridad de certificación ya existe."
 
-#: reforis_remote_access/__init__.py:77
+#: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
 msgstr "No se puede cambiar los ajustes."
 
-#: reforis_remote_access/__init__.py:100
+#: reforis_remote_access/__init__.py:98
+#, python-brace-format
 msgid "Token '{}' already exists."
 msgstr "El token '{}' ya existe."
 
-#: reforis_remote_access/__init__.py:104
+#: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
 msgstr "No se puede crear el token."
 
-#: reforis_remote_access/__init__.py:115
+#: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
 msgstr "El token solicitado no existe."
 
-#: reforis_remote_access/__init__.py:119
+#: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
 msgstr "No se puede obtener el token."
 
-#: reforis_remote_access/__init__.py:134
+#: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
 msgstr "No se puede revocar el token."
 
@@ -365,3 +366,4 @@ msgstr "No se puede revocar el token."
 
 #~ msgid "Remote Devices"
 #~ msgstr "Dispositivos Remotos"
+
