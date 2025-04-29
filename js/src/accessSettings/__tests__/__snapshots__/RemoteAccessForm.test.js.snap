@@ -68,21 +68,23 @@ exports[`<RemoteAccessForm /> should display a spinner and disable save button w
             value="1808"
           />
           <button
-            aria-label="Increase"
+            aria-label="Increase value. Hint: Hold to increase faster."
             class="btn btn-outline-secondary"
+            title="Increase value. Hint: Hold to increase faster."
             type="button"
           >
             <i
-              class="fas fa-plus"
+              class="fa"
             />
           </button>
           <button
-            aria-label="Decrease"
+            aria-label="Decrease value. Hint: Hold to decrease faster."
             class="btn btn-outline-secondary"
+            title="Decrease value. Hint: Hold to decrease faster."
             type="button"
           >
             <i
-              class="fas fa-minus"
+              class="fa"
             />
           </button>
         </div>
@@ -185,21 +187,23 @@ exports[`<RemoteAccessForm /> should expose the rest of the form when enabled 1`
             value="1194"
           />
           <button
-            aria-label="Increase"
+            aria-label="Increase value. Hint: Hold to increase faster."
             class="btn btn-outline-secondary"
+            title="Increase value. Hint: Hold to increase faster."
             type="button"
           >
             <i
-              class="fas fa-plus"
+              class="fa"
             />
           </button>
           <button
-            aria-label="Decrease"
+            aria-label="Decrease value. Hint: Hold to decrease faster."
             class="btn btn-outline-secondary"
+            title="Decrease value. Hint: Hold to decrease faster."
             type="button"
           >
             <i
-              class="fas fa-minus"
+              class="fa"
             />
           </button>
         </div>
@@ -297,21 +301,23 @@ exports[`<RemoteAccessForm /> should render full form when access is enabled 1`]
             value="1808"
           />
           <button
-            aria-label="Increase"
+            aria-label="Increase value. Hint: Hold to increase faster."
             class="btn btn-outline-secondary"
+            title="Increase value. Hint: Hold to increase faster."
             type="button"
           >
             <i
-              class="fas fa-plus"
+              class="fa"
             />
           </button>
           <button
-            aria-label="Decrease"
+            aria-label="Decrease value. Hint: Hold to decrease faster."
             class="btn btn-outline-secondary"
+            title="Decrease value. Hint: Hold to decrease faster."
             type="button"
           >
             <i
-              class="fas fa-minus"
+              class="fa"
             />
           </button>
         </div>

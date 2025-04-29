@@ -132,21 +132,23 @@ exports[`<Settings /> should render settings component 1`] = `
             value="1234"
           />
           <button
-            aria-label="Increase"
+            aria-label="Increase value. Hint: Hold to increase faster."
             class="btn btn-outline-secondary"
+            title="Increase value. Hint: Hold to increase faster."
             type="button"
           >
             <i
-              class="fas fa-plus"
+              class="fa"
             />
           </button>
           <button
-            aria-label="Decrease"
+            aria-label="Decrease value. Hint: Hold to decrease faster."
             class="btn btn-outline-secondary"
+            title="Decrease value. Hint: Hold to decrease faster."
             type="button"
           >
             <i
-              class="fas fa-minus"
+              class="fa"
             />
           </button>
         </div>
