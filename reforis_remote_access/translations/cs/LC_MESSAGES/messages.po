@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-28 16:17+0200\n"
-"PO-Revision-Date: 2025-05-14 21:01+0000\n"
+"PO-Revision-Date: 2025-05-18 09:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/cs/>\n"
@@ -223,7 +223,7 @@ msgstr "Akce"
 
 #: js/src/accessTokens/TokensTable.js:96
 msgid "Access revoked"
-msgstr "Přístup odvolán"
+msgstr "Udělení přístupu zrušeno"
 
 #: js/src/accessTokens/TokensTable.js:111
 msgid "Download"
@@ -239,7 +239,7 @@ msgstr "Certifikační autorita už existuje."
 
 #: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
-msgstr "Nelze změnit nastavení."
+msgstr "Nebylo možné změnit nastavení."
 
 #: reforis_remote_access/__init__.py:98
 #, python-brace-format
@@ -260,7 +260,7 @@ msgstr "Nebylo možné získat token."
 
 #: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
-msgstr "Nelze odvolat token."
+msgstr "Platnost tokenu nebylo možné odvolat."
 
 #~ msgid ""
 #~ "Here you can set up your router"
