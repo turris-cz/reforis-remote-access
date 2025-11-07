@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-28 16:17+0200\n"
-"PO-Revision-Date: 2024-11-15 14:00+0000\n"
+"POT-Creation-Date: 2025-11-07 18:11+0300\n"
+"PO-Revision-Date: 2025-05-18 09:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language: cs\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/reforis-"
@@ -44,8 +44,8 @@ msgid ""
 " another Turris router, or you intend to write your client."
 msgstr ""
 "Může to být užitečné, pokud plánujete přistupovat ke nastavovacímu "
-"rozhraní z jiného směrovače Turris nebo když si chcete napsat vlastního "
-"klienta."
+"rozhraní z jiného směrovače Turris nebo když si chcete naprogramovat "
+"vlastního klienta."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
@@ -75,9 +75,9 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed, you need to generate it first."
 msgstr ""
-"Aktuálně neexistuje žádná certifikační autorita (CA) určená pro vzdálený "
-"přístup. CA je nezbytná pro generování přístupových tokenů k ověřování. "
-"Nejprve je třeba autoritu vytvořit."
+"V tuto chvíli nemáte žádnou certifikační autoritu (CA), vyhrazenou pro "
+"účely vzdáleného přístupu. Ta je nezbytná pro vytváření přístupových "
+"tokenů k ověřování. Nejprve je třeba takovou autoritu vytvořit."
 
 #: js/src/accessSettings/AuthorityMissing.js:45
 msgid "Generate Certificate Authority"
@@ -86,7 +86,7 @@ msgstr "Vygenerovat certifikační autoritu"
 #: js/src/accessSettings/CertificateAuthority.js:45
 #: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
-msgstr "Nelze smazat certifikační autoritu."
+msgstr "Nebylo možné smazat certifikační autoritu."
 
 #: js/src/accessSettings/CertificateAuthority.js:55
 msgid "Certificate Authority"
@@ -98,7 +98,7 @@ msgid ""
 " delete it, you need to disable the access first."
 msgstr ""
 "Nemůžete smazat certifikační autoritu, pokud je povolen vzdálený přístup."
-" Ke jejímu smazání musíte přístup nejdřív zakázat."
+" Pokud jí chcete smazat, je nejdříve třeba tento přístup zakázat."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
@@ -114,7 +114,7 @@ msgstr "Smazat certifikační autoritu"
 
 #: js/src/accessSettings/RemoteAccessForm.js:36
 msgid "Cannot save connection parameters."
-msgstr "Nelze uložit parametry připojení."
+msgstr "Nebylo možné uložit parametry připojení."
 
 #: js/src/accessSettings/RemoteAccessForm.js:71
 msgid "Enable Remote Access"
@@ -185,7 +185,7 @@ msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
-"Kratší než 64 znaků. Pouze alfanumerické znaky, tečky, spojovníky a "
+"Kratší než 64 znaků. Pouze písmena a číslice, dále tečky, spojovníky a "
 "podtržítka."
 
 #: js/src/accessTokens/CreateTokenForm.js:81
@@ -222,7 +222,7 @@ msgstr "Akce"
 
 #: js/src/accessTokens/TokensTable.js:96
 msgid "Access revoked"
-msgstr "Přístup odvolán"
+msgstr "Udělení přístupu zrušeno"
 
 #: js/src/accessTokens/TokensTable.js:111
 msgid "Download"
@@ -238,7 +238,7 @@ msgstr "Certifikační autorita už existuje."
 
 #: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
-msgstr "Nelze změnit nastavení."
+msgstr "Nebylo možné změnit nastavení."
 
 #: reforis_remote_access/__init__.py:98
 #, python-brace-format
@@ -247,7 +247,7 @@ msgstr "Token „{}“ už existuje."
 
 #: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
-msgstr "Nelze vytvořit token."
+msgstr "Nebylo možné vytvořit token."
 
 #: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
@@ -255,11 +255,11 @@ msgstr "Požadovaný token neexistuje."
 
 #: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
-msgstr "Nelze získat token."
+msgstr "Nebylo možné získat token."
 
 #: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
-msgstr "Nelze odvolat token."
+msgstr "Platnost tokenu nebylo možné odvolat."
 
 #~ msgid ""
 #~ "Here you can set up your router"
