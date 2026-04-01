@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-11-07 18:11+0300\n"
-"PO-Revision-Date: 2026-03-31 21:09+0000\n"
+"PO-Revision-Date: 2026-04-02 08:09+0000\n"
 "Last-Translator: Fln <weblate.org@fln.lt>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/lt/>\n"
@@ -204,7 +204,7 @@ msgstr ""
 
 #: js/src/accessTokens/TokensTable.js:50
 msgid "Name"
-msgstr ""
+msgstr "Pavadinimas"
 
 #: js/src/accessTokens/TokensTable.js:51
 msgid "Actions"
@@ -216,7 +216,7 @@ msgstr ""
 
 #: js/src/accessTokens/TokensTable.js:111
 msgid "Download"
-msgstr ""
+msgstr "Atsisiuntimas"
 
 #: js/src/accessTokens/TokensTable.js:114
 msgid "Revoke"
