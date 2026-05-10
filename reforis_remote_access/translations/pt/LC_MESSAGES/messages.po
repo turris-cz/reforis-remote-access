@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: reForis Remote Access 2.2.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2025-11-07 18:11+0300\n"
-"PO-Revision-Date: 2026-05-09 20:11+0000\n"
+"PO-Revision-Date: 2026-05-11 11:12+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/pt/>\n"
@@ -203,7 +203,7 @@ msgstr ""
 
 #: js/src/accessTokens/TokensTable.js:111
 msgid "Download"
-msgstr "Descarregar"
+msgstr "Descarga"
 
 #: js/src/accessTokens/TokensTable.js:114
 msgid "Revoke"
