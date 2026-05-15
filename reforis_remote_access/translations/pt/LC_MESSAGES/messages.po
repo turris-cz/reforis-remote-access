@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: reForis Remote Access 2.2.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2025-11-07 18:11+0300\n"
-"PO-Revision-Date: 2026-05-11 11:12+0000\n"
+"PO-Revision-Date: 2026-05-16 05:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/pt/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.5-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
@@ -27,7 +27,7 @@ msgstr "Acesso Remoto"
 
 #: js/src/accessSettings/AccessSettings.js:34
 msgid "Access Settings"
-msgstr ""
+msgstr "Definições de Acesso"
 
 #: js/src/accessSettings/AccessSettings.js:36
 msgid ""
@@ -35,16 +35,21 @@ msgid ""
 "configuration is done via a secure encrypted connection, and each client "
 "is required to have a token issued by this device."
 msgstr ""
+"Aqui pode configurar o seu router para ser configurado remotamente. A "
+"configuração remota é feita via ligação encriptada segura, e é requerido a "
+"cada cliente ter um testemunho emitido por este dispositivo."
 
 #: js/src/accessSettings/AccessSettings.js:41
 msgid ""
 "It can be useful when you plan to access the configuration interface from"
 " another Turris router, or you intend to write your client."
 msgstr ""
+"Pode ser útil quando planeia aceder à interface de configuração a partir de "
+"outro router Turris, ou pretende escreve o seu cliente."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
-msgstr ""
+msgstr "A Gerar Autoridade de Certificado"
 
 #: js/src/accessSettings/AuthorityGenerating.js:32
 msgid ""
@@ -52,14 +57,17 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
+"A sua autoridade de certificado está a ser gerada. Geralmente demora alguns "
+"minutos. As definições vão aparecer aqui automaticamente assim que a "
+"autoridade esteja pronta."
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
-msgstr ""
+msgstr "Não pode gerar autoridade de certificado."
 
 #: js/src/accessSettings/AuthorityMissing.js:33
 msgid "No Certificate Authority"
-msgstr ""
+msgstr "Nenhuma Autoridade de Certificado"
 
 #: js/src/accessSettings/AuthorityMissing.js:35
 msgid ""
@@ -67,10 +75,13 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed, you need to generate it first."
 msgstr ""
+"Atualmente, não há nenhuma autoridade de certificado (CA) dedicada ao acesso "
+"remoto. É requerida uma CA para gerar testemunhos de acesso para "
+"autenticação. Para prosseguir, precisa de gera-la primeiro."
 
 #: js/src/accessSettings/AuthorityMissing.js:45
 msgid "Generate Certificate Authority"
-msgstr ""
+msgstr "Gerar Autoridade de Certificado"
 
 #: js/src/accessSettings/CertificateAuthority.js:45
 #: reforis_remote_access/__init__.py:56
@@ -79,7 +90,7 @@ msgstr ""
 
 #: js/src/accessSettings/CertificateAuthority.js:55
 msgid "Certificate Authority"
-msgstr ""
+msgstr "Autoridade de Certificado"
 
 #: js/src/accessSettings/CertificateAuthority.js:58
 msgid ""
@@ -103,7 +114,7 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:71
 msgid "Enable Remote Access"
-msgstr ""
+msgstr "Ativar Acesso Remoto"
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Accessible via WAN"
@@ -117,7 +128,7 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
-msgstr ""
+msgstr "Porto"
 
 #: js/src/accessSettings/RemoteAccessForm.js:91
 msgid "A port which will be opened for the remote configuration of this device."
@@ -167,7 +178,7 @@ msgstr ""
 
 #: js/src/accessTokens/CreateTokenForm.js:81
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
 
 #: js/src/accessTokens/CreateTokenForm.js:92
 msgid "Name cannot be empty"
@@ -183,7 +194,7 @@ msgstr ""
 
 #: js/src/accessTokens/Tokens.js:45
 msgid "Tokens"
-msgstr ""
+msgstr "Testemunhos"
 
 #: js/src/accessTokens/TokensTable.js:40
 msgid "There are no tokens added yet."
@@ -199,7 +210,7 @@ msgstr "Ações"
 
 #: js/src/accessTokens/TokensTable.js:96
 msgid "Access revoked"
-msgstr ""
+msgstr "Acesso revogado"
 
 #: js/src/accessTokens/TokensTable.js:111
 msgid "Download"
@@ -207,7 +218,7 @@ msgstr "Descarga"
 
 #: js/src/accessTokens/TokensTable.js:114
 msgid "Revoke"
-msgstr ""
+msgstr "Revogar"
 
 #: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
