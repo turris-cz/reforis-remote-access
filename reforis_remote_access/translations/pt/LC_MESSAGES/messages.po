@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: reForis Remote Access 2.2.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2025-11-07 18:11+0300\n"
-"PO-Revision-Date: 2026-05-16 05:11+0000\n"
+"PO-Revision-Date: 2026-05-17 08:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/pt/>\n"
@@ -86,7 +86,7 @@ msgstr "Gerar Autoridade de Certificado"
 #: js/src/accessSettings/CertificateAuthority.js:45
 #: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
-msgstr ""
+msgstr "Não pode apagar autoridade de certificado."
 
 #: js/src/accessSettings/CertificateAuthority.js:55
 msgid "Certificate Authority"
@@ -97,20 +97,24 @@ msgid ""
 "You can't delete certificate authority while remote access is enabled. To"
 " delete it, you need to disable the access first."
 msgstr ""
+"Não pode apagar a autoridade de certificado enquanto o acesso remoto está "
+"ativo. Para a apagar, precisa primeiro de desativar o acesso."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it, all clients will have their access revoked."
 msgstr ""
+"A sua autoridade de certificado está configurada de modo apropriado. Por "
+"favor note que se a apagar, todos os clientes terão o seu acesso revogado."
 
 #: js/src/accessSettings/CertificateAuthority.js:75
 msgid "Delete Certificate Authority"
-msgstr ""
+msgstr "Apagar Autoridade de Certificado"
 
 #: js/src/accessSettings/RemoteAccessForm.js:36
 msgid "Cannot save connection parameters."
-msgstr ""
+msgstr "Não pode salvar parâmetros da ligação."
 
 #: js/src/accessSettings/RemoteAccessForm.js:71
 msgid "Enable Remote Access"
@@ -144,7 +148,7 @@ msgstr ""
 
 #: js/src/accessTokens/AccessTokens.js:30
 msgid "Access Tokens"
-msgstr ""
+msgstr "Testemunhos de Acesso"
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid "You need to generate certificate authority to create tokens."
@@ -164,11 +168,11 @@ msgstr ""
 
 #: js/src/accessTokens/CreateTokenForm.js:61
 msgid "Create Token"
-msgstr ""
+msgstr "Criar Testemunho"
 
 #: js/src/accessTokens/CreateTokenForm.js:64
 msgid "Token name"
-msgstr ""
+msgstr "Nome do testemunho"
 
 #: js/src/accessTokens/CreateTokenForm.js:65
 msgid ""
@@ -231,7 +235,7 @@ msgstr ""
 #: reforis_remote_access/__init__.py:98
 #, python-brace-format
 msgid "Token '{}' already exists."
-msgstr ""
+msgstr "Testemunho '{}' já existe."
 
 #: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
