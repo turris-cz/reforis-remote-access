@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: reForis Remote Access 2.2.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2025-11-07 18:11+0300\n"
-"PO-Revision-Date: 2026-05-17 08:11+0000\n"
+"PO-Revision-Date: 2026-05-18 17:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
 "reforis-remote-access-plugin/pt/>\n"
@@ -122,13 +122,15 @@ msgstr "Ativar Acesso Remoto"
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Accessible via WAN"
-msgstr ""
+msgstr "Acessível via WAN"
 
 #: js/src/accessSettings/RemoteAccessForm.js:81
 msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
+"Dispositivos na rede WAN vão poder ligar à interface de configuração. Caso "
+"contrário, apenas dispositivos na LAN vão poder aceder a ela."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
@@ -137,6 +139,7 @@ msgstr "Porto"
 #: js/src/accessSettings/RemoteAccessForm.js:91
 msgid "A port which will be opened for the remote configuration of this device."
 msgstr ""
+"Um porto que vai ficar aberto para a configuração remota deste dispositivo."
 
 #: js/src/accessSettings/RemoteAccessForm.js:112
 msgid "Save"
@@ -144,7 +147,7 @@ msgstr "Salvar"
 
 #: js/src/accessSettings/RemoteAccessForm.js:122
 msgid "Should be a number in range of 1024-65536"
-msgstr ""
+msgstr "Deve ser um número entre 1024-65536"
 
 #: js/src/accessTokens/AccessTokens.js:30
 msgid "Access Tokens"
@@ -152,19 +155,23 @@ msgstr "Testemunhos de Acesso"
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid "You need to generate certificate authority to create tokens."
-msgstr ""
+msgstr "Precisa gerar a autoridade de certificado para criar testemunhos."
 
 #: js/src/accessTokens/AccessTokens.js:65
 msgid ""
 "You need to generate a token file for each client you want to grant "
 "access to."
 msgstr ""
+"Precisa gerar um ficheiro de testemunho para cada cliente a que quer "
+"conceder acesso."
 
 #: js/src/accessTokens/AccessTokens.js:70
 msgid ""
 "To use the token with another Turris router you need to transfer it using"
 " the \"Remote Devices\" plugin on the client device."
 msgstr ""
+"Para usar o testemunho com outro router Turris precisa de transferi-lo "
+"usando o plugin \"Dispositivos Remotos\" no dispositivo cliente."
 
 #: js/src/accessTokens/CreateTokenForm.js:61
 msgid "Create Token"
@@ -179,6 +186,8 @@ msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
+"Inferior a 64 caracteres. Apenas caracteres alfanuméricos, pontos, traços e "
+"underscores."
 
 #: js/src/accessTokens/CreateTokenForm.js:81
 msgid "Add"
@@ -186,15 +195,15 @@ msgstr "Adicionar"
 
 #: js/src/accessTokens/CreateTokenForm.js:92
 msgid "Name cannot be empty"
-msgstr ""
+msgstr "Nome não pode ser vazio"
 
 #: js/src/accessTokens/CreateTokenForm.js:95
 msgid "Name is too long"
-msgstr ""
+msgstr "Nome é demasiado longo"
 
 #: js/src/accessTokens/CreateTokenForm.js:98
 msgid "Name contains invalid characters"
-msgstr ""
+msgstr "Nome contém caracteres inválidos"
 
 #: js/src/accessTokens/Tokens.js:45
 msgid "Tokens"
@@ -202,7 +211,7 @@ msgstr "Testemunhos"
 
 #: js/src/accessTokens/TokensTable.js:40
 msgid "There are no tokens added yet."
-msgstr ""
+msgstr "Ainda não há testemunhos adicionados."
 
 #: js/src/accessTokens/TokensTable.js:50
 msgid "Name"
@@ -226,11 +235,11 @@ msgstr "Revogar"
 
 #: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
-msgstr ""
+msgstr "Autoridade de certificado já existe."
 
 #: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
-msgstr ""
+msgstr "Não pode mudar as definições."
 
 #: reforis_remote_access/__init__.py:98
 #, python-brace-format
@@ -239,16 +248,16 @@ msgstr "Testemunho '{}' já existe."
 
 #: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
-msgstr ""
+msgstr "Não pode criar testemunho."
 
 #: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
-msgstr ""
+msgstr "Testemunho requisitado não existe."
 
 #: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
-msgstr ""
+msgstr "Não pode obter testemunho."
 
 #: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
-msgstr ""
+msgstr "Não pode revogar testemunho."
