@@ -1,0 +1,265 @@
+# Portuguese translations for reForis Remote Access.
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the reForis Remote
+# Access project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: reForis Remote Access 2.2.0\n"
+"Report-Msgid-Bugs-To: tech.support@turris.cz\n"
+"POT-Creation-Date: 2026-10-15 21:10+0300\n"
+"PO-Revision-Date: 2026-09-04 13:55+0000\n"
+"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
+"Language: pt\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/turris"
+"/reforis-remote-access-plugin/pt/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
+msgid "Remote Access"
+msgstr "Acesso Remoto"
+
+#: js/src/accessSettings/AccessSettings.js:34
+msgid "Access Settings"
+msgstr "Definições de Acesso"
+
+#: js/src/accessSettings/AccessSettings.js:36
+msgid ""
+"Here you can set up your router to be configured remotely. The remote "
+"configuration is done via a secure encrypted connection, and each client "
+"is required to have a token issued by this device."
+msgstr ""
+"Aqui pode configurar o seu router para ser configurado remotamente. A "
+"configuração remota é feita via ligação encriptada segura, e é requerido "
+"a cada cliente ter um testemunho emitido por este dispositivo."
+
+#: js/src/accessSettings/AccessSettings.js:41
+msgid ""
+"It can be useful when you plan to access the configuration interface from"
+" another Turris router, or you intend to write your client."
+msgstr ""
+"Pode ser útil quando planeia aceder à interface de configuração a partir "
+"de outro router Turris, ou pretende escreve o seu cliente."
+
+#: js/src/accessSettings/AuthorityGenerating.js:30
+msgid "Generating Certificate Authority"
+msgstr "A Gerar Autoridade de Certificado"
+
+#: js/src/accessSettings/AuthorityGenerating.js:32
+msgid ""
+"Your certificate authority is now being generated. It usually takes a few"
+" minutes. Settings will appear here automatically once the authority is "
+"ready."
+msgstr ""
+"A sua autoridade de certificado está a ser gerada. Geralmente demora "
+"alguns minutos. As definições vão aparecer aqui automaticamente assim que"
+" a autoridade esteja pronta."
+
+#: js/src/accessSettings/AuthorityMissing.js:27
+msgid "Cannot generate certificate authority."
+msgstr "Não pode gerar autoridade de certificado."
+
+#: js/src/accessSettings/AuthorityMissing.js:33
+msgid "No Certificate Authority"
+msgstr "Nenhuma Autoridade de Certificado"
+
+#: js/src/accessSettings/AuthorityMissing.js:35
+msgid ""
+"Currently, there is no certificate authority (CA) dedicated to remote "
+"access. A CA is required to generate access tokens to authenticate. To "
+"proceed, you need to generate it first."
+msgstr ""
+"Atualmente, não há nenhuma autoridade de certificado (CA) dedicada ao "
+"acesso remoto. É requerida uma CA para gerar testemunhos de acesso para "
+"autenticação. Para prosseguir, precisa de gera-la primeiro."
+
+#: js/src/accessSettings/AuthorityMissing.js:45
+msgid "Generate Certificate Authority"
+msgstr "Gerar Autoridade de Certificado"
+
+#: js/src/accessSettings/CertificateAuthority.js:45
+#: reforis_remote_access/__init__.py:56
+msgid "Cannot delete certificate authority."
+msgstr "Não pode apagar autoridade de certificado."
+
+#: js/src/accessSettings/CertificateAuthority.js:55
+msgid "Certificate Authority"
+msgstr "Autoridade de Certificado"
+
+#: js/src/accessSettings/CertificateAuthority.js:58
+msgid ""
+"You can't delete certificate authority while remote access is enabled. To"
+" delete it, you need to disable the access first."
+msgstr ""
+"Não pode apagar a autoridade de certificado enquanto o acesso remoto está"
+" ativo. Para a apagar, precisa primeiro de desativar o acesso."
+
+#: js/src/accessSettings/CertificateAuthority.js:65
+msgid ""
+"Your certificate authority is set up properly. Please note that if you "
+"delete it, all clients will have their access revoked."
+msgstr ""
+"A sua autoridade de certificado está configurada de modo apropriado. Por "
+"favor note que se a apagar, todos os clientes terão o seu acesso "
+"revogado."
+
+#: js/src/accessSettings/CertificateAuthority.js:75
+msgid "Delete Certificate Authority"
+msgstr "Apagar Autoridade de Certificado"
+
+#: js/src/accessSettings/RemoteAccessForm.js:36
+msgid "Cannot save connection parameters."
+msgstr "Não pode salvar parâmetros da ligação."
+
+#: js/src/accessSettings/RemoteAccessForm.js:71
+msgid "Enable Remote Access"
+msgstr "Ativar Acesso Remoto"
+
+#: js/src/accessSettings/RemoteAccessForm.js:80
+msgid "Accessible via WAN"
+msgstr "Acessível via WAN"
+
+#: js/src/accessSettings/RemoteAccessForm.js:81
+msgid ""
+"Devices in the WAN network will be able to connect to the configuration "
+"interface. Otherwise, only devices on LAN will be able to access it."
+msgstr ""
+"Dispositivos na rede WAN vão poder ligar à interface de configuração. "
+"Caso contrário, apenas dispositivos na LAN vão poder aceder a ela."
+
+#: js/src/accessSettings/RemoteAccessForm.js:90
+msgid "Port"
+msgstr "Porto"
+
+#: js/src/accessSettings/RemoteAccessForm.js:91
+msgid "A port which will be opened for the remote configuration of this device."
+msgstr ""
+"Um porto que vai ficar aberto para a configuração remota deste "
+"dispositivo."
+
+#: js/src/accessSettings/RemoteAccessForm.js:112
+msgid "Save"
+msgstr "Salvar"
+
+#: js/src/accessSettings/RemoteAccessForm.js:122
+msgid "Should be a number in range of 1024-65536"
+msgstr "Deve ser um número entre 1024-65536"
+
+#: js/src/accessTokens/AccessTokens.js:30
+msgid "Access Tokens"
+msgstr "Testemunhos de Acesso"
+
+#: js/src/accessTokens/AccessTokens.js:55
+msgid "You need to generate certificate authority to create tokens."
+msgstr "Precisa gerar a autoridade de certificado para criar testemunhos."
+
+#: js/src/accessTokens/AccessTokens.js:65
+msgid ""
+"You need to generate a token file for each client you want to grant "
+"access to."
+msgstr ""
+"Precisa gerar um ficheiro de testemunho para cada cliente a que quer "
+"conceder acesso."
+
+#: js/src/accessTokens/AccessTokens.js:70
+msgid ""
+"To use the token with another Turris router you need to transfer it using"
+" the \"Remote Devices\" plugin on the client device."
+msgstr ""
+"Para usar o testemunho com outro router Turris precisa de transferi-lo "
+"usando o plugin \"Dispositivos Remotos\" no dispositivo cliente."
+
+#: js/src/accessTokens/CreateTokenForm.js:61
+msgid "Create Token"
+msgstr "Criar Testemunho"
+
+#: js/src/accessTokens/CreateTokenForm.js:64
+msgid "Token name"
+msgstr "Nome do testemunho"
+
+#: js/src/accessTokens/CreateTokenForm.js:65
+msgid ""
+"Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
+"and underscores."
+msgstr ""
+"Inferior a 64 caracteres. Apenas caracteres alfanuméricos, pontos, traços"
+" e underscores."
+
+#: js/src/accessTokens/CreateTokenForm.js:81
+msgid "Add"
+msgstr "Adicionar"
+
+#: js/src/accessTokens/CreateTokenForm.js:92
+msgid "Name cannot be empty"
+msgstr "Nome não pode ser vazio"
+
+#: js/src/accessTokens/CreateTokenForm.js:95
+msgid "Name is too long"
+msgstr "Nome é demasiado longo"
+
+#: js/src/accessTokens/CreateTokenForm.js:98
+msgid "Name contains invalid characters"
+msgstr "Nome contém caracteres inválidos"
+
+#: js/src/accessTokens/Tokens.js:45
+msgid "Tokens"
+msgstr "Testemunhos"
+
+#: js/src/accessTokens/TokensTable.js:40
+msgid "There are no tokens added yet."
+msgstr "Ainda não há testemunhos adicionados."
+
+#: js/src/accessTokens/TokensTable.js:50
+msgid "Name"
+msgstr "Nome"
+
+#: js/src/accessTokens/TokensTable.js:51
+msgid "Actions"
+msgstr "Ações"
+
+#: js/src/accessTokens/TokensTable.js:96
+msgid "Access revoked"
+msgstr "Acesso revogado"
+
+#: js/src/accessTokens/TokensTable.js:111
+msgid "Download"
+msgstr "Descarga"
+
+#: js/src/accessTokens/TokensTable.js:114
+msgid "Revoke"
+msgstr "Revogar"
+
+#: reforis_remote_access/__init__.py:47
+msgid "Certificate authority already exists."
+msgstr "Autoridade de certificado já existe."
+
+#: reforis_remote_access/__init__.py:75
+msgid "Cannot change settings."
+msgstr "Não pode mudar as definições."
+
+#: reforis_remote_access/__init__.py:98
+#, python-brace-format
+msgid "Token '{}' already exists."
+msgstr "Testemunho '{}' já existe."
+
+#: reforis_remote_access/__init__.py:102
+msgid "Cannot create token."
+msgstr "Não pode criar testemunho."
+
+#: reforis_remote_access/__init__.py:113
+msgid "Requested token does not exist."
+msgstr "Testemunho requisitado não existe."
+
+#: reforis_remote_access/__init__.py:117
+msgid "Cannot get token."
+msgstr "Não pode obter testemunho."
+
+#: reforis_remote_access/__init__.py:132
+msgid "Cannot revoke token."
+msgstr "Não pode revogar testemunho."
+

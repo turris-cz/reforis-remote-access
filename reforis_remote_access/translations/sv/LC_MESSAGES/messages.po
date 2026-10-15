@@ -1,17 +1,16 @@
 # Swedish translations for reForis Remote Access.
-# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Remote
 # Access project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-11-07 18:11+0300\n"
-"PO-Revision-Date: 2025-03-01 11:01+0000\n"
-"Last-Translator: Kristoffer Grundström "
-"<swedishsailfishosuser@tutanota.com>\n"
+"POT-Creation-Date: 2026-10-15 21:10+0300\n"
+"PO-Revision-Date: 2026-09-04 13:55+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language: sv\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/turris"
 "/reforis-remote-access-plugin/sv/>\n"
@@ -19,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
@@ -47,7 +46,7 @@ msgstr ""
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
-msgstr ""
+msgstr "Genererar certifikatets auktoritet"
 
 #: js/src/accessSettings/AuthorityGenerating.js:32
 msgid ""
@@ -58,11 +57,11 @@ msgstr ""
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
-msgstr ""
+msgstr "Kan inte generera certifikatets auktoritet."
 
 #: js/src/accessSettings/AuthorityMissing.js:33
 msgid "No Certificate Authority"
-msgstr ""
+msgstr "Ingen auktoritet för certifikatet"
 
 #: js/src/accessSettings/AuthorityMissing.js:35
 msgid ""
@@ -73,44 +72,48 @@ msgstr ""
 
 #: js/src/accessSettings/AuthorityMissing.js:45
 msgid "Generate Certificate Authority"
-msgstr ""
+msgstr "Generera auktoritet för certifikatet"
 
 #: js/src/accessSettings/CertificateAuthority.js:45
 #: reforis_remote_access/__init__.py:56
 msgid "Cannot delete certificate authority."
-msgstr ""
+msgstr "Kan inte ta bort certifikatets auktoritet."
 
 #: js/src/accessSettings/CertificateAuthority.js:55
 msgid "Certificate Authority"
-msgstr ""
+msgstr "Certifikatets auktoritet"
 
 #: js/src/accessSettings/CertificateAuthority.js:58
 msgid ""
 "You can't delete certificate authority while remote access is enabled. To"
 " delete it, you need to disable the access first."
 msgstr ""
+"Du kan inte ta bort certifikatets auktoritet när fjärråtkomst är "
+"aktiverad. För att ta bort det så behöver du stänga av åtkomsten först."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it, all clients will have their access revoked."
 msgstr ""
+"Ditt certifikats auktoritet är korrekt inställt. Vänligen notera att om "
+"du tar bort det så kommer alla klienters åtkomst återkallas."
 
 #: js/src/accessSettings/CertificateAuthority.js:75
 msgid "Delete Certificate Authority"
-msgstr ""
+msgstr "Ta bort certifikatets auktoritet"
 
 #: js/src/accessSettings/RemoteAccessForm.js:36
 msgid "Cannot save connection parameters."
-msgstr ""
+msgstr "Kan inte spara parametrarna för anslutningen."
 
 #: js/src/accessSettings/RemoteAccessForm.js:71
 msgid "Enable Remote Access"
-msgstr ""
+msgstr "Aktivera fjärråtkomst"
 
 #: js/src/accessSettings/RemoteAccessForm.js:80
 msgid "Accessible via WAN"
-msgstr ""
+msgstr "Tillgänglig via WAN"
 
 #: js/src/accessSettings/RemoteAccessForm.js:81
 msgid ""
@@ -120,11 +123,11 @@ msgstr ""
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: js/src/accessSettings/RemoteAccessForm.js:91
 msgid "A port which will be opened for the remote configuration of this device."
-msgstr ""
+msgstr "En port kommer att öppnas för fjärrkonfigurationen av den här enheten."
 
 #: js/src/accessSettings/RemoteAccessForm.js:112
 msgid "Save"
@@ -132,21 +135,23 @@ msgstr "Spara"
 
 #: js/src/accessSettings/RemoteAccessForm.js:122
 msgid "Should be a number in range of 1024-65536"
-msgstr ""
+msgstr "Bör vara ett nummer inom intervallet av 1024-65536"
 
 #: js/src/accessTokens/AccessTokens.js:30
 msgid "Access Tokens"
-msgstr ""
+msgstr "Tokens för åtkomst"
 
 #: js/src/accessTokens/AccessTokens.js:55
 msgid "You need to generate certificate authority to create tokens."
-msgstr ""
+msgstr "Du måste generera certifikatets auktoritet för att skapa tokens."
 
 #: js/src/accessTokens/AccessTokens.js:65
 msgid ""
 "You need to generate a token file for each client you want to grant "
 "access to."
 msgstr ""
+"Du måste generera en token-fil för varje klient som du vill godkänna "
+"åtkomst till."
 
 #: js/src/accessTokens/AccessTokens.js:70
 msgid ""
@@ -156,33 +161,35 @@ msgstr ""
 
 #: js/src/accessTokens/CreateTokenForm.js:61
 msgid "Create Token"
-msgstr ""
+msgstr "Skapa token"
 
 #: js/src/accessTokens/CreateTokenForm.js:64
 msgid "Token name"
-msgstr ""
+msgstr "Namn på token"
 
 #: js/src/accessTokens/CreateTokenForm.js:65
 msgid ""
 "Shorter than 64 characters. Only alphanumeric characters, dots, dashes "
 "and underscores."
 msgstr ""
+"Kortare än 64 tecken. Endast alfanumeriska tecken, punkter, streck och "
+"understreck."
 
 #: js/src/accessTokens/CreateTokenForm.js:81
 msgid "Add"
-msgstr ""
+msgstr "Lägg till"
 
 #: js/src/accessTokens/CreateTokenForm.js:92
 msgid "Name cannot be empty"
-msgstr ""
+msgstr "Namnet kan inte vara tomt"
 
 #: js/src/accessTokens/CreateTokenForm.js:95
 msgid "Name is too long"
-msgstr ""
+msgstr "Namnet är för långt"
 
 #: js/src/accessTokens/CreateTokenForm.js:98
 msgid "Name contains invalid characters"
-msgstr ""
+msgstr "Namnet innehåller ogiltiga tecken"
 
 #: js/src/accessTokens/Tokens.js:45
 msgid "Tokens"
@@ -190,7 +197,7 @@ msgstr "Nycklar"
 
 #: js/src/accessTokens/TokensTable.js:40
 msgid "There are no tokens added yet."
-msgstr ""
+msgstr "Inga tokens har lagts till än."
 
 #: js/src/accessTokens/TokensTable.js:50
 msgid "Name"
@@ -202,44 +209,44 @@ msgstr "Åtgärder"
 
 #: js/src/accessTokens/TokensTable.js:96
 msgid "Access revoked"
-msgstr ""
+msgstr "Åtkomsten återkallades"
 
 #: js/src/accessTokens/TokensTable.js:111
 msgid "Download"
-msgstr ""
+msgstr "Hämta"
 
 #: js/src/accessTokens/TokensTable.js:114
 msgid "Revoke"
-msgstr ""
+msgstr "Återkalla"
 
 #: reforis_remote_access/__init__.py:47
 msgid "Certificate authority already exists."
-msgstr ""
+msgstr "Certifikatets auktoritet finns redan."
 
 #: reforis_remote_access/__init__.py:75
 msgid "Cannot change settings."
-msgstr ""
+msgstr "Kan inte ändra inställningar."
 
 #: reforis_remote_access/__init__.py:98
 #, python-brace-format
 msgid "Token '{}' already exists."
-msgstr ""
+msgstr "Token '{}' finns redan."
 
 #: reforis_remote_access/__init__.py:102
 msgid "Cannot create token."
-msgstr ""
+msgstr "Kan inte skapa token."
 
 #: reforis_remote_access/__init__.py:113
 msgid "Requested token does not exist."
-msgstr ""
+msgstr "Begärd token finns inte."
 
 #: reforis_remote_access/__init__.py:117
 msgid "Cannot get token."
-msgstr ""
+msgstr "Kan inte hämta token."
 
 #: reforis_remote_access/__init__.py:132
 msgid "Cannot revoke token."
-msgstr ""
+msgstr "Kan inte återkalla token."
 
 #~ msgid ""
 #~ "Here you can set up your router"
