@@ -5,14 +5,13 @@
 
 """reForis Remote Access plugin"""
 
-from pathlib import Path
-from http import HTTPStatus
 import base64
+from http import HTTPStatus
+from pathlib import Path
 
-from flask import Blueprint, current_app, jsonify, request, make_response
+from flask import Blueprint, current_app, jsonify, make_response, request
 from flask_babel import gettext as _
-
-from reforis.foris_controller_api.utils import validate_json, APIError
+from reforis.foris_controller_api.utils import APIError, validate_json
 
 blueprint = Blueprint(
     "Remote Access",
