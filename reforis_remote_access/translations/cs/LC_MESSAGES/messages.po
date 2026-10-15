@@ -1,14 +1,14 @@
 # Czech translations for reForis Remote Access.
-# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Remote
 # Access project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-11-07 18:11+0300\n"
+"POT-Creation-Date: 2026-10-15 21:10+0300\n"
 "PO-Revision-Date: 2026-09-04 13:54+0000\n"
 "Last-Translator: Josef Schlehofer <pepe@bloodkings.eu>\n"
 "Language: cs\n"
@@ -18,8 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
-"X-Generator: Weblate 2026.9\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: js/src/accessSettings/RemoteAccessForm.js:68 js/src/app.js:13
 msgid "Remote Access"
@@ -35,18 +34,18 @@ msgid ""
 "configuration is done via a secure encrypted connection, and each client "
 "is required to have a token issued by this device."
 msgstr ""
-"Zde můžete nastavit svůj směrovač tak, aby byl nastavován vzdáleně. To je "
-"prováděno přes bezpečné šifrované spojení a je třeba, aby každý klient měl "
-"token vydaný tímto zařízením."
+"Zde můžete nastavit svůj směrovač tak, aby byl nastavován vzdáleně. To je"
+" prováděno přes bezpečné šifrované spojení a je třeba, aby každý klient "
+"měl token vydaný tímto zařízením."
 
 #: js/src/accessSettings/AccessSettings.js:41
 msgid ""
 "It can be useful when you plan to access the configuration interface from"
 " another Turris router, or you intend to write your client."
 msgstr ""
-"Může to být užitečné, pokud plánujete přistupovat ke nastavovacímu rozhraní "
-"z jiného směrovače Turris nebo když si chcete naprogramovat vlastního "
-"klienta."
+"Může to být užitečné, pokud plánujete přistupovat ke nastavovacímu "
+"rozhraní z jiného směrovače Turris nebo když si chcete naprogramovat "
+"vlastního klienta."
 
 #: js/src/accessSettings/AuthorityGenerating.js:30
 msgid "Generating Certificate Authority"
@@ -58,8 +57,9 @@ msgid ""
 " minutes. Settings will appear here automatically once the authority is "
 "ready."
 msgstr ""
-"Vaše certifikační autorita je nyní vytvářena. Obvykle to trvá několik minut. "
-"Nastavení se zde automaticky objeví, jakmile bude autorita připravena."
+"Vaše certifikační autorita je nyní vytvářena. Obvykle to trvá několik "
+"minut. Nastavení se zde automaticky objeví, jakmile bude autorita "
+"připravena."
 
 #: js/src/accessSettings/AuthorityMissing.js:27
 msgid "Cannot generate certificate authority."
@@ -75,9 +75,9 @@ msgid ""
 "access. A CA is required to generate access tokens to authenticate. To "
 "proceed, you need to generate it first."
 msgstr ""
-"V tuto chvíli nemáte žádnou certifikační autoritu (CA), vyhrazenou pro účely "
-"vzdáleného přístupu. Ta je nezbytná pro vytváření přístupových tokenů k "
-"ověřování. Nejprve je třeba takovou autoritu vytvořit."
+"V tuto chvíli nemáte žádnou certifikační autoritu (CA), vyhrazenou pro "
+"účely vzdáleného přístupu. Ta je nezbytná pro vytváření přístupových "
+"tokenů k ověřování. Nejprve je třeba takovou autoritu vytvořit."
 
 #: js/src/accessSettings/AuthorityMissing.js:45
 msgid "Generate Certificate Authority"
@@ -97,16 +97,16 @@ msgid ""
 "You can't delete certificate authority while remote access is enabled. To"
 " delete it, you need to disable the access first."
 msgstr ""
-"Nemůžete smazat certifikační autoritu, pokud je povolen vzdálený přístup. "
-"Pokud jí chcete smazat, je nejdříve třeba tento přístup zakázat."
+"Nemůžete smazat certifikační autoritu, pokud je povolen vzdálený přístup."
+" Pokud jí chcete smazat, je nejdříve třeba tento přístup zakázat."
 
 #: js/src/accessSettings/CertificateAuthority.js:65
 msgid ""
 "Your certificate authority is set up properly. Please note that if you "
 "delete it, all clients will have their access revoked."
 msgstr ""
-"Vaše certifikační autorita je správně nastavena. Mějte na paměti, že když ji "
-"smažete, všem klientům tím zakážete přístup."
+"Vaše certifikační autorita je správně nastavena. Mějte na paměti, že když"
+" ji smažete, všem klientům tím zakážete přístup."
 
 #: js/src/accessSettings/CertificateAuthority.js:75
 msgid "Delete Certificate Authority"
@@ -129,8 +129,8 @@ msgid ""
 "Devices in the WAN network will be able to connect to the configuration "
 "interface. Otherwise, only devices on LAN will be able to access it."
 msgstr ""
-"Zařízení v síti WAN budou schopna se připojovat k nastavovacímu rozhraní. "
-"Jinak mají přístup jen zařízení v síti LAN."
+"Zařízení v síti WAN budou schopna se připojovat k nastavovacímu rozhraní."
+" Jinak mají přístup jen zařízení v síti LAN."
 
 #: js/src/accessSettings/RemoteAccessForm.js:90
 msgid "Port"
@@ -384,3 +384,4 @@ msgstr "Platnost tokenu nebylo možné odvolat."
 
 #~ msgid "Remote Devices"
 #~ msgstr "Vzdálená zařízení"
+
