@@ -8,6 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.3.1] - 2026-10-27
+
+### Added
+
+- Added & updated Weblate translations
+
+### Changed
+
+- Updated several npm dependencies
+- NPM audit fix
+
 ## [2.3.0] - 2025-11-07
 
 ### Added
@@ -120,7 +131,8 @@ and this project adheres to
 - Mange certificate authority
 - Configure remote access
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.3.0...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.3.1...master
+[2.3.1]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.3.0...v2.3.1
 [2.3.0]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.2.0...v2.3.0
 [2.2.0]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.1.0...v2.2.0
 [2.1.0]: https://gitlab.nic.cz/turris/reforis/reforis-remote-access/-/compare/v2.0.0...v2.1.0

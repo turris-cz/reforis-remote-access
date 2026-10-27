@@ -6,14 +6,14 @@
         "url": "https://gitlab.nic.cz/turris/reforis/reforis-remote-access.git"
     },
     "license": "GPL-3.0",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "description": "reForis Remote Access plugin allows accessing Turris from an external network.",
     "main": "./src/app.js",
     "eslintConfig": {
         "extends": "eslint-config-reforis"
     },
     "dependencies": {
-        "foris": "^6.8.0"
+        "foris": "^6.12.0"
     },
     "peerDependencies": {
         "prop-types": "^15.8.1",
@@ -31,18 +31,18 @@
         "babel-loader": "^8.1.0",
         "css-loader": "^3.4.2",
         "eslint": "^8.57.0",
-        "eslint-config-reforis": "^2.2.1",
+        "eslint-config-reforis": "^2.3.0",
         "jest": "^25.2.4",
         "jest-mock-axios": "^3.2.0",
-        "moment-timezone": "^0.5.48",
-        "prettier": "^3.6.2",
+        "moment-timezone": "^0.6.5",
+        "prettier": "^3.9.10",
         "process": "^0.11.10",
         "prop-types": "^15.8.1",
         "react": "16.9.0",
         "react-dom": "16.9.0",
         "react-router-dom": "^5.1.2",
         "style-loader": "^0.23.1",
-        "webpack": "^5.102.1",
+        "webpack": "^5.112.2",
         "webpack-cli": "^5.1.4"
     },
     "scripts": {
